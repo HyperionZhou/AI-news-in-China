@@ -1,0 +1,24 @@
+2019.09.25
+1. Macaron: AI + Hardware -> modify videos.
+Macaron is an app that can help people easily modify pictures and videos on their phones. Now, combining powerful
+video segmentation AI model application with Apple A13 Bionic chip, it can fulfill real-time video’s rendering which
+used to be implemented by professional working station.
+
+Moreover, Macaron is a member of Tencent AI accelerator. This project is also helped a lot by Tencent.
+
+2. Films repairing AI techniques
+Currently, there are some AI based techniques trying to repair old roll film. For example, Deepsense AI repairs 
+<Gone with the wind>. In China, an AI called Shensi transform a 720 x 576 film to a 2k or even larger film,
+repairing its quality simultaneously. 
+This system uses Deep Learning, GAN, DenseNet, CycleGAN, and  so on. It has three main modules including resolution 
+augmenting module, digital image repairing module.
+The highlight is that the system is trained separately to solve different videos problems. Also, it uses cycle
+network to improve efficiency and stability.
+
+3. Using AI to cultivate vegetables. Tencent x WUR smart greenhouse competition.
+They use greenhouse cultivating simulator to calculate the growing performance under certain environment
+circumstances. They also implements a evaluating the gains, like how sweet the tomatoes are and how much money 
+they may earn in the market.
+The AI is tuning temperature, sunlight, CO2, and so on. On theoretical way, this may produce 10 times profits
+than usual. However, in reality, the growing performance may be opposite.
+ 
