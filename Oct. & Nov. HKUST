@@ -1,0 +1,25 @@
+HKUST
+
+1. Didi, Chinese Uber, gets Daniel H. Wagner Prize on INFORMS, which is pretty amazing.
+
+Didi AI Lab raised “Reinforcement Learning based Sharing cars orders’ assignment solutions”. Didi uses half Markov process to build model for assigning sharing cars’ order to different drivers. To solve the order assigning problem that presented by the model, Didi utilizes reinforcement learning, time difference method, and traditional combination and and optimization method to solve the problem.
+
+2. CUHK develops the first AI portable blood testing microscope.
+
+This microscope can provide  normal  clinics and poor places with fast and cheap blood testing service. This system combines AI with traditional blood testing techniques and learns thousands of blood cells features.
+
+3. Compressing Bert: the methods’ collection.
+
+1st: Network pruning.
+
+2nd: low rank decompose.
+
+3rd: knowledge distillation
+
+4th: parameter sharing
+
+5th: quantification
+
+6th: pre-training and downstream
+
+The recommended models: ALBERT, DistillBERT, MobileBERT, Q-BERT, LayerDrop, RPP
