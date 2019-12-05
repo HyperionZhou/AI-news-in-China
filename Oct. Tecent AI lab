@@ -1,0 +1,18 @@
+Oct. Tencent AI lab
+
+1. Students in a Zhejiang’s primary school use head rings to monitor students’ focusing level.
+
+The head rings use Electroencephalography, EEG technique and can evaluate users’ focusing level then transmit to the teachers’ screen. This system can also transfer the focus status to parents’ smart phones. There are many extra functions. For example, the ring can help students to do meditation. Some students feel more pressure since the device let their parents know about their focus status. Others think it can help with the study efficiency. People in China still have different attitude toward this kind of device.
+
+2. Tencent AI team raised NumNet+ model, ranking first on the DROP dataset.
+
+ 
+DROP dataset is a math inference dataset for computer.  Tencent’s new model is the best one currently, with F1 rate for more than 80%. NumNet+ is based on numerically-aware graph neural network, NumGNN. This network use topological graph to represent the relationship of numbers. For example, node 5 has a link to node 4 with ‘>’ label. This model also combines pre-trained model RoBERTa.
+
+3. Chinese AI budget is 14 times higher than the US
+
+The US AI budget for 2020 is less than 1.4 billion. However, China has 14 times as high as the budget of the US. Moreover, the US budget is limited on the government related projects. Chinese budget is more about the whole AI business environment.
+
+4. Tsinghua: automatic driving bike.
+
+Tsinghua published a paper on Nature, about its new automatic driving bike. This bike can follow people and avoid obstructs using computer vision techniques. Also, it can follow some voice command.
