@@ -1,0 +1,190 @@
+#Pengcheng Lab and Guangdong-Hong Kong-Macao Greater Bay Area Artificial Intelligence and Robot Federation sign strategic cooperation agreement
+
+On the morning of December 20, 2019, the 2019 New Generation Artificial Intelligence Academician Summit Forum was grandly held in Shenzhen. The theme of this forum is "Cloud Brain Intelligence, Pengcheng First", focusing on the most cutting-edge technology trends in AI and focusing on artificial intelligence. The dynamics of intelligence in open source open platforms, high-end chips, brain-like research, and intelligent applications.
+Continuing last year's strong academician lineup, this year invited up to 10 academicians to gather together for on-site reviews, in-depth analysis of the development status of the field of artificial intelligence, and directions worth exploring in the future. At the same time, the top domestic experts in the field of artificial intelligence from academia and business also shared their insights on industry changes and technological innovation in the field of artificial intelligence technology, and explored the boundaries of AI together.
+
+Pengcheng Lab and the Guangdong-Hong Kong-Macao Greater Bay Area Artificial Intelligence and Robot Federation (hereinafter referred to as the "Federation") signed a strategic cooperation agreement. Former Deputy Director of the Guangdong Provincial Department of Science and Technology, Wen Zewei, Director of Shenzhen Science and Technology Commission, Liang Yongsheng, Academician Gao Wen, Academician Zhao Qinping, Academician Chen Jie, Academician Wu Jianping, Academician Wang Shafei, Academician Zhang Dongxiao, Academician Pu Muming and Professor Jia Weijia of the University of Macau Come together to witness. Under the auspices of Dr. Zhang Zhengyou, Director of the Tencent AI Lab, Researcher Mei Tao, Assistant Director of Pengcheng Lab, and Dr. Liu Qifeng, Secretary General of the Federation, signed a contract on behalf of the cooperation unit.
+
+Through this cooperation, Pengcheng Lab will leverage the advantages of artificial intelligence technology, especially the advantages of Pengcheng Yunnao's open source open empowerment resources, and promote the construction and promotion of the artificial intelligence enablement open source platform in Guangdong, Hong Kong, and Macau. The federation will make full use of the abundant resource advantages of the three real estate institutions to support the artificial intelligence core technology of Pengcheng Laboratory in the three places, and promote the accelerated development of the artificial intelligence and robotics industries in the Guangdong, Hong Kong and Macao Greater Bay Area.
+
+
+
+
+About Pengcheng Lab:
+Pengcheng Lab (Shenzhen Provincial Laboratory of Cyberspace Science and Technology) aims at the new round of innovation-driven development needs, builds a national laboratory "preparatory team", builds innovative Guangdong, and helps Shenzhen take the lead in building a socialist modernization leading area. The laboratory takes national and regional development strategies as its mission, aggregates high-quality innovative resources at home and abroad, builds major scientific infrastructure and platforms, conducts regional multi-disciplinary, interdisciplinary, and large-scale basic and applied basic research, with a focus on network communications. , Artificial intelligence and cyberspace security, and strive to lead the future academic direction, promote the development of the network information industry, and actively promote the Guangdong-Hong Kong-Macao Greater Bay Area to build an international technological innovation center.
+ 
+About the Federation:
+The federation was initiated by Academician Gao Wen.It is a joint effort of three regional societies of Guangdong Institute of Artificial Intelligence and Robotics, Hong Kong Institute of Artificial Intelligence and Robotics, and the Macau Bay Area Artificial Intelligence Society. The academic organization in the field of robotics and the academic organization of industry-university-research cooperation aim to promote the development of artificial intelligence and robotics in the Guangdong-Hong Kong-Macao Greater Bay Area, enhance exchanges and cooperation between the three places, and coordinate ecological construction.
+
+
+
+# AI攻破高数核心，1秒内精确求解微分方程、不定积分，性能远超Matlab
+大家都知道，AI (神经网络) 连加减法这样的简单算术都做不好：
+
+
+可现在，AI已经懂得微积分，把魔爪伸向你最爱的高数了。
+
+它不光会求不定积分：
+
+
+还能解常微分方程：
+
+
+一阶二阶都可以。
+
+这是Facebook发表的新模型，1秒给出的答案，超越了Mathematica和Matlab这两只付费数学软件30秒的成绩。
+
+团队说，这是Seq2Seq和Transformer搭配食用的结果。
+
+用自然语言处理 (NLP) 的方法来理解数学，果然行得通。
+
+这项成果，已经在推特上获得了1700赞。许多小伙伴表示惊奇
+
+巨大数据集的生成姿势
+
+要训练模型做微积分题目，最重要的前提就是要有大大大的数据集。
+
+这里有，积分数据集和常微分方程数据集的制造方法：
+
+函数，和它的积分
+
+首先，就是要做出“一个函数&它的微分”这样的数据对。团队用了三种方法：
+
+第一种是正向生成 (Fwd) ，指生成随机函数 (最多n个运算符) ，再用现成的工具求积分。把工具求不出的函数扔掉。
+
+第二种是反向生成 (Bwd) ，指生成随机函数，再对函数求导。填补了第一种方法收集不到的一些函数，因为就算工具求不出积分，也一定可以求导。
+
+第三种是用了分部积分的反向生成 (Ibp) 。
+
+将数学视作自然语言
+
+积分方程和微分方程，都可以视作将一个表达式转换为另一个表达式，研究人员认为，这是机器翻译的一个特殊实例，可以用NLP的方法来解决。
+
+第一步，是将数学表达式以树的形式表示。
+
+运算符和函数为内部节点，数字、常数和变量等为叶子节点。
+
+第二步，引入seq2seq模型。
+seq2seq模型具有两种重要特性：
+输入和输出序列都可以具有任意长度，并且长度可以不同。
+输入序列和输出序列中的字词不需要一一对应。
+因此，seq2seq模型非常适合求解微积分的问题。
+使用seq2seq模型生成树，首先，要将树映射到序列。
+使用前缀表示法，将每个父节点写在其子节点之前，从左至右列出。
+比如 2 + 3 * (5 + 2)，表示为树是：
+表示为序列就是 [+ 2 * 3 + 5 2]。
+树和前缀序列之间也是一一映射的。
+第三步，生成随机表达式。
+要创建训练数据，就需要生成随机数学表达式。前文已经介绍了数据集的生成策略，这里着重讲一下生成随机表达式的算法。
+使用n个内部节点对表达式进行统一采样并非易事。比如递归这样的方法，就会倾向于生成深树而非宽树，偏左树而非偏右树，实际上是无法以相同的概率生成不同种类的树的。
+所以，以随机二叉树为例，具体的方法是：从一个空的根节点开始，在每一步中确定下一个内部节点在空节点中的位置。重复进行直到所有内部节点都被分配为止。
+不过，在通常情况下，数学表达式树不一定是二叉树，内部节点可能只有1个子节点。如此，就要考虑根节点和下一内部节点参数数量的二维概率分布，记作 L(e,n)。
+接下来，就是对随机树进行采样，从可能的运算符和整数、变量、常量列表中随机选择内部节点及叶子节点来对树进行“装饰”。
+最后，计算表达式的数量。
+经由前面的步骤，可以看出，表达式实际上是由一组有限的变量、常量、整数和一系列运算符组成的。
+于是，问题可以概括成：
+最多包含n个内部节点的树
+一组p1个一元运算符（如cos，sin，exp，log）
+一组p2个二进制运算符（如+，-，×，pow）
+一组L个叶子值，其中包含变量（如x，y，z），常量（如e，π），整数（如 {-10，…，10}）
+如果p1 = 0，则表达式用二叉树表示。
+这样，具有n个内部节点的二叉树恰好具有n + 1个叶子节点。每个节点和叶子可以分别取p1和L个不同的值。
+具有n个二进制运算符的表达式数量就可以表示为：
+如果p1 > 0，表达式数量则为：
+可以观察到，叶子节点和二元运算符的数量会明显影响问题空间的大小。
+△不同数目运算符和叶子节点的表达式数量
+胜过商业软件
+实验中，研究人员训练seq2seq模型预测给定问题的解决方案。采用的模型，是8个注意力头（attention head），6层，512维的Transformer模型。
+研究人员在一个拥有5000个方程的数据集中，对模型求解微积分方程的准确率进行了评估。
+结果表明，对于微分方程，波束搜索解码能大大提高模型的准确率。
+而与最先进的商业科学计算软件相比，新模型不仅更快，准确率也更高。
+在包含500个方程的测试集上，商业软件中表现最好的是Mathematica。
+比如，在一阶微分方程中，与使用贪婪搜索解码算法（集束大小为1）的新模型相比，Mathematica不落下风，但新方法通常1秒以内就能解完方程，Mathematica的解题时间要长的多（限制时间30s，若超过30s则视作没有得到解）。
+而当新方法进行大小为50的波束搜索时，模型准确率就从81.2%提升到了97%，远胜于Mathematica（77.2%）
+并且，在某一些Mathematica和Matlab无力解决的问题上，新模型都给出了有效解。
+△商业科学计算软件没有找到解的方程
+邀请AI参加IMO
+这个会解微积分的AI一登场，就吸引了众多网友的目光，引发热烈讨论。网友们纷纷称赞：鹅妹子嘤。
+有网友这样说道：
+这篇论文超级有趣的地方在于，它有可能解决复杂度比积分要高得高得高得多的问题。
+还有网友认为，这项研究太酷了，该模型能够归纳和整合一些sympy无法实现的功能。
+不过，也有网友认为，在与Mathematica的对比上，研究人员的实验设定显得不够严谨。
+默认设置下，Mathematica是在复数域中进行计算的，这会增加其操作的难度。但作者把包含复数系数的表达式视作“无效”。所以他们在使用Mathematica的时候将设置调整为实数域了？
+
+我很好奇Mathematica是否可以解决该系统无法解决的问题。
+
+30s的限制时间对于计算机代数系统有点武断了。
+但总之，面对越来越机智的AI，已经有人发起了挑战赛，邀请AI挑战IMO金牌。
+Facebook AI研究院出品
+这篇论文有两位共同一作。
+Guillaume Lample，来自法国布雷斯特，是Facebook AI研究院、皮埃尔和玛丽·居里大学在读博士。
+他曾于巴黎综合理工学院和CMU分别获得数学与计算机科学和人工智能硕士学位。2014年进入Facebook实习。
+
+François Charton，Facebook AI研究院的客座企业家（Visiting entrepreneur），主要研究方向是数学和因果关系。
+https://arxiv.org/abs/1912.01412
+
+https://news.ycombinator.com/item?id=21084748
+
+#港大本科 | 面向未来的新兴专业：金融科技、应用人工智能课程解析
+
+香港大学于2019/20学年，推出一系列跨学科的全新本科课程文理学士，旨在培养领导未来新行业、创造未来新机会的领袖人才。本篇文章将为大家介绍文理学士系列中的文理学士（金融科技）及文理学士（应用人工智能）。
+
+在港大
+文理学士（金融科技） 
+BASc(FinTech)
+文理学士（金融科技）培养具有金融和科技知识的金融科技专家及企业家，毕业生未来将领导金融科技的创新和应用。课程由港大工程学院、经济及工商管理学院等多个学院参与设计。
+过去这几年里金融圈崛起的高频词汇首当其冲就是FinTech了。
+近几年，摩根大通集团约1/3的分析师和员工开始自学编程；高盛工程部门早早就向2020届的FinTech学生抛出橄榄枝；麻省理工等名校相继开设网上FinTech认证课程；招商银行专门开启了针对19年应届生的FinTech管培生招募；金融第一大考CFA，也新增了FinTech的内容......
+
+高盛曾报告，在金融行业，“保守预计，到2025年，机器学习和人工智能可以节省成本和带来新业务的盈利，能创造大约每年340亿-430亿美元的价值。”不知道FinTech，无异于主动退出未来的金融市场。
+Pt.1
+
+FINTECH
+  金融科技到底是什么？
+
+FinTech = Finance+Technology，即金融科技。关于其内涵，国际金融稳定理事会（FSB）给出了一个国际通用的标准定义：
+“技术带来的金融创新，它能够产生新的商业模式、应用、过程或产品，从而对金融市场、金融机构或金融服务的提供方式产生重大影响。”
+
+一个最简单也最日常例子，如今我们天天“扫一扫”的微信&支付宝、Apple Pay等，就是FinTech所带来的经济模式的重大转变。
+
+而FinTech的范畴远超“电子支付”，实际上，只要是技术在金融行业的应用，都属于金融科技的范畴。比如这几年我们耳熟能详的前沿技术——人工智能、大数据、区块链、密码学、云计算等——都是金融科技的研究对象。
+
+
+
+有了新兴技术后，FinTech可应用的金融业务范围也非常广。它正被应用到金融行业的方方面面：借贷、管理财富、支付、保险、众筹、征信，乃至是零售和房屋中介。
+Pt.2
+
+ FUTURE
+行业预测&就职前景 
+■ 薪资
+从Google的报告来看，美国FinTech相关岗位的薪资可以达到8.8万美元之多;以Algorithm Engineer(算法模型工程师)为例，年薪约9.6W美金。
+
+根据麦肯锡对18年FinTech实际薪酬观察报告表现，以上海为例，初级岗位每月的基本薪水在￥15k-25k+commission。而每升高一级的涨薪也非常可观，升职加薪后，年薪直逼百万不在话下。
+
+■可就职公司/行业
+蚂蚁金服，京东金融，Nubank，Robinhood，Bloomberg，PayPal......以及各大银行等等。
+
+
+Pt.3
+港大与包括渣打、腾讯在内的多个知名企业合作，为FinTech学生提供大量实习机会。今年3月，港大与腾讯正式合作，结合港大的卓越学术成就，以及腾讯在金融科技行业的实践经验，携手培育金融科技人才和合作开展相关的研究及开发项目，共同促进行业未来发展。合作涵盖：
+
+✨腾讯金融学院与港大合作，为文理学士（金融科技）本科学生提供工作坊、客席讲课、讲座及安排企业参观等活动；
+✨自新学年起连续四个学年，腾讯为港大学生提供固定名额的实习机会；
+✨港大计算机科学系的金融科技及区块链实验室将与学院一同合作开展与金融科技有关的研究及开发项目。
+
+
+
+课程更详细内容请参考官网：https://basc.hku.hk/fintech/
+就读课程的学长学姐
+也为我们带来了TA们的心得：
+
+肖程原
+重庆南开中学
+“ 选择金融科技是我的兴趣所在，经过港大一个学期的学习，金融科技对我而言不再是一个“高级”的概念，技术的革新和运用有了更切实的意义。例如大家都听说过区块链技术，大家都知道加密货币（如比特币）是其中最出名的应用，但实际上区块链可以应用在各行各业，比如说保险、金融资产结算、数字服务、防伪等等。
+
+FinTech中的Technology是可以跨越多个领域的，反过来同一个领域也需要多个技术的支持和创新。FinTech实在是一个很庞大、复杂但又有趣、充满挑战的领域。”
+
+谷伊宁
+哈尔滨市第三中学
+“ 我当时想选一个兼修计算机以及金融研究的专业，金融科技是最佳选择。港大的金融科技专业课程包含内容非常广且自由度较高，金融科技的热点话题比如AI，区块链，NLP，网络安全等都有涉猎，以供我们在高年级选择想要深入研究的领域。此外，金融科技课程隶属于文理学士，会有专属文理学士的课程和实习安排，比如大一的时候有领导力课程，之后还会有大数据的课程等。”
+
