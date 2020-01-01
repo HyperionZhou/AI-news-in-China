@@ -18,173 +18,170 @@ The federation was initiated by Academician Gao Wen.It is a joint effort of thre
 
 
 
-# AI攻破高数核心，1秒内精确求解微分方程、不定积分，性能远超Matlab
-大家都知道，AI (神经网络) 连加减法这样的简单算术都做不好：
+# AI breaks through the core of high numbers, accurately solves differential equations and indefinite integrals within 1 second, and has far better performance than Matlab
+Everyone knows that AI (Neural Network) can't even do simple arithmetic like addition and subtraction:
 
 
-可现在，AI已经懂得微积分，把魔爪伸向你最爱的高数了。
+But now, AI already knows calculus and stretches the magic claw towards your favorite high number.
 
-它不光会求不定积分：
-
-
-还能解常微分方程：
+It will not only find indefinite integrals:
 
 
-一阶二阶都可以。
+Can also solve ordinary differential equations:
 
-这是Facebook发表的新模型，1秒给出的答案，超越了Mathematica和Matlab这两只付费数学软件30秒的成绩。
 
-团队说，这是Seq2Seq和Transformer搭配食用的结果。
+First order and second order are fine.
 
-用自然语言处理 (NLP) 的方法来理解数学，果然行得通。
+This is a new model published by Facebook. The answer given in 1 second surpassed the 30-second performance of Mathematica and Matlab.
 
-这项成果，已经在推特上获得了1700赞。许多小伙伴表示惊奇
+The team said that this is the result of Seq2Seq and Transformer.
 
-巨大数据集的生成姿势
+Using natural language processing (NLP) to understand mathematics works.
 
-要训练模型做微积分题目，最重要的前提就是要有大大大的数据集。
+This result has received 1,700 likes on Twitter. Many little friends expressed surprise
 
-这里有，积分数据集和常微分方程数据集的制造方法：
+Generating poses for huge data sets
 
-函数，和它的积分
+To train a model to do a calculus problem, the most important prerequisite is a large and large data set.
 
-首先，就是要做出“一个函数&它的微分”这样的数据对。团队用了三种方法：
+Here are the manufacturing methods for the integral dataset and the ordinary differential equation dataset:
 
-第一种是正向生成 (Fwd) ，指生成随机函数 (最多n个运算符) ，再用现成的工具求积分。把工具求不出的函数扔掉。
+Function, and its integral
 
-第二种是反向生成 (Bwd) ，指生成随机函数，再对函数求导。填补了第一种方法收集不到的一些函数，因为就算工具求不出积分，也一定可以求导。
+The first is to make a data pair like "a function & its differential". The team used three methods:
 
-第三种是用了分部积分的反向生成 (Ibp) 。
+The first is forward generation (Fwd), which refers to generating a random function (up to n operators) and then using existing tools to find the integral. Throw away functions that the tool cannot find.
 
-将数学视作自然语言
+The second is backward generation (Bwd), which refers to generating a random function and then deriving the function. Filled up some functions that the first method could not collect, because even if the tool can't find the integral, it can definitely be derived.
 
-积分方程和微分方程，都可以视作将一个表达式转换为另一个表达式，研究人员认为，这是机器翻译的一个特殊实例，可以用NLP的方法来解决。
+The third is inverse generation (Ibp) using segment integrals.
 
-第一步，是将数学表达式以树的形式表示。
+Treat mathematics as natural language
 
-运算符和函数为内部节点，数字、常数和变量等为叶子节点。
+Integral and differential equations can both be regarded as transforming one expression into another. Researchers believe that this is a special case of machine translation and can be solved by NLP.
 
-第二步，引入seq2seq模型。
-seq2seq模型具有两种重要特性：
-输入和输出序列都可以具有任意长度，并且长度可以不同。
-输入序列和输出序列中的字词不需要一一对应。
-因此，seq2seq模型非常适合求解微积分的问题。
-使用seq2seq模型生成树，首先，要将树映射到序列。
-使用前缀表示法，将每个父节点写在其子节点之前，从左至右列出。
-比如 2 + 3 * (5 + 2)，表示为树是：
-表示为序列就是 [+ 2 * 3 + 5 2]。
-树和前缀序列之间也是一一映射的。
-第三步，生成随机表达式。
-要创建训练数据，就需要生成随机数学表达式。前文已经介绍了数据集的生成策略，这里着重讲一下生成随机表达式的算法。
-使用n个内部节点对表达式进行统一采样并非易事。比如递归这样的方法，就会倾向于生成深树而非宽树，偏左树而非偏右树，实际上是无法以相同的概率生成不同种类的树的。
-所以，以随机二叉树为例，具体的方法是：从一个空的根节点开始，在每一步中确定下一个内部节点在空节点中的位置。重复进行直到所有内部节点都被分配为止。
-不过，在通常情况下，数学表达式树不一定是二叉树，内部节点可能只有1个子节点。如此，就要考虑根节点和下一内部节点参数数量的二维概率分布，记作 L(e,n)。
-接下来，就是对随机树进行采样，从可能的运算符和整数、变量、常量列表中随机选择内部节点及叶子节点来对树进行“装饰”。
-最后，计算表达式的数量。
-经由前面的步骤，可以看出，表达式实际上是由一组有限的变量、常量、整数和一系列运算符组成的。
-于是，问题可以概括成：
-最多包含n个内部节点的树
-一组p1个一元运算符（如cos，sin，exp，log）
-一组p2个二进制运算符（如+，-，×，pow）
-一组L个叶子值，其中包含变量（如x，y，z），常量（如e，π），整数（如 {-10，…，10}）
-如果p1 = 0，则表达式用二叉树表示。
-这样，具有n个内部节点的二叉树恰好具有n + 1个叶子节点。每个节点和叶子可以分别取p1和L个不同的值。
-具有n个二进制运算符的表达式数量就可以表示为：
-如果p1 > 0，表达式数量则为：
-可以观察到，叶子节点和二元运算符的数量会明显影响问题空间的大小。
-△不同数目运算符和叶子节点的表达式数量
-胜过商业软件
-实验中，研究人员训练seq2seq模型预测给定问题的解决方案。采用的模型，是8个注意力头（attention head），6层，512维的Transformer模型。
-研究人员在一个拥有5000个方程的数据集中，对模型求解微积分方程的准确率进行了评估。
-结果表明，对于微分方程，波束搜索解码能大大提高模型的准确率。
-而与最先进的商业科学计算软件相比，新模型不仅更快，准确率也更高。
-在包含500个方程的测试集上，商业软件中表现最好的是Mathematica。
-比如，在一阶微分方程中，与使用贪婪搜索解码算法（集束大小为1）的新模型相比，Mathematica不落下风，但新方法通常1秒以内就能解完方程，Mathematica的解题时间要长的多（限制时间30s，若超过30s则视作没有得到解）。
-而当新方法进行大小为50的波束搜索时，模型准确率就从81.2%提升到了97%，远胜于Mathematica（77.2%）
-并且，在某一些Mathematica和Matlab无力解决的问题上，新模型都给出了有效解。
-△商业科学计算软件没有找到解的方程
-邀请AI参加IMO
-这个会解微积分的AI一登场，就吸引了众多网友的目光，引发热烈讨论。网友们纷纷称赞：鹅妹子嘤。
-有网友这样说道：
-这篇论文超级有趣的地方在于，它有可能解决复杂度比积分要高得高得高得多的问题。
-还有网友认为，这项研究太酷了，该模型能够归纳和整合一些sympy无法实现的功能。
-不过，也有网友认为，在与Mathematica的对比上，研究人员的实验设定显得不够严谨。
-默认设置下，Mathematica是在复数域中进行计算的，这会增加其操作的难度。但作者把包含复数系数的表达式视作“无效”。所以他们在使用Mathematica的时候将设置调整为实数域了？
+The first step is to represent the mathematical expression as a tree.
 
-我很好奇Mathematica是否可以解决该系统无法解决的问题。
+Operators and functions are internal nodes, and numbers, constants, and variables are leaf nodes.
 
-30s的限制时间对于计算机代数系统有点武断了。
-但总之，面对越来越机智的AI，已经有人发起了挑战赛，邀请AI挑战IMO金牌。
-Facebook AI研究院出品
-这篇论文有两位共同一作。
-Guillaume Lample，来自法国布雷斯特，是Facebook AI研究院、皮埃尔和玛丽·居里大学在读博士。
-他曾于巴黎综合理工学院和CMU分别获得数学与计算机科学和人工智能硕士学位。2014年进入Facebook实习。
+The second step is to introduce the seq2seq model.
+The seq2seq model has two important characteristics:
+Both input and output sequences can have any length, and the lengths can be different.
+The words in the input and output sequences do not need to correspond one-to-one.
+Therefore, the seq2seq model is very suitable for solving calculus problems.
+To generate a tree using the seq2seq model, first, map the tree to a sequence.
+Using prefix notation, write each parent node before its child nodes, listed from left to right.
+For example 2 + 3 * (5 + 2), expressed as a tree is:
+Expressed as a sequence is [+ 2 * 3 + 5 2].
+There is also a one-to-one mapping between the tree and the prefix sequence.
+The third step is to generate a random expression.
+To create training data, you need to generate random mathematical expressions. The generation strategy of the data set has been introduced earlier, and the algorithm for generating random expressions is emphasized here.
+It is not easy to uniformly sample expressions using n internal nodes. For example, methods such as recursion tend to generate deep trees instead of wide trees, and left-side trees instead of right-side trees. In fact, it is impossible to generate different types of trees with the same probability.
+Therefore, taking a random binary tree as an example, the specific method is: starting from an empty root node, and determining the position of the next internal node in the empty node at each step. Repeat until all internal nodes are allocated.
+However, under normal circumstances, the mathematical expression tree is not necessarily a binary tree, and the internal node may have only one child node. In this way, it is necessary to consider the two-dimensional probability distribution of the number of parameters of the root node and the next internal node, denoted as L (e, n).
+The next step is to sample the random tree and randomly select internal nodes and leaf nodes from the list of possible operators and integers, variables, and constants to "decorate" the tree.
+Finally, the number of expressions is calculated.
+From the previous steps, you can see that the expression is actually composed of a limited set of variables, constants, integers, and a series of operators.
+The problem can then be summarized as:
+Tree with up to n internal nodes
+A set of p1 unary operators (such as cos, sin, exp, log)
+A set of p2 binary operators (such as +,-, ×, pow)
+A set of L leaf values, which include variables (such as x, y, z), constants (such as e, π), and integers (such as {-10,…, 10})
+If p1 = 0, the expression is represented by a binary tree.
+In this way, a binary tree with n internal nodes happens to have n + 1 leaf nodes. Each node and leaf can take p1 and L different values, respectively.
+The number of expressions with n binary operators can be expressed as:
+If p1> 0, the number of expressions is:
+It can be observed that the number of leaf nodes and binary operators can significantly affect the size of the problem space.
+△ Number of expressions for different numbers of operators and leaf nodes
+Better than business software
+In experiments, researchers trained a seq2seq model to predict a solution to a given problem. The model used is an 8 attention head, 6-layer, 512-dimensional Transformer model.
+Researchers evaluated the accuracy of the model in solving calculus equations in a data set of 5,000 equations.
+The results show that for differential equations, beam search decoding can greatly improve the accuracy of the model.
+Compared with the most advanced commercial scientific computing software, the new model is not only faster, but also more accurate.
+On a test set containing 500 equations, the best performing commercial software is Mathematica.
+For example, in the first-order differential equation, compared with the new model using the greedy search decoding algorithm (bunch size is 1), Mathematica does not fall, but the new method can usually solve the equation in less than 1 second, and Mathematica's problem solving time It is much longer (the time limit is 30s, if it exceeds 30s, it is regarded as no solution).
+When the new method performs a beam search with a size of 50, the model accuracy improves from 81.2% to 97%, which is far better than Mathematica (77.2%).
+And, for some problems that Mathematica and Matlab cannot solve, the new model gives effective solutions.
+△ Commercial scientific computing software did not find a solution to the equation
+Invite AI to IMO
+The appearance of this AI that can solve calculus has attracted the attention of many netizens and caused heated discussions. Netizens have praised: goose sister-in-law.
+Some netizens said:
+What's super interesting about this paper is that it has the potential to solve problems where the complexity is much higher than the integral.
+Some netizens believe that this research is too cool, and the model can summarize and integrate some functions that cannot be achieved by sympy.
+However, some netizens believe that in comparison with Mathematica, the experimental settings of researchers do not appear to be rigorous enough.
+By default, Mathematica performs calculations in the complex field, which makes its operation more difficult. But the author considers expressions containing complex coefficients to be "invalid." So when they used Mathematica, adjusted the setting to the real number field?
 
-François Charton，Facebook AI研究院的客座企业家（Visiting entrepreneur），主要研究方向是数学和因果关系。
+I am curious if Mathematica can solve problems that the system cannot solve.
+
+The 30s limit is a bit arbitrary for computer algebra systems.
+In short, in the face of increasingly intelligent AI, some people have already launched a challenge and invited AI to challenge the IMO gold medal.
+Facebook AI Academy
+This paper has two co-authors.
+Guillaume Lample, from Brest, France, is a PhD candidate at the Facebook AI Institute, Pierre, and Mary Curie University.
+He has a master's degree in Mathematics and Computer Science and Artificial Intelligence from the Ecole Polytechnique and CMU, respectively. Entered Facebook internship in 2014.
+
+François Charton, Visiting Entrepreneur at the Facebook AI Research Institute, focuses on mathematics and causality.
 https://arxiv.org/abs/1912.01412
 
 https://news.ycombinator.com/item?id=21084748
 
-#港大本科 | 面向未来的新兴专业：金融科技、应用人工智能课程解析
+# 港 大 大学 | Emerging majors for the future: analysis of fintech and applied artificial intelligence courses
 
-香港大学于2019/20学年，推出一系列跨学科的全新本科课程文理学士，旨在培养领导未来新行业、创造未来新机会的领袖人才。本篇文章将为大家介绍文理学士系列中的文理学士（金融科技）及文理学士（应用人工智能）。
+In the 2019/20 school year, the University of Hong Kong has launched a series of new interdisciplinary undergraduate courses in Bachelor of Arts, aimed at training leaders who will lead new industries in the future and create new opportunities in the future. This article will introduce you to the Bachelor of Arts (Financial Technology) and Bachelor of Arts (Applied Artificial Intelligence) in the Bachelor of Arts series.
 
-在港大
-文理学士（金融科技） 
-BASc(FinTech)
-文理学士（金融科技）培养具有金融和科技知识的金融科技专家及企业家，毕业生未来将领导金融科技的创新和应用。课程由港大工程学院、经济及工商管理学院等多个学院参与设计。
-过去这几年里金融圈崛起的高频词汇首当其冲就是FinTech了。
-近几年，摩根大通集团约1/3的分析师和员工开始自学编程；高盛工程部门早早就向2020届的FinTech学生抛出橄榄枝；麻省理工等名校相继开设网上FinTech认证课程；招商银行专门开启了针对19年应届生的FinTech管培生招募；金融第一大考CFA，也新增了FinTech的内容......
+University of Hong Kong
+Bachelor of Arts (FinTech)
+BASc (FinTech)
+Bachelor of Arts (Fintech) trains Fintech experts and entrepreneurs with financial and technological knowledge. Graduates will lead the innovation and application of Fintech in the future. The course was designed by the HKU School of Engineering, the School of Economics and Business Administration, and other colleges.
+The first high-frequency vocabulary that has risen in the financial circle in the past few years is FinTech.
+In recent years, approximately one-third of analysts and employees of the JPMorgan Chase Group have started to teach themselves programming; Goldman Sachs' engineering department has thrown olive branches to FinTech students in 2020; MIT and other famous universities have successively launched online FinTech certification courses; The recruitment of FinTech Guan Peisheng for the freshmen of 19 years has been started; the CFA, the first major financial test, has also added FinTech content ...
 
-高盛曾报告，在金融行业，“保守预计，到2025年，机器学习和人工智能可以节省成本和带来新业务的盈利，能创造大约每年340亿-430亿美元的价值。”不知道FinTech，无异于主动退出未来的金融市场。
+Goldman Sachs has reported that in the financial industry, "conservatively predicts that by 2025, machine learning and artificial intelligence can save costs and bring in new business profits, which can create value of about $ 34 billion to $ 43 billion per year." Don't know FinTech, It is tantamount to actively exiting future financial markets.
 Pt.1
 
 FINTECH
-  金融科技到底是什么？
+  What exactly is FinTech?
 
-FinTech = Finance+Technology，即金融科技。关于其内涵，国际金融稳定理事会（FSB）给出了一个国际通用的标准定义：
-“技术带来的金融创新，它能够产生新的商业模式、应用、过程或产品，从而对金融市场、金融机构或金融服务的提供方式产生重大影响。”
+FinTech = Finance + Technology. Regarding its connotation, the International Financial Stability Board (FSB) gives an internationally accepted standard definition:
+"Financial innovation brought by technology can generate new business models, applications, processes or products, which can have a significant impact on the way financial markets, financial institutions or financial services are provided."
 
-一个最简单也最日常例子，如今我们天天“扫一扫”的微信&支付宝、Apple Pay等，就是FinTech所带来的经济模式的重大转变。
+One of the simplest and most everyday examples. Nowadays, we scan every day on WeChat & Alipay, Apple Pay, etc., which is a major change in the economic model brought by FinTech.
 
-而FinTech的范畴远超“电子支付”，实际上，只要是技术在金融行业的应用，都属于金融科技的范畴。比如这几年我们耳熟能详的前沿技术——人工智能、大数据、区块链、密码学、云计算等——都是金融科技的研究对象。
+The scope of FinTech is far beyond "electronic payment". In fact, as long as the application of technology in the financial industry, it belongs to the category of financial technology. For example, the cutting-edge technologies we know well in recent years-artificial intelligence, big data, blockchain, cryptography, cloud computing, etc.-have been the research objects of fintech.
 
 
 
-有了新兴技术后，FinTech可应用的金融业务范围也非常广。它正被应用到金融行业的方方面面：借贷、管理财富、支付、保险、众筹、征信，乃至是零售和房屋中介。
+With emerging technologies, FinTech's range of financial services is also very broad. It is being applied to all aspects of the financial industry: lending, managing wealth, payments, insurance, crowdfunding, credit reporting, and even retail and housing agencies.
 Pt.2
 
- FUTURE
-行业预测&就职前景 
-■ 薪资
-从Google的报告来看，美国FinTech相关岗位的薪资可以达到8.8万美元之多;以Algorithm Engineer(算法模型工程师)为例，年薪约9.6W美金。
+ FUTURE
+Industry Forecast & Employment Outlook
+■ Salary
+According to Google's report, the salary of FinTech related positions in the United States can reach as much as $ 88,000; taking Algorithm Engineer (algorithm model engineer) as an example, the annual salary is about $ 9.6W.
 
-根据麦肯锡对18年FinTech实际薪酬观察报告表现，以上海为例，初级岗位每月的基本薪水在￥15k-25k+commission。而每升高一级的涨薪也非常可观，升职加薪后，年薪直逼百万不在话下。
+According to the performance of McKinsey's 18-year FinTech actual salary observation report, taking Shanghai as an example, the basic salary of a junior post is ￥ 15k-25k + commission per month. The salary increase for each level is also very considerable. After promotion and salary increase, the annual salary is close to one million.
 
-■可就职公司/行业
-蚂蚁金服，京东金融，Nubank，Robinhood，Bloomberg，PayPal......以及各大银行等等。
+■ Employable companies / industries
+Ant Financial, JD Finance, Nubank, Robinhood, Bloomberg, PayPal ... and major banks, etc.
 
 
 Pt.3
-港大与包括渣打、腾讯在内的多个知名企业合作，为FinTech学生提供大量实习机会。今年3月，港大与腾讯正式合作，结合港大的卓越学术成就，以及腾讯在金融科技行业的实践经验，携手培育金融科技人才和合作开展相关的研究及开发项目，共同促进行业未来发展。合作涵盖：
+HKU works with many well-known companies including Standard Chartered and Tencent to provide FinTech students with a large number of internship opportunities. In March this year, HKU and Tencent formally cooperated to combine HKU's outstanding academic achievements and Tencent's practical experience in the fintech industry, to jointly cultivate fintech talents and cooperate in related research and development projects to jointly promote the future development of the industry. Cooperation covers:
 
-✨腾讯金融学院与港大合作，为文理学士（金融科技）本科学生提供工作坊、客席讲课、讲座及安排企业参观等活动；
-✨自新学年起连续四个学年，腾讯为港大学生提供固定名额的实习机会；
-✨港大计算机科学系的金融科技及区块链实验室将与学院一同合作开展与金融科技有关的研究及开发项目。
+✨Tencent College of Finance cooperates with HKU to provide workshops, guest lectures, lectures and corporate visits for Bachelor of Arts (Financial Technology) undergraduates;
+四个 For four consecutive academic years since the new academic year, Tencent has provided a fixed number of internship opportunities for HKU students;
+The FinTech and Blockchain Lab at the Department of Computer Science at the University of Hong Kong will work with the college to conduct research and development projects related to FinTech.
 
+For more details, please refer to the official website: https://basc.hku.hk/fintech/
+Seniors
+Also brought us the experience of the TAs:
 
+Xiao Chengyuan
+Chongqing Nankai Middle School
+"Choosing fintech is my interest. After one semester of study at the University of Hong Kong, fintech is no longer a" advanced "concept for me, and the innovation and application of technology has more practical significance. After blockchain technology, everyone knows that cryptocurrencies (such as Bitcoin) are the most famous applications, but in fact, blockchain can be applied in various industries, such as insurance, financial asset settlement, digital services, anti-counterfeiting, etc. .
 
-课程更详细内容请参考官网：https://basc.hku.hk/fintech/
-就读课程的学长学姐
-也为我们带来了TA们的心得：
+Technology in FinTech can span multiple fields, which in turn requires the support and innovation of multiple technologies in the same field. FinTech is really a huge, complex, yet interesting and challenging field. "
 
-肖程原
-重庆南开中学
-“ 选择金融科技是我的兴趣所在，经过港大一个学期的学习，金融科技对我而言不再是一个“高级”的概念，技术的革新和运用有了更切实的意义。例如大家都听说过区块链技术，大家都知道加密货币（如比特币）是其中最出名的应用，但实际上区块链可以应用在各行各业，比如说保险、金融资产结算、数字服务、防伪等等。
-
-FinTech中的Technology是可以跨越多个领域的，反过来同一个领域也需要多个技术的支持和创新。FinTech实在是一个很庞大、复杂但又有趣、充满挑战的领域。”
-
-谷伊宁
-哈尔滨市第三中学
-“ 我当时想选一个兼修计算机以及金融研究的专业，金融科技是最佳选择。港大的金融科技专业课程包含内容非常广且自由度较高，金融科技的热点话题比如AI，区块链，NLP，网络安全等都有涉猎，以供我们在高年级选择想要深入研究的领域。此外，金融科技课程隶属于文理学士，会有专属文理学士的课程和实习安排，比如大一的时候有领导力课程，之后还会有大数据的课程等。”
-
+Gu Yining
+Harbin No.3 Middle School
+"I wanted to choose a major in computer and financial research at the time. Fintech was the best choice. The University of Hong Kong's Fintech course included a wide range of content and a high degree of freedom. NLP, network security, etc. are all involved, so that we can choose the areas that we want to study in advanced grades. In addition, the Fintech course belongs to the Bachelor of Arts and Sciences. Leadership courses, followed by big data courses, etc. "
