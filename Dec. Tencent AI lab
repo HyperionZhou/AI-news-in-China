@@ -1,160 +1,161 @@
-# 只要写完脚本，AI读懂你的心，从选材到剪辑，一站式完成创作
+# Just write the script, AI understands your heart, from material selection to editing, one-stop completion of creation
 
-镜头切换自然，节奏有急有缓，创作这样高质量的视频，需要怎样的专业剪辑技巧？
-答案是，不用剪，会写就行。
-比如要剪辑一个有关长颈鹿的片段，你只需要告诉AI：
-The giraffe is the world’s tallest animal, and well known for its long legs and neck.
-长颈鹿是世界上最高的动物，以其长腿和长脖子闻名于世。
+The camera switches naturally and the tempo is slow. What kind of professional editing skills are required to create such a high-quality video?
+The answer is that you can write without cutting.
+For example, to edit a clip about a giraffe, you just need to tell the AI:
+The giraffe is the world ’s tallest animal, and well known for its long legs and neck.
+The giraffe is the tallest animal in the world and is famous for its long legs and long neck.
 It has a brown mane on the neck, and its head has two hairy horns.
-它的脖子上有棕色的鬃毛，头上长了两只毛茸茸的角。
-AI就能自动剪辑完成这样的画面
-先展示一下长颈鹿群的全貌。接着镜头切给一只奔跑中的长颈鹿，展示一下它的长腿长脖子。按照指示，再给鬃毛和犄角来个特写，齐活！
-是的，不再需要费劲挑选素材，一帧一帧地来回倒腾
+It has a brown mane on its neck and two furry horns on its head.
+AI can automatically edit such a picture
+Let's first show the full picture of the giraffe herd. Then the camera cuts a running giraffe to show its long legs and neck. Follow the instructions and give a close-up of your mane and horns, live together!
+Yes, no longer hassle to pick the material, and go back and forth frame by frame
 
-只需要把你脑海中的创意转化成简短的文字，这个名叫Write-A-Video的AI就能读懂你的心，从选材到剪辑，一站式完成创作。
-这就是北航、清华、哈佛和以色列赫兹利亚跨学科研究中心的科学家联手打造的最新AI神器，只需主题脚本，就能生成视频。
+You only need to turn the ideas in your mind into short texts. This AI called Write-A-Video can understand your heart, from material selection to editing.
+This is the latest AI artifact created by scientists from Beihang University, Tsinghua University, Harvard, and Herzliya Interdisciplinary Research Center in Israel. It can generate videos with only themed scripts.
 
-用文字创作视频
-现在，准备好素材，我们一起来看看，Write-A-Video到底是怎样“写”出一个视频来的。
-整个过程分为三步。
-第一步，用户以文本的形式提供输入。Write-A-Video会挑选出句子中的关键词。
-第二步，Write-A-Video会利用关键词，把素材库里与之相匹配的候选片段挑出来。
-文本和镜头之间的视觉语义匹配主要包括两个步骤：关键字匹配和视觉语义嵌入。
-首先，AI会根据脚本从素材库中检索所有带有关键字标签的视频镜头。
-素材库中的所有视频均被分割为快照，便于语义匹配，还能在下一步正式剪辑视频时，让用户用电影术语来指导AI创作。
+Create video with text
+Now that the material is ready, let's take a look at how Write-A-Video "writes" a video.
+The whole process is divided into three steps.
+In the first step, the user provides input in the form of text. Write-A-Video picks out keywords in sentences.
+In the second step, Write-A-Video will use keywords to select candidate clips that match it in the material library.
+Visual semantic matching between text and shots mainly includes two steps: keyword matching and visual semantic embedding.
+First, the AI ​​will retrieve all video footage with keyword tags from the material library according to the script.
+All videos in the material library are divided into snapshots for semantic matching, and users can use movie terminology to guide AI creation when the video is officially edited in the next step.
 
-Write-A-Video的作者，北京航空航天大学的汪淼老师介绍说，Write-A-Video允许用户在输入文本中使用电影术语，以探索每个场景不同的视觉风格，比如调整电影的节奏，画面的调动等。
-此外，采用基于直方图的分割算法，如果帧与帧之间在HSV色域中的直方图相差超过80%，并且追踪的SURF关键点80%以上不匹配，那么算法就会以这两帧为界，切分镜头。
-太长（>30s）或太短（<2s）的镜头也会被舍弃，因为短镜头观感不好，而长镜头会降低效率和可变性
-而后，视觉语义嵌入技术会为每个检索到的镜头计算匹配分数，排名最高的镜头就会被选为候选镜头。
-这里采用的方法是 VSE++ （论文地址见文末）。该方法能将跨模型内容编码到联合特征空间中，比如把文本和镜头联系起来。
-在嵌入空间中，从镜头中每十帧抽取一帧，计算其与文本之间的余弦相似度，最后取平均值，即为判断镜头能否入选的最终得分。
+The author of Write-A-Video, teacher Wang Miao of Beijing University of Aeronautics and Astronautics, said that Write-A-Video allows users to use film terms in the input text to explore different visual styles of each scene, such as adjusting the rhythm of the movie Screen movement, etc.
+In addition, using a histogram-based segmentation algorithm, if the histogram in the HSV color gamut between frames differs by more than 80%, and the tracked SURF key points do not match more than 80%, the algorithm will use these two frames as Circles, split the lens.
+Lenses that are too long (> 30s) or too short (<2s) will also be discarded because short lenses will not look good, while long lenses will reduce efficiency and variability
+Then, the visual semantic embedding technology calculates a matching score for each retrieved shot, and the shot with the highest ranking is selected as a candidate shot.
+The method used here is VSE ++ (the address of the paper is at the end of the article). This method can encode cross-model content into a joint feature space, such as linking text to shots.
+In the embedding space, one frame is taken every ten frames from the shot, the cosine similarity between it and the text is calculated, and the average value is finally taken as the final score for judging whether the shot can be selected.
 
-第三步，就是将这些镜头组合在一起，完成视频的剪辑。
-这一步，其实是Write-A-Video对镜头的混合优化。而它也有自己的审美标准。
+The third step is to combine these shots together to complete the video editing.
+This step is actually a hybrid optimization of the lens by Write-A-Video. And it has its own aesthetic standards.
 
-首先，画面应该是明亮而生动的。
-其次，镜头不能晃动得太厉害。
-最后，要避免不连贯的跳接（jump cut）和相反的相机运动。
-值得一提的是，Write-A-Video对用户非常友好
-加上新的文本，对应素材就自动续上了
-查找对应镜头，剪切，重新排列，都可以用添加、删除文本及移动句子等文本编辑的形式进行。不用掌握剪辑技巧，更不用会敲代码。
-不仅如此，在下面这个视频中，你会发现，敲进去的文字可以转成配音旁白，渲染影片气氛。
-并且，旁白和视频完全同步，对应得十分自然。提到白金汉宫时，镜头就自然地转到了白金汉宫门前。而提到皇家护卫队时，画面便给到了表演中的皇家护卫队。
-研究团队表示，跟商用的逐帧处理视频编辑器比起来，用上Write-A-Video，创作起来快多了。
-有了Write-A-Video，甚至新手，都能以快得多的速度（13分钟：7小时），完成质量与职业剪辑师差距不大的视频剪辑任务。
-剪辑师用Pr，新手用Write-A-Video
-在刚刚结束的SIGGRAPH Asia 2019会议上，研究团队报告并展示了Write-A-Video这一成果，得到了国际同行的广泛认可。
-北航清华团队出品
-Write-A-Video的第一作者汪淼博士，现为北京航空航天大学虚拟现实技术与系统国家重点实验室助理研究员，硕士生导师。
-△汪淼
-他本科毕业于西安电子科技大学，后于2016年获得清华大学博士学位，师从论文通讯作者，清华大学计算机系胡事民教授。
-论文作者中的杨国炜参加该项目时，只是一位本科生，现已在清华大学计算机系攻读博士学位。
-另外两位作者，分别是菲尔兹奖得主、哈佛大学教授、美籍华人数学家丘成桐，以及以色列赫兹利亚跨学科研究中心院长艾里尔·沙米尔（Ariel Shamir）。
-
-
-#  年轻人猝死事件频发，AI医生能更好避免悲剧发生吗？
-茨威格曾说：“一个人年轻的时候，总以为疾病和死神只会光顾别人。”
-但据不完全统计，每一年，中国大约有55万人猝死。且超过90%的年轻人都是亚健康状态，超过一半的白领都有过劳死的风险。对于年轻人而言，除了避免长期劳累、熬夜等不健康生活方式外，积极预防、减少诱发猝死因素显得尤为重要。进行心血管方面的疾病筛查与诊疗，则是其中一环。
-但在当前的医疗市场，医学影像筛查用时长、医师资源缺乏，难以匹配心血管疾病的海量市场，于是AI有了用武之地。 
-心血管领域亟需AI影像加入
-不久前，《柳叶刀》一篇研究称，1990 年至 2017 年这27年间，唯一没有变化、一直居于首位的中国居民主要死因的是脑卒中（中风），其后依次是缺血性心脏病、慢性阻塞性肺病、肺癌、阿尔茨海默病和其他痴呆症。
-单就2018年中国心血管病的数据显示，心血管病患病率仍处于上升阶段，目前患病人数约为2.9亿，心血管病导致的死亡占居民疾病死亡的40%以上，居各类疾病首位。且从全球范围来看，据世界卫生组织（WHO）统计，缺血性心脏病和脑卒中也分别是全球排名第一和第二的主要死因，由此可见，心血管疾病目前已成为全球面临的重大的公共卫生问题。
-为了遏制这一趋势，最好的方法是推广心血管早筛，早日发现心血管存在的潜在问题。医学影像作为现代医学最重要的临床诊断和鉴别诊断工具，接近70%的临床诊断都需借助其使用，有着广泛需求的心血管领域更是如此。
-然而，与心血管“市场需求”的旺盛相比，传统医疗体系却疲于应对。一般而言，心血管影像诊断分为图像扫描、图像后处理、撰写报告、报告审核四个步骤，单个案例在影像环节花去的时间基本要半个小时。“心血管的后处理非常麻烦，即便是飞利浦、西门子等传统国际领先厂商的医疗设备工作站也无法快速做完，很耗人力。拿安贞医院（指首都医科大学附属北京安贞医院，其心脏内科中心是全国心血管疑难危重疾病的诊治中心之一）来说，一天可能要做近200个心血管影像诊断，一般医生要花费半个小时，快的也至少15分钟。” 专注于心血管领域的AI医疗科技公司数坤科技战略副总裁刘建对AI报道表示。
-在欧美发达国家，一个医生平均接诊的人数不多，所以即便AI让筛查与诊疗速度更快，也不会有太大的吸引力。然而，在我国，每年医学影像增长量超过30%，而每年新增的放射科医生只有4%，影像医生缺口巨大。而且，我国医疗资源目前呈现“倒挂”趋势，根据国家卫健委数据，截止至2018年11月底，不到8%的三级医院就诊人数达到16.46亿人次，占全国总人次近60%。有北京市民反映，平常去三甲医院看病挂资深主任的号基本都得等上一两周。对时间要求非常紧迫的心血管疾患而言，更是难言之殇。
-相比之下，AI影像能够三分钟完成诊断甚至更快，面对庞大的市场需求，AI在心血管的影像诊断方面被寄予厚望。
-避开AI影像“红海
-面对心血管影像AI的广阔市场前景，想象中其相关的AI企业和产品应该多如牛毛，然而，现实并非如此。目前行业最为集中的产品仍然是肺结节筛查。“医学影像AI产业现状和需求调研”显示：88%的科室使用的AI产品是肺结节筛查，6%是冠脉分析，其余依次是骨龄、乳腺和前列腺智能诊断。
-从AI医疗企业的数量上来看，有媒体调查显示，140余家从事医疗AI的企业，近120家在做医学影像业务，其中约百家企业切入的是肺结节影像产品，在这个肺结节赛道上的玩家众多。
-“肺部结节也是临床常见问题，公开数据较多，而且还有开源算法，对于企业而言，相对比较容易进入，现在市场上已是一片红海”，刘建介绍说，“所以我们特立独行，选择了从心脑血管领域切入”。
-在业内人士看来，对于科技企业来说，肺结节筛查是入门级别。相比而言，心血管疾病的诊断流程更为复杂，技术门槛太高。例如：冠脉CT图像需要经过复杂的三维重建，从主动脉到冠脉血管，血管径差异从厘米至毫米呈数量级差异，要诊断出血管的起源、走形、血管壁的斑块、管腔狭窄等，这是一个高难度和极具挑战的场景。面对复杂的任务，目前普遍采用的深度学习模型无法胜任。此外，是否有支撑起这个领域的高标准、高质量的标注数据库，也是需要考量的关键要素。
-“用于肺结节筛查的AI影像涉及的神经元是2亿个，而我们用于心血管筛查的多维度卷积神经网络技术有10亿个神经元”，刘建表示，该技术能精准分割人体器官，重建出清晰精确的3D数字心、数字脑等，并能对相关部位做精准诊断。
-就“国内首款冠状动脉CT成像AI辅助诊断系统CoronaryDoc”举例而言，该系统在心血管治疗中可以自动抓取 CT 图像，并进行三维重建、判读，输出标准化报告，这个过程只需3分钟即可完成。而后医生只要对 AI 给出的结果进行确认，或根据自己判断加以修改即可，不需要再分步骤确认，大大提升效率。
-“以DSA的医生结果为金标准，在病灶检出方面，冠脉AI敏感度高于95%（简单理解：敏感度高=漏诊率低）高于医生肉眼判读。产品特异性（简单理解：特异性高=误诊率低）与CTA仲裁医生的结果近似。这意味着用AI筛查，绝大部分都不漏病。”刘建介绍称，AI冠脉CTA极大程度降低狭窄病变的漏诊率，AI诊断的准确性和特异性不亚于一线城市三甲医院高年资专家医生，AI与医生协同的判读效率显著优于单纯人力判读。
-
-虽然AI医疗发展迅速，但相比其他行业还是走得更慢一些。以远程心电数据监测而闻名的优加利的董事长陈娟曾在一场论坛上分享了一个故事：曾经她去向安徽某医院推广产品，结果心内科主任一见到她，问的第一个问题却是“你这个企业能活过五年吗？”，因为这个主任曾采购过一批心电设备，但仅过了两年，那个设备企业便倒闭了。
-也有AI医疗企业在推广时，产品遭医生认定为“反人类”而被拒，也有医生担心被AI替代而婉拒。
-好在，医生也是会慢慢改变的。北京朝阳医院心脏中心副主任、心律失常科主任刘兴鹏，就是力挺AI赋能医疗的医生代表。刘兴鹏表示，“医生群体是慢热的，但是如果AI真的能够刺激到他，他也是非常愿意接受的。”
-从认识AI、接受AI到拥抱AI产品，像刘兴鹏这样的医生也开始越来越多。医生们不会再纠结自己是否被取代，也不再害怕试用过产品的AI企业“英年早逝”，而是开始结合自身经验，对人工智能提出了更为具体的需求。
-AI用于医疗辅助诊断的价值日益凸显，刘建指出，我们国家一直在强调心脏中心的建设，这对基层医疗水平的提高非常重要。人工智能帮助基层医生解决他们不会诊、诊不了的问题。对大医院，能解决流通量问题。
-新的发展路径
-尽管产品越来越受到认可，但“落地多少家医院”“商业模式是什么”仍旧是每个医疗AI企业无法规避的难题。
-君联资本董事总经理周瑔表示，人工智能技术非常先进，但是人工智能在医疗应用中的商业模式方面非常落后。“用一次软件向病人收一次钱不现实，怎么设定收费模式，这个需要被突破。”
-在医疗老兵刘建看来，AI医疗这个行业与其他行业不同，目前的模式是先以 “免费试用”方式进入医院，受到认可后再进一步谈商业化问题。目前，数坤科技正在商业转化中。
+First, the picture should be bright and vivid.
+Secondly, the lens should not be shaken too much.
+Finally, avoid inconsistent jump cuts and opposite camera movements.
+It is worth mentioning that Write-A-Video is very user-friendly
+Add new text, and the corresponding material will be automatically added.
+Finding corresponding shots, cutting, rearranging, can be done in the form of text editing such as adding and deleting text and moving sentences. No need to master editing skills, no need to type code.
+Not only that, in the video below, you will find that the typed text can be turned into a voice-over narration to render the movie atmosphere.
+And the narration and video are fully synchronized, so the correspondence is very natural. When it comes to Buckingham Palace, the camera naturally turns to the front of Buckingham Palace. When referring to the Royal Guard, the picture shows the Royal Guard during the performance.
+The research team says that compared to commercial frame-by-frame video editors, using Write-A-Video makes creation much faster.
+With Write-A-Video, even novices can complete video editing tasks at a much faster speed (13 minutes: 7 hours) with a quality that is not much different from professional editors.
+Pr for editors, Write-A-Video for novices
+At the just-concluded SIGGRAPH Asia 2019 conference, the research team reported and demonstrated the results of Write-A-Video, which was widely recognized by international peers.
+Presented by the Tsinghua team of Beihang University
+Dr. Wang Miao, the first author of Write-A-Video, is currently an assistant researcher and master's tutor of the State Key Laboratory of Virtual Reality Technology and Systems at Beijing University of Aeronautics and Astronautics.
+△ Wang Miao
+He graduated from Xi'an University of Electronic Science and Technology with a bachelor's degree, and later received a Ph.D. from Tsinghua University in 2016. He studied under the correspondence author of the thesis and Professor Hu Shimin from the Department of Computer Science of Tsinghua University.
+The author of the thesis, Yang Guowei, was only an undergraduate when he participated in the project, and he is now pursuing a doctorate degree in computer science at Tsinghua University.
+The other two authors are the Fields Prize winner, Harvard professor, Chinese American mathematician Qiu Chengtong, and Dean of Israel's Herzliya Interdisciplinary Research Center, Ariel Shamir.
 
 
-#人工智能真的能学会“读心术”吗？如果可以，怎么做？
-AI读懂思想乃大势所趋
-在诸如人机交互和心理保健等多个领域中，自动无创的大脑活动检测或许都大有用处。它可以提供用户与设备之间交互的额外维度，还可以导出不依赖于口头交流的实物信息。
-这样的创新也意味着更好的脑机接口。这将为人机交流开辟全新的平台，包括为患有身体或精神疾病的人提供支持。脑机接口可以让瘫痪的人移动机械臂，或者使脊髓受伤的人控制电动轮椅。 
+# Sudden deaths among young people occur frequently, can AI doctors better avoid tragedies?
+Zweig once said: "When a person is young, he always thought that illness and death would only patronize others."
+However, according to incomplete statistics, about 550,000 people die suddenly each year in China. And more than 90% of young people are sub-healthy, and more than half of white-collar workers are at risk of overwork. For young people, in addition to avoiding unhealthy lifestyles such as long-term fatigue and staying up late, it is particularly important to actively prevent and reduce the factors that induce sudden death. Screening and diagnosis of cardiovascular diseases is one of them.
+However, in the current medical market, the length of medical image screening and the lack of physician resources make it difficult to match the mass market for cardiovascular disease, so AI has its place.
+Cardiovascular field urgently needs AI image to join
+Not long ago, a study in The Lancet stated that during the 27 years from 1990 to 2017, the only Chinese resident who had remained the first place to die was mainly stroke (stroke), followed by ischemic heart Disease, chronic obstructive pulmonary disease, lung cancer, Alzheimer's disease, and other dementias.
+According to China's cardiovascular disease data in 2018, the prevalence of cardiovascular disease is still on the rise. Currently, the number of patients suffering from cardiovascular disease is about 290 million. Cardiovascular disease deaths account for more than 40% of residents' disease deaths. Disease first. And from a global perspective, according to the World Health Organization (WHO) statistics, ischemic heart disease and stroke are also the world ’s leading causes of death, and the second leading cause of death, which shows that cardiovascular disease has now become a global problem. Major public health issues.
+In order to curb this trend, the best way is to promote early cardiovascular screening, and to identify potential cardiovascular problems early. Medical imaging is the most important clinical diagnosis and differential diagnosis tool in modern medicine. Nearly 70% of clinical diagnosis requires its use, especially in the cardiovascular field, which has a wide range of needs.
+However, compared with the exuberance of cardiovascular "market demand", the traditional medical system is struggling to cope. Generally speaking, cardiovascular imaging diagnosis is divided into four steps: image scanning, image post-processing, report writing, and report review. The time spent in the imaging process of a single case is basically half an hour. "Cardiovascular post-processing is very troublesome. Even the medical equipment workstations of traditional international leading manufacturers such as Philips and Siemens cannot be completed quickly and are labor-intensive. Take Anzhen Hospital (referring to Beijing Anzhen Hospital of Capital Medical University, its heart The Medical Center is one of the national diagnosis and treatment centers for difficult and critical cardiovascular diseases.) For example, it may take nearly 200 cardiovascular imaging diagnoses a day, and it usually takes half an hour for doctors and at least 15 minutes. "Focus on cardiovascular Liu Jian, vice president of strategy for Shukun Technology, an AI medical technology company in the field, told the AI ​​report.
+In developed countries in Europe and the United States, the average number of doctors receiving a doctor is not large, so even if AI makes screening and diagnosis faster, it will not be very attractive. However, in China, the annual increase of medical images exceeds 30%, and only 4% of new radiologists are added each year, and the gap between imaging doctors is huge. Moreover, China's medical resources are currently showing an "upside down" trend. According to the National Health and Medical Commission, as of the end of November 2018, less than 8% of tertiary hospitals had visited 1.646 billion people, accounting for nearly 60% of the country's total. Some Beijing residents have reported that they usually have to wait for a week or two to go to the top three hospitals to see their senior directors. This is even more difficult for cardiovascular diseases where time is critical.
+In contrast, AI imaging can complete diagnosis in three minutes or even faster. Facing the huge market demand, AI has high hopes for cardiovascular imaging diagnosis.
+Avoid AI images "Red Sea
+Facing the broad market prospects of cardiovascular imaging AI, it is imagined that its related AI companies and products should be as big as cattle hair. However, this is not the case. Currently the industry's most concentrated product is still pulmonary nodule screening. "Investigation on the status and needs of the medical imaging AI industry" shows that 88% of the AI ​​products used in the department are lung nodule screening, 6% are coronary artery analysis, and the rest are bone age, breast and prostate intelligent diagnosis.
+In terms of the number of AI medical companies, media surveys show that more than 140 companies engaged in medical AI, nearly 120 are doing medical imaging business, of which about 100 companies cut into pulmonary nodule imaging products. There are many players on the festival track.
+"Pulmonary nodules are also a common clinical problem. There are more open data and open source algorithms. For enterprises, it is relatively easy to enter. Now the market is a red sea." Liu Jian said, "So we are special Alone, chose to cut through the cardio-cerebral vascular field. "
+In the industry, lung nodule screening is the entry level for technology companies. In contrast, the diagnostic process of cardiovascular disease is more complicated, and the technical threshold is too high. For example: coronary CT images need to undergo complex three-dimensional reconstruction. From the aorta to the coronary blood vessels, the diameter of the blood vessels varies from centimeters to millimeters by an order of magnitude. To diagnose the origin, shape of the blood vessels, plaques on the vessel wall, and lumen Narrow and so on, this is a difficult and challenging scene. Faced with complex tasks, the currently adopted deep learning models are incapable. In addition, whether there is a high-standard, high-quality annotation database that supports this field is also a key element to be considered.
+"The AI ​​images used for lung nodule screening involve 200 million neurons, and our multi-dimensional convolutional neural network technology for cardiovascular screening has 1 billion neurons," Liu Jian said. It can accurately segment human organs, reconstruct clear and accurate 3D digital hearts, digital brains, etc., and make accurate diagnosis of relevant parts.
+For example, "CoronaryDoc, the first AI-assisted diagnostic system for coronary CT imaging in China", for example, the system can automatically capture CT images during cardiovascular treatment, and perform 3D reconstruction, interpretation, and output of standardized reports. This process only takes 3 minutes. Can be done. Later, the doctor only needs to confirm the result given by the AI, or modify it according to his own judgment. There is no need to confirm it in steps, which greatly improves the efficiency.
+"Taking DSA doctor's results as the gold standard, in detecting lesions, coronary AI sensitivity is higher than 95% (simple understanding: high sensitivity = low rate of missed diagnosis) is higher than doctors' interpretation. Product specificity (simple understanding: High specificity = low misdiagnosis rate) is similar to the results of CTA arbitrators. This means that most screenings are not missed with AI screening. "Liu Jian said that AI coronary CTA greatly reduces the rate of missed diagnosis of stenotic lesions. The accuracy and specificity of AI diagnosis is no less than that of senior expert doctors in Tier 3 hospitals in first-tier cities. The interpretation efficiency of AI and doctors is significantly better than that of human interpretation alone.
 
-随着人们越来越容易获取低成本的脑电图（EEG）设备，消费行业和研究机构能够负担脑电波数据的成本，进而产生了用自动分类取代人类专家的需求。 
-
-本文将介绍一个案例,以说明如何用机器学习来分析大脑活动。通过使用市售设备的脑电图记录，文章将介绍如何使用机器学习模型来预测受试者的相应心理状态。
-机器学习如何进行心理状态分类
-除非记录人隶属于执行此类实验的实验室，否则记录高质量的脑电图数据并非一帆风顺。但是，最近看到了一篇有趣的文章，是由约旦·伯德，路易斯·曼索、爱德华多·里比耶罗、阿尼科·埃卡特和迭戈·R·法里亚共同撰写的《关于使用基于脑电图的脑机接口进行心理状态分类的研究》。幸运的是，他们已经公开分享了研究中使用的数据，以供其他人进行实验使用。特别有趣的是，在亚马逊上只需花几百美元便可下单使用消费级设备。他们的研究中所用的记录和处理数据的方法将在以下部分介绍。
- 
-实验细节
- 
-该研究利用了市售的MUSE牌脑电图头带使用了四个干颅外电极。这是一种可穿戴式的大脑感应设备，可通过4个脑电图（EEG）传感器测量大脑活动。
-
-为了唤起不同的心理状态，实验利用了下表所示的一系列电影片段，分别代表积极效价和消极效价。
- 
-针对表中的每一个影片片段，分别记录两名实验对象（1名男性，1名女性，年龄在20-22岁）60秒的数据，从而产生12分钟的大脑活动数据（每种情绪状态对应6分钟的数据）。另外还收集了六分钟的中性脑电波数据，从而产生从实验对象身上记录的总共多达36分钟的脑电图数据。（每天收集三分钟的数据，以减少静息情绪状态的干扰）。通过将可变频率重新采样到150Hz，可以产生一个容量为324,000个数据点的数据集。
- 
-特征提取和脑电图信号分类是脑机接口(BCI) 应用的核心问题。脑电图特征提取的挑战之一是信号的复杂性，因为它实际上是非线性的，不平稳的，并且是随意的。只有在极短的间隔之间，才认为信号是稳定的。这就是应用短时开窗技术以满足所需是最佳实践的原因。然而，仍认为它是一个在正常大脑条件下成立的假设。
-
-这一部分展示了特征设置，这些特征被认为可以恰当区分心理状态的不同类别。这些特征依赖于统计学技术、基于快速傅里叶变换的时频分析、信息熵、时间序列的最大-最小特征等。根据给定时间窗口中信号的时间分布，所有初步用来对心理状态进行分类的特征都将进行计算。定义该滑动窗口的时间段为1秒，即所有特征都在这个时间点上进行计算。
-
-机器学习算法
- 
-接着以上从原始脑电图数据中进行特征提取的方法，现在有了一个包含2547个特征的数据集。针对数据集的每一行，都有对应的目标变量：“中性”、“消极”或“积极”。实验目标为基于这组特征训练机器学习模型，从而成功预测相应的心理状态。
-此样例从随机森林分类这一“go-to”算法开始，因为它设置简单，具有强大的开箱即用功能，无需进行超参数调优。
-此处说明一下：使用卷积神经网络方法处理原始时域数据（不是含有信号各种频率特性的已提取的特征集）也会很有趣。由于应用于时域的卷积在卷积定理中与信号的频率特性联系紧密，这很有可能是减少预处理和特征提取工作量的有效方法。
-
-交叉验证
- 
-在应用机器学习的过程中，首先需要明白交叉验证的重要性:在数据集的一部分上评估模型性能，这一部分需区别于用于训练模型的部分。其中一种方式就是在训练模型时保留部分数据集，并且用以下方式（示例）评估模型性能：
-
-·  用70%已标注的数据训练模型
-
-·  用剩下的30%评估已训练的模型
-
-通过多次反复，观察测试结果是否因训练/测试的样本不同而不同，K-折交叉验证从而得到完善。
+Although AI healthcare is developing rapidly, it is still slower than other industries. Chen Juan, the chairman of Youjiali, famous for remote ECG data monitoring, shared a story in a forum: once she went to promote a product to an Anhui hospital, but the director of cardiology first asked her to see her first. The question is "Can your company live for five years?" Because the director had purchased a batch of ECG equipment, but only two years later, the equipment company closed down.
+In the promotion of AI medical companies, the products were rejected by doctors as "anti-human" when they were promoted by doctors, and some doctors declined because they were worried about being replaced by AI.
+Fortunately, doctors will slowly change. Liu Xingpeng, deputy director of the Heart Center of Beijing Chaoyang Hospital and director of the arrhythmia department, is a doctor representative who supports AI-enabled medical care. Liu Xingpeng said, "The doctor community is slow, but if AI can really stimulate him, he is also very willing to accept it."
+From knowing AI, accepting AI, and embracing AI products, doctors like Liu Xingpeng have also started to increase. Doctors will no longer worry about whether they have been replaced, nor are they afraid that AI companies that have tried products will die early. Instead, they will start to combine their own experiences and put forward more specific requirements for artificial intelligence.
+The value of AI for medical auxiliary diagnosis is increasingly prominent. Liu Jian pointed out that our country has always emphasized the construction of heart centers, which is very important for the improvement of primary medical care. Artificial intelligence helps grassroots doctors solve problems they cannot and cannot diagnose. For large hospitals, it can solve the problem of circulation.
+New development path
+Although the products are getting more and more recognized, "how many hospitals are there" and "what is the business model" is still a difficult problem for every medical AI company.
+Zhou Ye, Managing Director of Junlian Capital, said that artificial intelligence technology is very advanced, but artificial intelligence is very backward in business models in medical applications. "It is unrealistic to charge patients once with software. How to set up a charging model needs to be broken."
+From the perspective of medical veteran Liu Jian, the AI ​​medical industry is different from other industries. The current model is to enter the hospital by "free trial" first, and then discuss commercialization issues after being recognized. At present, Shukun Technology is undergoing commercial transformation.
 
 
- 
-通过多次的训练/测试比对，就能够获得更好的模型性能评估和完整的检查，确认在进行了不同标注数据段的训练后，模型性能不会有很大差异，即使这些数据本身在模型中有不稳定性或样本集很小。
 
-本案例中，在训练模型时采用了10折交叉验证，计算了在不同数据段上评估的准确性。最终模型性能可以通过以下混淆矩阵进行可视化展示。
+#Can artificial intelligence really learn "mind reading"? If so, how?
+AI understands thinking is the trend
+Automated and non-invasive detection of brain activity may be of great use in areas such as human-computer interaction and mental health. It can provide an extra dimension of interaction between the user and the device, and it can also export physical information that does not rely on oral communication.
+Such innovation also means better brain-computer interfaces. This will open up entirely new platforms for human-machine communication, including providing support for people with physical or mental illness. A brain-computer interface allows a paralyzed person to move a robotic arm or a spinal cord injured person to control an electric wheelchair.
 
-在机器学习领域和特定的统计分类问题中，混淆矩阵，也被称为误差矩阵，是一种能够将算法进行可视化展示的特殊表单布局。矩阵的每一行都表示实际类的实例，而每一列都表示预测类的实例。其名称源于它能够轻而易举地看出系统是否混淆了不同的类（比如，错将一个类标注成了另一个类）。
+As people increasingly get low-cost electroencephalography (EEG) equipment, the consumer industry and research institutions can afford the cost of EEG data, which has created a need to replace human experts with automatic classification.
 
-当交叉验证超过10折进行评估模型预测时，所获得的最终结果是动人的——0.987（+/-0.01）的准确率。这就说明，基于从原始脑电图数据中提取出来的特征集，对一个人的心理状态进行“中性”、“消极”或“积极”的预测，具有近99%的准确率。 
+This article will introduce a case study on how to use machine learning to analyze brain activity. Using EEG recordings of commercially available equipment, the article will show how to use machine learning models to predict the corresponding mental state of a subject.
+How machine learning classifies mental states
+Unless the recorder belongs to a laboratory performing such experiments, recording high-quality EEG data is not easy. However, I recently saw an interesting article, co-authored by Jordan Bird, Luis Manso, Eduardo Ribeiro, Anico Ecate and Diego R. Faria Research on Mental State Classification Using EEG-Based Brain-Computer Interface. Fortunately, they have publicly shared the data used in the study for others to experiment with. What's particularly interesting is that you can place orders for consumer-grade devices for only a few hundred dollars on Amazon. The methods used to record and process data in their research are described in the following sections.
+ 
+Experimental details
+ 
+The study utilized a commercially available MUSE brand EEG headband using four dry extracranial electrodes. This is a wearable brain sensing device that measures brain activity with 4 electroencephalogram (EEG) sensors.
 
-通过脑电图记录预测情绪状态，尽管该实例的结果是动人的，但是为了更广泛的应用，仍有工作要做。同时，实验记录中只有两个对象的有限样本数量也产生了对新个体的普遍化问题。不过，由于样例结果前景广阔，它也成为了进一步研究的良好开端。
+In order to evoke different mental states, the experiment used a series of movie clips shown in the table below, which represent positive and negative titers, respectively.
+ 
+For each video clip in the table, 60 seconds of data were recorded from two subjects (1 male, 1 female, aged 20-22) to generate 12 minutes of brain activity data (corresponding to each emotional state 6 minutes of data). In addition, six minutes of neutral EEG data were collected to generate a total of up to 36 minutes of EEG data recorded from the subject. (Collect data for three minutes each day to reduce interference with resting emotional states). By resampling the variable frequency to 150Hz, a data set with a capacity of 324,000 data points can be generated.
+ 
+Feature extraction and EEG signal classification are the core issues of brain-computer interface (BCI) applications. One of the challenges in EEG feature extraction is the complexity of the signal because it is actually non-linear, unstable, and arbitrary. Only between extremely short intervals is the signal considered stable. That's why applying short-term windowing techniques to meet your needs is a best practice. However, it is still considered a hypothesis that is established under normal brain conditions.
+
+This section shows feature sets that are thought to properly distinguish between different categories of mental state. These features depend on statistical techniques, time-frequency analysis based on fast Fourier transform, information entropy, and maximum-minimum characteristics of time series. According to the temporal distribution of signals in a given time window, all features initially used to classify mental states will be calculated. The time period of the sliding window is defined as 1 second, that is, all features are calculated at this time point.
+
+Machine learning algorithms
+ 
+Following the above feature extraction method from the original EEG data, we now have a data set containing 2547 features. For each row of the data set, there is a corresponding target variable: "Neutral", "Negative" or "Positive". The experimental goal is to train a machine learning model based on this set of features to successfully predict the corresponding mental state.
+This example starts with the "go-to" algorithm of random forest classification, because it is simple to set up, has powerful out-of-the-box features, and does not require hyperparameter tuning.
+Here's the explanation: it would also be interesting to use convolutional neural network methods to process raw time-domain data (not extracted feature sets that contain various frequency characteristics of the signal). Since the convolution applied in the time domain is closely related to the frequency characteristics of the signal in the convolution theorem, this is likely to be an effective method to reduce the workload of preprocessing and feature extraction.
+
+Cross-validation
+ 
+In the process of applying machine learning, you first need to understand the importance of cross-validation: evaluating the performance of a model on a part of the data set, which needs to be distinguished from the part used to train the model. One way is to keep part of the data set while training the model, and evaluate the model performance in the following way (example):
+
+Train the model with 70% labeled data
+
+Evaluate the trained model with the remaining 30%
+
+Through repeated iterations, it is observed whether the test results are different due to different training / test samples, and K-fold cross-validation is thus improved.
 
 
-前景展望
- 
-这一结果是否意味着，人们正在向意念完全受控的异位科幻未来靠近？而在这一未来世界，人们甚至会失去自我想法这一隐私权。
+ 
+Through multiple training / test comparisons, better model performance evaluation and complete inspection can be obtained, and it is confirmed that after training with different labeled data segments, the model performance will not be very different, even if the data itself is in There is instability in the model or the sample set is small.
 
-人工智能读取人脑活动的能力引发了有关隐私权和安全性等道德问题，而主要研究人员有必要认识到这一点。技术打开了新型恶意应用的潘多拉之盒，其中包括了在操纵人脑思考敏感信息后从人脑中窃取它们。不过，该领域的突破仍然有待时日，在破解基于思考的大脑模式之路上，还需跨出重要的一步。这样的创新也意味着更好的脑机接口。这将为人机交流开辟全新的平台。脑机接口可以让瘫痪的人移动机械臂，或者使脊髓受伤的人控制电动轮椅。如下视频所示的“智能修复”等应用，是在扶助全世界残障人士的事业中迈出的一大步。
+In this case, a 10-fold cross-validation was used when training the model, and the accuracy of the evaluation on different data segments was calculated. The final model performance can be visualized through the following confusion matrix.
+
+In the field of machine learning and specific statistical classification problems, the confusion matrix, also known as the error matrix, is a special form layout that can visualize the algorithm. Each row of the matrix represents an instance of the actual class, and each column represents an instance of the predicted class. Its name comes from its ability to easily see if the system is confusing different classes (for example, mislabeling one class as another).
+
+When cross-validation is more than 10% off for prediction of the evaluation model, the final result obtained is impressive-0.987 (+/- 0.01) accuracy. This shows that based on the feature set extracted from the original EEG data, the prediction of a person's psychological state is "neutral", "negative" or "positive", with an accuracy rate of nearly 99%.
+
+Predicting emotional state through EEG recordings. Although the results of this example are moving, there is still work to be done for wider applications. At the same time, the limited sample size of only two subjects in the experimental records also raises the problem of generalizing new individuals. However, due to the promising prospects of the sample results, it is also a good start for further research.
 
 
-《超越仿生学》，英国卫报 (“Beyond bionics”,The Guardian)
- 
-尽管自认为是“技术乐观主义者”，但还是相信有必要健全该技术的法律法规，以确保这项技术真正帮助有需要的人，同时不会造成灾难性后果。
+Outlook
+ 
+Does this result imply that people are approaching a future of ectopic science fiction with completely controlled thoughts? In this future world, people will even lose the right to privacy.
 
-未来如何，我们无法预料。但有一点可以肯定的是，人们正在有意或无意地寻找与计算机进行交互的方式。人工智能驱动型接口前景广阔，且充满挑战。
+The ability of artificial intelligence to read human brain activity raises ethical questions about privacy and security, and key researchers need to recognize this. Technology opens the Pandora's box of new malicious applications, including stealing them from the human brain after manipulating it to think about sensitive information. However, breakthroughs in this area still take time, and an important step needs to be taken to crack the thinking-based brain model. Such innovation also means better brain-computer interfaces. This will open up a new platform for human-machine communication. A brain-computer interface allows a paralyzed person to move a robotic arm or a spinal cord injured person to control an electric wheelchair. Applications such as "smart repair" shown in the video below are a big step forward in helping people with disabilities around the world.
 
-既然潘多拉的魔盒已经被打开，那就勇敢无畏的前进吧！
 
-“AI企业泥沙俱下也成了这个行业的通病，基本跟人工智能没关系的企业，现在包装成人工智能企业做宣传。”周瑔表示，“现在很多做人工智能的企业，都只是用开源算法，并没有自己去定制化，去优化算法。”
+Beyond Bionics, The Guardian
+ 
+Although he considers himself a "tech optimist", he still believes that it is necessary to improve the laws and regulations of the technology to ensure that the technology really helps those in need without causing disastrous consequences.
 
-周瑔还道出了包括影像赛道在内的许多医疗AI企业的痛点，“很多企业在数据方面，也参差不齐，数据的质量有待验证；甚至有的企业把既有数据又拿来训练算法又拿来做验证，其结果必然可观但是不客观。做得稍微好一点的企业则把训练数据和验证数据分开。但更严格的方法还要第三方验证，比如从301医院拿出的数据最后验证的时候拿协和医院的数据来验证。”
+What the future holds, we cannot predict. But one thing is certain, people are deliberately or unintentionally looking for ways to interact with computers. Artificial intelligence-driven interfaces are promising and challenging.
 
-对此，刘建也深表认可，作为医疗AI企业的代表方，他强调，“企业一定洁身自好，将数据源把控好，要跟医生结合，让医生输入数据、做质量的把控。”
+Now that Pandora's Box has been opened, go ahead bravely!
 
-在寻求数据有效性的同时，医疗AI企业也开始寻求新的发展路径，分层诊疗制度让AI医疗创业企业将目光从已经饱和的北上广三甲医院转移，向基层医疗市场下沉。与GPS（飞利浦、西门子、GE医疗）三巨头等大型设备商结合，也是突破途径之一。
+"AI companies have become a common problem in this industry. Enterprises that have nothing to do with artificial intelligence are now packaged as artificial intelligence companies for publicity." Zhou Zheng said, "Many companies doing artificial intelligence now only use open source algorithms, and There is no need to customize it to optimize the algorithm. "
+
+Zhou Zheng also pointed out the pain points of many medical AI companies, including the video track. "Many companies are uneven in terms of data, and the quality of the data needs to be verified. Some companies even use both data and training The algorithm is used for verification again, and the results must be considerable but not objective. A slightly better company separates the training data from the verification data. However, more stringent methods require third-party verification, such as data from 301 hospital At the time of the final verification, the data of Concord Hospital were used for verification. "
+
+In this regard, Liu Jian also deeply acknowledged that, as a representative of medical AI companies, he emphasized, "Enterprises must be clean and good, control data sources, and integrate with doctors to allow doctors to enter data and control quality."
+
+While seeking data validity, medical AI companies have also begun to seek new development paths. The layered diagnosis and treatment system allows AI medical startups to shift their sights from the already saturated Beijing-Guangzhou-Guangzhou top three hospitals and sink to the primary medical market. Combining with GPS (Philips, Siemens, GE Medical) and other large equipment manufacturers is also one of the breakthrough ways.
