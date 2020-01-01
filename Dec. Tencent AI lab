@@ -1,5 +1,4 @@
 # Just write the script, AI understands your heart, from material selection to editing, one-stop completion of creation
-
 The camera switches naturally and the tempo is slow. What kind of professional editing skills are required to create such a high-quality video?
 The answer is that you can write without cutting.
 For example, to edit a clip about a giraffe, you just need to tell the AI:
@@ -8,10 +7,8 @@ It has a brown mane on its neck and two furry horns on its head.
 AI can automatically edit such a picture
 Let's first show the full picture of the giraffe herd. Then the camera cuts a running giraffe to show its long legs and neck. Follow the instructions and give a close-up of your mane and horns, live together!
 Yes, no longer hassle to pick the material, and go back and forth frame by frame
-
 You only need to turn the ideas in your mind into short texts. This AI called Write-A-Video can understand your heart, from material selection to editing.
 This is the latest AI artifact created by scientists from Beihang University, Tsinghua University, Harvard, and Herzliya Interdisciplinary Research Center in Israel. It can generate videos with only themed scripts.
-
 Create video with text
 Now that the material is ready, let's take a look at how Write-A-Video "writes" a video.
 The whole process is divided into three steps.
@@ -27,10 +24,8 @@ Lenses that are too long (> 30s) or too short (<2s) will also be discarded becau
 Then, the visual semantic embedding technology calculates a matching score for each retrieved shot, and the shot with the highest ranking is selected as a candidate shot.
 The method used here is VSE ++ (the address of the paper is at the end of the article). This method can encode cross-model content into a joint feature space, such as linking text to shots.
 In the embedding space, one frame is taken every ten frames from the shot, the cosine similarity between it and the text is calculated, and the average value is finally taken as the final score for judging whether the shot can be selected.
-
 The third step is to combine these shots together to complete the video editing.
 This step is actually a hybrid optimization of the lens by Write-A-Video. And it has its own aesthetic standards.
-
 First, the picture should be bright and vivid.
 Secondly, the lens should not be shaken too much.
 Finally, avoid inconsistent jump cuts and opposite camera movements.
@@ -87,23 +82,15 @@ From the perspective of medical veteran Liu Jian, the AI ​​medical industry 
 AI understands thinking is the trend
 Automated and non-invasive detection of brain activity may be of great use in areas such as human-computer interaction and mental health. It can provide an extra dimension of interaction between the user and the device, and it can also export physical information that does not rely on oral communication.
 Such innovation also means better brain-computer interfaces. This will open up entirely new platforms for human-machine communication, including providing support for people with physical or mental illness. A brain-computer interface allows a paralyzed person to move a robotic arm or a spinal cord injured person to control an electric wheelchair.
-
 As people increasingly get low-cost electroencephalography (EEG) equipment, the consumer industry and research institutions can afford the cost of EEG data, which has created a need to replace human experts with automatic classification.
-
 This article will introduce a case study on how to use machine learning to analyze brain activity. Using EEG recordings of commercially available equipment, the article will show how to use machine learning models to predict the corresponding mental state of a subject.
 How machine learning classifies mental states
 Unless the recorder belongs to a laboratory performing such experiments, recording high-quality EEG data is not easy. However, I recently saw an interesting article, co-authored by Jordan Bird, Luis Manso, Eduardo Ribeiro, Anico Ecate and Diego R. Faria Research on Mental State Classification Using EEG-Based Brain-Computer Interface. Fortunately, they have publicly shared the data used in the study for others to experiment with. What's particularly interesting is that you can place orders for consumer-grade devices for only a few hundred dollars on Amazon. The methods used to record and process data in their research are described in the following sections.
- 
 Experimental details
- 
 The study utilized a commercially available MUSE brand EEG headband using four dry extracranial electrodes. This is a wearable brain sensing device that measures brain activity with 4 electroencephalogram (EEG) sensors.
-
 In order to evoke different mental states, the experiment used a series of movie clips shown in the table below, which represent positive and negative titers, respectively.
- 
 For each video clip in the table, 60 seconds of data were recorded from two subjects (1 male, 1 female, aged 20-22) to generate 12 minutes of brain activity data (corresponding to each emotional state 6 minutes of data). In addition, six minutes of neutral EEG data were collected to generate a total of up to 36 minutes of EEG data recorded from the subject. (Collect data for three minutes each day to reduce interference with resting emotional states). By resampling the variable frequency to 150Hz, a data set with a capacity of 324,000 data points can be generated.
- 
 Feature extraction and EEG signal classification are the core issues of brain-computer interface (BCI) applications. One of the challenges in EEG feature extraction is the complexity of the signal because it is actually non-linear, unstable, and arbitrary. Only between extremely short intervals is the signal considered stable. That's why applying short-term windowing techniques to meet your needs is a best practice. However, it is still considered a hypothesis that is established under normal brain conditions.
-
 This section shows feature sets that are thought to properly distinguish between different categories of mental state. These features depend on statistical techniques, time-frequency analysis based on fast Fourier transform, information entropy, and maximum-minimum characteristics of time series. According to the temporal distribution of signals in a given time window, all features initially used to classify mental states will be calculated. The time period of the sliding window is defined as 1 second, that is, all features are calculated at this time point.
 
 Machine learning algorithms
@@ -111,19 +98,11 @@ Machine learning algorithms
 Following the above feature extraction method from the original EEG data, we now have a data set containing 2547 features. For each row of the data set, there is a corresponding target variable: "Neutral", "Negative" or "Positive". The experimental goal is to train a machine learning model based on this set of features to successfully predict the corresponding mental state.
 This example starts with the "go-to" algorithm of random forest classification, because it is simple to set up, has powerful out-of-the-box features, and does not require hyperparameter tuning.
 Here's the explanation: it would also be interesting to use convolutional neural network methods to process raw time-domain data (not extracted feature sets that contain various frequency characteristics of the signal). Since the convolution applied in the time domain is closely related to the frequency characteristics of the signal in the convolution theorem, this is likely to be an effective method to reduce the workload of preprocessing and feature extraction.
-
 Cross-validation
- 
 In the process of applying machine learning, you first need to understand the importance of cross-validation: evaluating the performance of a model on a part of the data set, which needs to be distinguished from the part used to train the model. One way is to keep part of the data set while training the model, and evaluate the model performance in the following way (example):
-
 Train the model with 70% labeled data
-
 Evaluate the trained model with the remaining 30%
-
 Through repeated iterations, it is observed whether the test results are different due to different training / test samples, and K-fold cross-validation is thus improved.
-
-
- 
 Through multiple training / test comparisons, better model performance evaluation and complete inspection can be obtained, and it is confirmed that after training with different labeled data segments, the model performance will not be very different, even if the data itself is in There is instability in the model or the sample set is small.
 
 In this case, a 10-fold cross-validation was used when training the model, and the accuracy of the evaluation on different data segments was calculated. The final model performance can be visualized through the following confusion matrix.
@@ -140,20 +119,11 @@ Outlook
 Does this result imply that people are approaching a future of ectopic science fiction with completely controlled thoughts? In this future world, people will even lose the right to privacy.
 
 The ability of artificial intelligence to read human brain activity raises ethical questions about privacy and security, and key researchers need to recognize this. Technology opens the Pandora's box of new malicious applications, including stealing them from the human brain after manipulating it to think about sensitive information. However, breakthroughs in this area still take time, and an important step needs to be taken to crack the thinking-based brain model. Such innovation also means better brain-computer interfaces. This will open up a new platform for human-machine communication. A brain-computer interface allows a paralyzed person to move a robotic arm or a spinal cord injured person to control an electric wheelchair. Applications such as "smart repair" shown in the video below are a big step forward in helping people with disabilities around the world.
-
-
 Beyond Bionics, The Guardian
- 
 Although he considers himself a "tech optimist", he still believes that it is necessary to improve the laws and regulations of the technology to ensure that the technology really helps those in need without causing disastrous consequences.
-
 What the future holds, we cannot predict. But one thing is certain, people are deliberately or unintentionally looking for ways to interact with computers. Artificial intelligence-driven interfaces are promising and challenging.
-
 Now that Pandora's Box has been opened, go ahead bravely!
-
 "AI companies have become a common problem in this industry. Enterprises that have nothing to do with artificial intelligence are now packaged as artificial intelligence companies for publicity." Zhou Zheng said, "Many companies doing artificial intelligence now only use open source algorithms, and There is no need to customize it to optimize the algorithm. "
-
 Zhou Zheng also pointed out the pain points of many medical AI companies, including the video track. "Many companies are uneven in terms of data, and the quality of the data needs to be verified. Some companies even use both data and training The algorithm is used for verification again, and the results must be considerable but not objective. A slightly better company separates the training data from the verification data. However, more stringent methods require third-party verification, such as data from 301 hospital At the time of the final verification, the data of Concord Hospital were used for verification. "
-
 In this regard, Liu Jian also deeply acknowledged that, as a representative of medical AI companies, he emphasized, "Enterprises must be clean and good, control data sources, and integrate with doctors to allow doctors to enter data and control quality."
-
 While seeking data validity, medical AI companies have also begun to seek new development paths. The layered diagnosis and treatment system allows AI medical startups to shift their sights from the already saturated Beijing-Guangzhou-Guangzhou top three hospitals and sink to the primary medical market. Combining with GPS (Philips, Siemens, GE Medical) and other large equipment manufacturers is also one of the breakthrough ways.
