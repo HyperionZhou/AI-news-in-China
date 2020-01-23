@@ -1,0 +1,942 @@
+1. Top 10 AI academic perspectives worth reviewing in 2019
+In 2019, issues such as "Will Deep Learning usher in the Winter" and "How AI can be interpreted" will frequently become the "guests" of the AI ​​community.
+
+In 2019, the AI ​​community began to call for new breakthroughs in methods other than deep learning, such as combining traditional AI methods such as inference, basic mathematics, and other interdisciplinary methods such as brain-like methods.
+
+In 2019, "multi-modal" has become a hot research direction in the AI ​​world. CV researchers have begun to pay attention to NLP, and NLP researchers have begun to introduce CV in their research. The convergence of multiple research areas is already unstoppable.
+
+The following are the top ten quotes worthy of review in the AI ​​academic community in 2019, in the hope that everyone can get a little inspiration from them and prepare for the new journey of the new year!
+
+
+
+1
+
+Inference, abstract derivation, these things that humans finally learn to do will also be the most difficult things for neural networks to learn.
+
+——Geoffery Hinton, godfather of deep learning, one of the 2018 Turing Award winners
+
+If we compare humans with neural networks, then the development of neural networks has made great progress in human perception tasks such as visual signal processing and speech signal processing, but the performance of motion control is not so good. Advanced neural networks have just caught up with traditional control methods, let alone compared with humans. Humans have very high motion control capabilities and are very easy. Obviously, our brains are designed for motion control.
+
+Neural networks will eventually surpass humans one day, but now they have achieved only a small victory. In addition, inference, abstract derivation, and other things that humans learn to do last will also be the most difficult thing for neural networks to learn.
+
+
+
+2
+
+What really matters to me as a scientist is what new directions need to be explored to solve the problem. I don't care about who is right and who is wrong, who is on whose team.
+
+——Yoshua Bengio, the world's leading AI expert and pioneer of deep learning
+
+Many public-facing information channels do not understand the way academics do scientific research, whether it is for the field of AI or other disciplines. In fact, they study and understand the shortcomings of current theories and methods in order to explore the tools of intelligence. Larger space outside.
+
+To this day, the level of intelligence that AI systems can achieve is not comparable to a 2-year-old child. However, our algorithm may reach the level of some lower-level animals in the perception task, and now there are more and more tools to help a system explore its environment, so the intelligence level of these systems is also slowly Gradually improve.
+
+Bengio believes that in the future, we can try to implement the functions of reasoning, planning, imagination, and attribution based on the deep learning tools designed in the past years to achieve high-level recognition of AI systems.
+
+
+
+3
+
+One cannot expect that artificial intelligence will "do its job" as soon as it comes out. It's always on the road, and that's the charm of artificial intelligence.
+
+——Zhang Ye, Academician of the Chinese Academy of Sciences
+
+The first-generation model of artificial intelligence is interpretable and robust. However, it also has great limitations, that is, it is difficult to accurately express human knowledge and experience. This is also the root cause of the later artificial intelligence winter.
+
+By the second generation of artificial intelligence, one of the most important results was deep learning. However, deep learning is not a universal machine for AI. It needs to meet the five conditions of rich data or knowledge, complete information, deterministic information, static, single domain, and single task. It is still far from true artificial intelligence.
+
+Therefore, the next step is to move to the third generation of artificial intelligence. Aiming at the two main limitations of the first and second generation of artificial intelligence, establish an interpretable and robust artificial intelligence theory, and develop a safe, reliable, and usable artificial intelligence. Technology to promote innovative applications of artificial intelligence.
+
+
+
+4
+
+We used to think that deep learning was a "small black house" with only deep neural networks. Now we open the door and find that there is a deep forest in it. Maybe we can find more things in the future.
+
+——Zhou Zhihua, Professor of Nanjing University
+
+Although deep neural networks have become so popular and successful today, in fact, we can see that in many tasks, the best performance may not be completely deep neural networks, and it has been mathematically proven that a model cannot be used in Get the best performance in all tasks. So we need to explore deep models beyond neural networks.
+
+Deep forest is one of them. Although we don't know to what extent deep forest can develop, because we can't build a very deep model, but even if we build a very deep model in the future, and find that its performance is not as good as we expected, we The research is still valuable.
+
+Because the construction process of the deep forest provides evidence for these guesses: when you can achieve layer-by-layer signal processing, feature transformation, and sufficient model complexity with a model, you can enjoy the benefits of the deep model. This is why deep forests perform better than previous forests. It also brings us new insights: Is it possible for us to design new models that take into account these points?
+
+
+
+5
+
+In essence, the basic methodologies used by artificial intelligence, knowledge engineering, and mathematics to solve problems are uniform.
+
+——Xu Zongben, Academician of the Chinese Academy of Sciences
+
+While rejoicing that artificial intelligence has become a usable technology, we must calmly see that at present we are still in the artificial intelligence stage of "how much labor is exchanged for how much intelligence". It is far from the true industrialization of artificial intelligence and can truly transform artificial intelligence. Technology is used well and well, and there is still a long way to go.
+
+Regarding the future development direction of artificial intelligence, Xu Zongben said that we might as well make an analogy with the realization of communism: the communist goal of artificial intelligence is autonomous intelligence, and before realizing communism we must go through the primary stage of socialism-machine learning Automation is the primary goal of socialism. Therefore, the development trajectory of artificial intelligence should be from artificial to automation, and then to autonomous intelligence.
+
+In order to truly realize the automation of machines, we must first solve the basic problems of five mathematical fields: the statistical basis of big data, the basic algorithms of big data calculations, the mathematical principles of deep learning, the transportation problems under unconventional constraints, and the learning methodology. Modeling and learning theory on function space.
+
+
+
+6
+
+In the future, deep learning and linguistic research should help each other, and multimodal information processing is also promising.
+
+——Zhou Ming, Chief Researcher, Microsoft Research Asia
+
+The deep learning-based NLP technology has gone through the four technical nodes of word embedding, sentence embedding, codec model with attention, and Transformer (full use of attention), pre-trained model + fine-tuning for specific tasks It has also become the new paradigm of current NLP practice.
+
+This new paradigm also brings us a new inspiration: we can train a model in advance for large-scale corpora. This model represents not only the structural information of the language, but also the information of the field and even common sense. It's just that we don't understand. Coupled with our future scheduled task, this task has only a small training sample. The pre-trained model obtained from the large training sample is applied to the small training sample, and the effect is greatly improved.
+
+However, the future NLP will not be just a rule-based model, nor will it be a DNN-based model; it should be an interpretable, knowledgeable, ethical, economically beneficial, lifelong learning model. In the future, deep learning and linguistic research should help each other, and multimodal information processing is also promising.
+
+
+
+7
+
+What is true intelligence? I don't think it's conclusive yet, and we don't know enough about our own intelligence.
+
+——Zhang Zhengyou, Senior Researcher, Visual Technology Group, Microsoft Research
+
+In fact, today's artificial intelligence is still just machine learning: learning a mapping from a large amount of labeled data.
+
+So what is true intelligence? As Swiss cognitive scientist Jean Piaget said, intelligence is what you use when you don't know how to do it. In other words, when you can't face with what you have learned or talent, what you use is intelligence.
+
+How to implement intelligent systems? Zhang Zhengyou said: There may be many roads, but he thinks that a very important road is to take the carrier into consideration and do carrier-intelligent intelligence, that is, robots.
+
+Based on this, he also proposed the A2G theory: A is AI, that is, the robot must be able to see, hear, speak, and think, B is the Body ontology, C is Control, and ABC forms the basic capabilities of the robot; D is Developmental Learning, development To learn, E is EQ, emotional understanding, personification, F is Flexible Manipulation, and flexible control; finally, to reach G, G is Guardian Angel.
+
+
+
+8
+
+The research idea of ​​"task performance-centric" at the current stage of AI research is actually the bottleneck for us to move towards general artificial intelligence.
+
+-François Chollet, Keras library author
+
+Basically, all the wrong parts of researchers and the general public's perception of AI technology can be attributed to excessive anthropomorphism. But AI is very cunning. When humans design AI and train it to which one or two human skills they want to imitate, it will imitate only these two skills completely, but they will not learn the other (even if it seems very relevant) ) Skills.
+
+In this process, AI will also try to take all possible shortcuts, discover all kinds of tips that can bring improvement, and even environment bugs. Instead of actively following the "right path" originally planned by human beings, the final system will also There is nothing in common with human thinking.
+
+It can be said that the “task performance-centered” research thinking of AI research at this stage is actually the bottleneck for us to move towards general artificial intelligence. In fact, AI research should take another route, namely the Hernandez-Orallo route: “AI is Such a science and engineering, the machine it creates can complete tasks that have never been seen before and never prepared in advance. "
+
+Not only that, to understand the level of intelligence of a system, the efficiency with which it acquires new abilities in a series of different tasks should be measured; this is related to a priori, experience, and difficulty of generalization.
+
+
+
+9
+
+I don't think we need to wait until one is fully developed, then develop another or develop a combination of them, because you will find that you will never reach a peak.
+
+——Wang Xin, First Author of Best Student Paper of CVPR2019
+
+Research combining vision and language has actually been around for a long time. Before the era of deep learning, some people were doing research, but only after the emergence of deep learning, about 2014 and 15 years, everyone began to focus on this research direction.
+
+Because we are living in a multi-modal world, as human beings, we do n’t just see with our eyes, we also need to communicate and express through language, and even record something; and language itself is developed based on what we see.
+
+So in the final analysis, it is an option to study the two things separately, but in the end, the scientific research we are going to do is definitely to combine CV and NLP, and even other modalities. And I don't think we need to wait until one is fully developed, then develop another or develop a combination of them, because you will find that you will never reach a peak.
+
+
+
+10
+
+Technology has both good and bad sides, like fire, which can keep warm, cook food, and burn others.
+
+——Jürgen Schmidhuber, father of LSTM
+
+Decades ago, when industrial robots first appeared, it was said that robots would replace all human work. However, as a result, these countries with many robots have gained more capital without increasing unemployment, because many new occupations were unexpected at the time.
+
+This is also true now, as AI is used more in China and globally, the number of jobs will only increase, not decrease, and the unemployment rate will remain roughly the same as new jobs will appear.
+
+Technology has both good and bad sides, just like fire, which can keep you warm, cook food, and burn others; even a little bit like AI, if humans do not intervene, it will spread widely. However, people have found that the benefits of fire are much more troublesome, so people have been improving the technology of using fire.
+
+In this way, human beings have been to this day.
+
+
+
+2. Artificial intelligence, bid farewell to manual entry in corporate finance with intelligence
+Companies or enterprises often need to spend a lot of manpower to manually enter financial information in the process of financial management and payment of reimbursement. Not only is it costly, but it also takes a long time, and there may be errors if you manually enter it. With the development of the industry and the continuous breakthrough of technology, OCR, NLP, ML and other technologies are being applied to the work of corporate financial management. Among them, text recognition has been applied to the check and document recognition input of the financial industry, and bill recognition among. Natural language processing is widely used in tasks such as reimbursement specifications, automated financial statement generation, and content extraction.
+
+I. Market Size of Intelligent Financial System
+At present, more and more enterprises are shifting from traditional financial processing methods to digital and intelligent services. With the continuous development of artificial intelligence technology, enterprises will be more inclined to use cloud financial systems to replace manpower, improve work efficiency and reduce manpower costs. Among them, Chinese small and micro enterprises have developed rapidly in the past few years. According to the latest statistics in 2019, since 2018, the market size of cloud financial applications for small and micro enterprises in China is about 2.11 billion yuan, and it is expected to reach 5.12 billion yuan in 2020, with an average growth rate of 57.9%. The potential market size may reach 90 billion yuan, with huge room for growth.
+
+
+Related technologies of intelligent financial system
+Text recognition technology: It is an AI capability commonly used at present. Through a recognition system, the bill is passed through an image acquisition device, and then the text on the image is recognized through text recognition technology, and then a data structure is entered into the financial system. This can save a lot of manpower and material resources, and can improve efficiency and accuracy.
+Text extraction technology: It can identify the key information in the text information and extract it by an automated method. This technology can be used to sort out the key information in the invoice content, including the name of the reimbursement applicant, the address of the relevant unit, the invoice number, the specific amount and other related information, and automatically generate computer-readable structured data.
+Key information recognition technology: Structured text data can be retrieved, and the preset information content or related information content can be identified through the information of the keyword word vector. This technology is used in conjunction with the inspection of corporate financial copy norms. Through compliance information, it can effectively identify risks that may exist in corporate financial documents, including money laundering and fraud.
+Machine reading comprehension technology: It can automate the inspection of enterprise reimbursement rules. Enterprise users can formulate relevant rules for reimbursement issues for projects or projects. Intelligent systems can understand the content of rules and review the content of reimbursement applications, identify non-compliant reimbursement content, improve the efficiency of corporate finance departments, and avoid Occurrence of artificial errors.
+
+Third, the case of intelligent financial systems
+SAP Concur: By automating expense management processes, SAP Concur greatly simplifies employee expense reimbursement, enabling them to receive reimbursement payments faster while helping companies save time and money. SAP Concur provides interconnected travel and expense management, enabling organizations to understand expenses in more detail before, during, and after travel. Today, SAP Concur is a provider of travel and expense management services and solutions, with more than 48,000 customers of all sizes and industries worldwide. Whether on a website, smartphone, or tablet, SAP Concur's cloud-based solution can provide employees with an easy experience, allowing relevant personnel to understand expense management expenditures anytime, anywhere, helping companies truly realize digital transformation and unlock potential.
+UiPath Robot: Automatically extracts data from bank statements of all customers and compares them with the accounting system to ensure accurate balance matching. UiPath robots can effectively process data and make information update in the system. Through the automated service, the accuracy rate higher than manual operation is realized for the customer, and human error is completely eliminated. With the improvement of the quality and speed of processing tasks, the turnaround time was saved by 80%, and at the same time, one quarter of the labor was saved.
+IBM Financial Risk Management: IMB relies on the Watson artificial intelligence engine and uses advanced analytics, automation, and artificial intelligence algorithms to develop anti-money laundering compliance, which can prevent potential fraud while monitoring employee misconduct, efficiency, and effectiveness. The IBM financial risk management system uses cloud, big data, and deep learning algorithms to implement solutions with advanced analytical capabilities to transform financial risk management to create considerable value while meeting the growing regulatory and profitability needs of enterprises.
+Reimbursement every moment: The intelligent reimbursement service mainly uses machine vision technology. Based on the convolutional neural network deep learning algorithm, the application of artificial intelligence can greatly reduce the workload of entering and reviewing invoice information. One-stop service for intelligent identification, intelligent audit, and intelligent analysis. On the basis of massive data support, the intelligent reimbursement system can learn and train itself to distinguish various invoices. In the work of invoice identification and review, the learning ability of artificial intelligence is much stronger than humans.
+
+Limitations of intelligent financial systems
+Whether it is car manufacturers' artificial intelligence may have a transformative impact on the global financial system, however, in corporate financial operations, the human link is still important, and the approval process and approval projects require more flexible standard formulation and more complicated processing links . The current artificial intelligence technology cannot be fully integrated into the financial department of the enterprise. In the initial stage, it will only be used as a manual auxiliary tool to solve some tasks in tedious and repetitive labor links. Only by adjusting social structures and processes to support new ways of working, while minimizing emerging risks, will it be possible to maximize its benefits.
+
+V. Development Trend of Intelligent Financial System
+In the future, artificial intelligence and natural language understanding technologies will gradually mature. More and more enterprises will choose to use intelligent financial systems. The intelligentization of corporate finance will be a clear development trend. At present, the enterprise intelligent financial system has been proven by the market for its practical value, and the corresponding service processes and deployment channels have also been established. As more and more enterprises introduce financial systems, a large amount of industry data will immediately flow into the cloud system. Industry data can better train intelligent financial systems, and smarter financial systems will attract more enterprises to use them, thereby forming a closed loop of positive development.
+
+
+
+
+
+
+
+3. Can AI significantly improve the accuracy of breast cancer screening? Nature: Very promising!
+
+On New Year's Day, Nature wrote that AI showed hope in breast cancer screening. This is the result of a joint research between Google and universities, and the model they have jointly developed surpasses individual human experts in accurately identifying breast cancer. But as early as October 2017, the MIT Artificial Intelligence Laboratory (CSAIL) developed the first application of AI to improve the accuracy of detection and diagnosis of breast cancer. Less than 2 years later, CSAIL has developed an AI system that is also used for breast cancer screening. At the same time, Harvard University has also developed an AI screening system called SigMA.
+
+Now, what can be learned from the dazzling results of AI breast cancer screening research? AI reports take everyone to find out.
+
+First let's take a look at the results of this release on Nature:
+Google Deepmind has partnered with the Royal Cancer Research Centre, Northwestern University, and the Royal Surrey County Hospital to create an AI system after more than two years of research. 25,856 women in the United Kingdom and 3,097 women in the United States underwent mammography (the imaging method of choice for breast cancer diagnosis currently), and the data was used to train the AI ​​system. The trained AI system identifies breast cancer in breast X-rays of women with breast cancer. The results showed that the AI ​​system outperformed the judgment of the radiologist who initially evaluated the mammogram, and outperformed 6 expert radiologists who randomly selected 500 cases in a controlled study.
+According to Google ’s official blog, the AI ​​system reduced the false-positive misdiagnosis rate in the United Kingdom by 1.2% in a breast cancer screening assessment of more than 25,000 women in the United Kingdom and more than 3,000 women in the United States. It also fell by 5.7%. The false negative rate of false negatives decreased by 2.7% in the UK and 9.4% in the United States.
+ 
+However, a highlight of this research is that the AI ​​system has obtained a large amount of data reserves, which has laid a solid foundation for future topics. The research team said: "AI may one day play a role in helping to detect breast cancer early."
+Why is it just "possible"?
+Compared with the empty talk in the business world, researchers' rigorous expressions are particularly valuable. It is foreseeable that the research results in the laboratory still have a long way to go in clinical practice, and the real world is more complicated and diverse than the controlled research environment, so it is described as "possible" It is precisely the rigorous attitude of researchers. Moreover, the population covered by this study is not comprehensive. In other words, although there are more data than in the past, it is still incomplete, and the utility of this tool in medical practice needs further evaluation.
+So AI has already outperformed some radiologists in breast cancer screening. What is the significance of implementing this research into the clinic?
+Two major meanings:
+1. Improve the dilemma of severe lack of radiologists (this point is not discussed in this article)
+2. Greatly reduce the problem of false positive judgment of breast cancer
+False positives: Although mammography is widely used, it is still a challenge in terms of early breast cancer screening. Because reading these X-ray images is a daunting task, even for experts, on the images obtained by projecting X-rays through the squeezed breast tissue, normal breast tissue often overlaps each other, allowing certain signs It is not easy to be found, and then affects the final result, so false positives and false negatives often occur. When tested by a needle biopsy, once a breast X-ray appears suspicious and has abnormal cells, the patient will usually undergo surgery to remove the lesion; however, about 90% of the lesions found during surgery are Benign. This means that thousands of women undergo painful and costly postoperative scar removal surgery each year. These uncertain factors are likely to cause delays in testing and treatment, cause unnecessary distress to patients, and increase the workload of already overwhelmed radiologists.
+
+In response, the American Cancer Society said that in mammograms, radiologists have a misdiagnosis rate of about 20% of breast cancers, and half of all women who have been screened for 10 years have false positive results. It can be seen that the accuracy of this AI model for breast cancer screening is higher than that of experts, which lays the foundation for future applications. Once the AI ​​system is used in the clinic, it will help reduce the rate of misdiagnosis of breast cancer screening by radiologists. AI will help radiologists "see" abnormalities that were otherwise invisible. With the continuous improvement of data, the accuracy of AI screening will continue to increase, which will help reduce the false diagnosis rate of false positives and false negatives.
+
+Past and present of AI and breast cancer screening?
+At present, imaging techniques such as mammography (molybdenum target), ultrasound, and magnetic resonance have become important methods for breast cancer detection, staging, efficacy evaluation, and follow-up. At the same time, breast-assisted computer-assisted diagnosis has also been widely used in X-ray screening of breast cancer.
+In 2012, the Italian scholar Parmeggiani of the University of Naples II and other scholars jointly developed an artificial neural network expert system for improving the recognition of breast X-rays. This system can assist radiologists to obtain a higher diagnosis rate of breast cancer.
+In 2016, the Wong and Chang team at the Houston Methodist Hospital developed a natural language processing software algorithm that accurately obtained the key features of mammograms in 543 breast cancer patients and correlated them with breast cancer subtypes. The speed of diagnosis is 30 times that of ordinary doctors, and the accuracy rate is as high as 99%.
+
+In October 2017, the MIT Computer Science and Artificial Intelligence Laboratory (CSAIL) developed an AI model that uses machine learning to predict high-risk breast lesions and cancer, which can reduce false positives for breast cancer and avoid unnecessary surgery. The system trains AI on the existing data of more than 600 high-risk disease cases, including different types of data sources such as demographics, family history, past biopsies and pathology reports. When tested on 335 high-risk lesions, the model correctly diagnosed 97% of breast malignancies.
+In October 2018, researchers from the San Diego Naval Medical Center and Google AI developed an AI system called "Lymph Node Assistant" (LYNA for short). The system uses a cancer detection algorithm to automatically evaluate lymph node biopsies. In the accuracy test of metastatic breast cancer, LYNA has an accuracy rate of 99%, which is superior to human pathologists.
+
+In May 2019, scientists at Harvard Medical School developed an AI screening system called SigMA. The system can efficiently and accurately "read" the molecular characteristics of HR (homologous recombination) defects, and further cooperate with existing screening methods. Researchers say that if SigMA is incorporated into the genetic testing technology already used in hospitals in the future, about 270,000 breast cancer patients will benefit each year.
+
+In May 2019, CSAIL researchers at MIT invented an AI-driven method of mammograms that is expected to detect women's breast cancer years 5 years in advance. CSAIL and a team of researchers at Massachusetts General Hospital have created a deep learning model that requires only a mammogram to predict whether a woman will develop breast cancer in the future. Scientists first performed mammograms on more than 60,000 patients treated at Massachusetts General Hospital. They then identified women with breast cancer within five years of screening. Using this data, scientists have built a model that can identify subtle patterns in breast tissue that reflect early signs of cancer.
+
+Google, MIT, Harvard and others study breast cancer screening behind terrible breast cancer mortality
+Breast cancer is known as the number one cancer killer for women worldwide. In the United States alone, 40,000 women die of breast cancer each year. The average annual global incidence of breast cancer is approximately 1.67 million and the number of deaths is approximately 520,000, with an average of one new patient every 26 seconds. In China, the rate of breast cancer growth is twice the global average, ranking first in the world. One in 10 women has breast cancer or breast hyperplasia. One in four breast hyperplasia patients is likely to develop breast cancer.
+
+X-ray screening of breast cancer in China
+According to relevant reports, the misdiagnosis rate of medical imaging in China is far higher than that in the United States, and the level of information infrastructure in imaging is far lower than in the United States. China's medical imaging service model has become a pain point for doctors and patients. The "Three-year Action Plan to Promote the Development of a New Generation of Artificial Intelligence Industry (2018-2020)" proposes to cultivate "medical imaging aided diagnostic systems" smart products. The "Action Plan" states that by 2020, the advanced multimodal medical imaging assisted diagnosis system in China will detect more than 95% of the above typical diseases, the false negative rate will be less than 1%, and the false positive rate will be less than 5%.
+On August 17, 2019, during the China Oncology Conference (CCO) held in Chongqing, the first "Guidelines for the Screening of Breast Cancer in Chinese Women" was formally released for the first time. Academician Hao Xishan pointed out in response to media questions that mammography is a Mature imaging inspection methods are widely used internationally. In China, ultrasound examination is of some significance for early diagnosis and early treatment of breast cancer. Academician Hao Xishan introduced that the latest "China Breast Cancer Screening Guide" recommends that mammography screening should be performed every two years for women at general risk; for women from breast cancer risk families who carry breast cancer-related mutations, it is recommended to From the age of 35, breast ultrasound examinations are performed semi-annually and breast magnetic resonance examinations are performed annually.
+Peng Weijun, chairman of the Breast Speciality Committee of the Chinese Medical Association Radiology Branch, said: "Breast molybdenum X-ray examination is the simplest and most effective way to screen for breast cancer, and it is the first choice internationally." X-ray and ultrasound "is a breast cancer screening The golden partner of the investigation, if the two are used at the same time, they can fully complement each other in the effectiveness of the inspection and achieve better screening results. "
+ 
+It is particularly worth mentioning that AI reports learned from domestic companies that focus on AI-assisted medical imaging diagnosis. The intelligent detection system for mammary molybdenum targets uses AI technology. At present, the detection rate of systemic lesions reaches 93%, and the benign and malignant accuracy rates It reaches 94%, and complete detection of mammary gland target disease in 20 seconds, covering all breast disease species.
+According to Professor Ma Xiangjun, Executive Deputy Chairman of the Breast Health Professional Committee and Deputy Dean of Haidian Maternal and Child Health Hospital, Professor Ma said in December this year: "AI technology plays a very good role in early screening of breast cancer and can effectively improve tumor screening. Checking the accuracy will lead to the improvement of early screening and early diagnosis of breast cancer. "
+As the most common gynecological malignant tumor, breast cancer is one of the killers that endanger human health. Today, AI-assisted diagnosis and treatment technology has fully entered the medical field and has made great contributions in the early screening and diagnosis of cancer. For example, the AI ​​developed by Google DeepMind defeated doctors in breast cancer screening tests, and the AI ​​developed by MIT can predict breast cancer 5 years in advance. A series of results are in line with the concepts of AI empowerment and AI goodness to make up for human limitations. Early screening and accurate diagnosis of breast cancer is no longer difficult, and it is for the benefit of all mankind.
+
+
+
+
+
+
+4. AI is everywhere? 10 most exciting practical AI applications in retail
+
+In recent years, our core experience in the retail industry has not changed much. Go to a store (or online store), browse for items, try it, and buy.
+
+How do you transition from this shopping to the next stage? Artificial intelligence is facilitating this transformation. Whether from a consumer or business perspective, it has revolutionized retail.
+ 
+Artificial intelligence bridges the gap between virtual and physical sales for businesses. In the retail industry, major brands are gradually applying artificial intelligence to reduce costs, increase efficiency, achieve operational flexibility and increase decision-making speed.
+
+A recent IBM study showed that the use of AI-driven intelligent automation in the retail and consumer goods industries is expected to jump from the current 40% to more than 80% in the next three years.
+
+This is a major leap and the main reason why retail companies have adopted artificial intelligence-driven strategies. The career of data scientist in retail industry is very good-this article will discuss 10 successful applications of artificial intelligence to change the global retail industry.
+
+Overview
+
+· In recent years, the rise of artificial intelligence has affected many industries
+
+· Retail is one of the industries most affected! Revolutionary changes in retail operations as we know them due to artificial intelligence
+
+10 exciting examples below to see how artificial intelligence is transforming the retail industry
+
+
+
+Ten successful practical applications of artificial intelligence in the retail industry:
+1 McDonald's: Car Intelligent Voice Assistant
+2 H & M: Artificial Intelligence Portfolio Plan
+3 Nestle: Pepper robot sells coffee machines
+4 Bosch Automotive: Artificial Intelligence Sales Assistant
+5 Mango and Vodafone: Smart Digital Locker
+6 53 Degrees North: Customer Segmentation Automation
+7 Domino's Pizza: Pizza Robot Takeaway
+8 Nestle: AI cooking voice guidance
+9 Walmart: robots scan shelves
+10 Olay: Smart Personalized Skin Care
+
+Note: The data mentioned in this article is before November 2019. Given the rapid advances in technology and the rapid expansion of enterprises, data will always change.
+
+1.McDonald's: Car Intelligent Voice Assistant
+
+McDonald's, one of the most popular restaurants in the world, quickly entered the era of artificial intelligence. Over the past few decades, McDonald's senior people have been keeping up with the trend of the times, and now they have not let up.
+I found it a little boring when driving in line, especially at night. I believe most people have experienced this kind of experience, and they all have their own ways to spend this time.
+Now, artificial intelligence has solved this problem!
+
+McDonald's-the most beloved-Hamburg chain recently acquired Apprente artificial intelligence company, which established a voice platform for them to order complex, multilingual, multi-accent and multi-order sessions The installation is complete. Who doesn't like natural language processing?
+Imagine that considering the time required for each customer to place an order, it is necessary to set up an intelligent voice assistant in the car shuttle restaurant. Not only can it speed up ordering, it's also more cost-effective – it's a win-win situation.
+This technology is "from sound to meaning", not "from speech to text." Basically, the system does not transcribe what the customer said before inferring its meaning, but derives the result directly from the voice signal.
+The company believes that this is a better approach when it is used for services that are directly related to the customer service experience, especially in noisy environments such as restaurants and public areas, or where customers speak more orally In the case of relatively low speech recognition.
+In the future we can talk about McFlurries with a robot-how exciting!
+
+2.H & M: Artificial Intelligence Product Portfolio Plan
+The work of the clothing store owner is very meticulous. They must plan for the new season and carefully decide what trends they want to show their customers in the window. So how do you predict trends?
+
+One way is to review the trends of each previous season, then take the new style (or fashion element) into consideration and then make a decision.
+This is indeed a problem in the fashion world today, because customers have different tastes. Social media has changed the meaning of fashion and clothing stores, and even big names are struggling to keep up.
+Therefore, making decisions on current conditions based on historical data may be outdated.
+
+As you might have guessed, this is the opportunity for artificial intelligence.
+The artificial intelligence algorithm can analyze the product categories of competing brands and compare these products with the customer's demographics and shopping history to predict the products that retailers should add to their inventory most.
+Big brands like H & M have realized the importance of using artificial intelligence in their portfolio plans. Their goal is to predict fashion trends months in advance. The retail giant has hired more than 200 data scientists, analysts, and engineers to use artificial intelligence to review purchasing patterns in stores.
+The data is a combination of all the 5 billion people who visited stores and websites last year, as well as external data. H & M is changing the traditional marketing model of all 4958 stores with one model.
+This has certain advantages:
+· Localization of inventory-to meet the needs of customers in different regions
+· Insightful data insights-helping brands remove bad product cycles
+RFID technology enters stores-supply chain processes are improved
+We know that the industry is undergoing a tremendous change, and the catalyst for this change is technology. Not just a technology, but a series of technologies, including artificial intelligence (AI), augmented reality (AR), robotics, and more. "— Carl John Purson, CEO of H & M
+Soon, with fast delivery, we can easily purchase the latest products. This will definitely draw you to the store more often and entice you to keep shopping.
+If you are a data scientist in the retail world, "market basket analysis" is a concept you must know. It works in Excel as follows:
+Effective cross-selling using market basket analysis
+
+3 Pepper robots-Nescafe coffee machine sales solution
+I grew up in southern India, and my love for coffee has become "fanatical". I am very happy with the many choices in the coffee shop, but I am disappointed that there are no staff around to help me introduce these coffee machines.
+How happy it is to have a coffee buddy robot that understands your needs and recommends the most suitable coffee machine! Thanks to artificial intelligence, all this is possible!
+
+Nestle Japan is using a simulated robot to sell its coffee machines made by SoftBank Robotics. It is one of the first robots in the world to sense and respond to human emotions.
+It is equipped with the latest speech and emotion recognition technology. The best part is that it can respond by interpreting human facial expressions!
+ "Pepper Robot will be able to introduce Nestlé products and provide services to engage with consumers"-Takaoka Hiroshi, CEO and Chairman of Nestlé Japan
+Starting your day with the perfect aroma of your favorite coffee is the most wonderful feeling in the world. I look forward to talking to a simulated coffee robot soon!
+As mentioned above, this robot can read facial expressions. As a data science professional, if you want to learn facial expression recognition, check out this article.
+
+4 Bosch Automotive-Artificial Intelligence Sales Assistant
+
+Every car dealer increases profits through after-sales service. Considering the current bad situation, the auto industry has now found its own position, and the existence of dealers may depend on this.
+So how to ensure that customers will use after-sales service? After-sales service is not only important for revenue, but also increases the chances of customers buying a car again, and may also be recommended to others.
+
+However, anyone who has worked in sales knows that attracting customers is a challenging and difficult task. This requires time, energy, and close monitoring, and serving thousands of customers is an extremely difficult task for the service team.
+British-based car dealer company BochAutomotive uses a unique artificial intelligence software that simplifies sales channels and sets up an automated sales assistant to increase service revenue through the business.
+Conversica's Sales Assistant software is designed to automate and enhance sales processes by identifying and talking to online customers. Sales executives and management companies claim that the average participation rate for authenticated messages is 35%.
+This is already high!
+ "This assistant has specialized skills training that can generate new interest, participate in demand, and drive outreach before the event. The artificial intelligence assistant can quickly, professionally and continuously communicate, identify customers who might buy and hand them over. To salespeople to create more sales opportunities and increase revenue-Conversica
+This helped a Toyota dealer achieve an average monthly sales increase of 60%.
+
+5 Mango and Vodafone: Smart Digital Locker
+
+AI applications are great in retail! How many times have you been disappointed in the fitting room that the clothes you chose are not suitable?
+This is an ongoing struggle! We left the fitting room to find the perfect size, and the process was repeated. This situation is changing dramatically due to artificial intelligence.
+Digital mirrors are now available to scan the codes on the clothes in the fitting room and contact the floor staff directly for help.
+The clerk receives the customer's request in real time through the digital watch. We can also use our own smart watches to save details of any outfit we like. That's cool, isn't it?
+
+The digital fitting room uses an Internet of Things (IoT) digital mirror designed by Mango and developed by Vodafone in collaboration with Jogotech.
+ "For Mango, this is a very exciting project. We believe that the future of the retail industry is the integration of online and offline. These new fitting rooms are another step in the digital transformation of stores and create for our customers A new experience. "-Guillermo Colominas, Mango Chief Account Officer
+Mango will soon be setting up digital fitting rooms in all the top stores in Barcelona and New York. This will solve our problem of constantly getting in and out of the fitting room to find the right clothes. It's easy, isn't it?
+
+6 53 Degrees North: Application of Artificial Intelligence in Customer Segmentation
+
+Customer segmentation is one of the most widely adopted use cases in the industry. Any B2C company you can think of-they all rely on customer segmentation to support their revenue.
+But given the unprecedented growth in the data we are generating now, artificially creating these data segments is not a good idea. There are actually multiple ways to parse customer data and create custom segments.
+
+Data science and artificial intelligence have also changed this situation. By using technologies such as market basket analysis, association rules, clustering, etc., companies can create market segments to enhance their marketing impact.
+53 Degrees North (53DN) is a home retail chain from Ireland that works with Brandyfloss to use their automated customer segmentation software. This solution will address segmentation issues and drive its marketing activities to reposition target audiences.
+Using the Brandyfloss algorithm, a set of 3612 target customers was created. For comparison, group B with the same 3612 people was randomly selected from the remaining customer list. 53DN launched an email marketing campaign to these two groups to promote the promotion of hiking shoes for ten days.
+At the end of the event, sales data was studied. 95% of sales come from the customer base created by Brandyfloss. Up to 93% of total revenue comes from the customer base created by Brandyfloss.
+
+7 Domino's Pizza: Pizza robot delivers hot pizza
+
+Want to eat pizza after reading the title? Think of bubbling cheese and perfect crust. I really want to order one right away!
+Unfortunately, when pizza reached our door, the bubbling cheese had long since disappeared. Many people think that pizza is not new.
+The good news is that our favorite pizza brands have solved this problem with artificial intelligence.
+Domino has launched the Domino Robot Unit (DRU). They built an artificial intelligence-based robot that can deliver hot pizza to your doorstep!
+ "DRU gives us everything we need for robotics, machine learning, and artificial intelligence." — Don Major, CEO and General Manager, Domino Group
+This innovative technology is like a self-driving car with a mini oven and a refrigerator with wheels. In fact, it's a cooler (or hotter) self-driving car! The car is a collaboration between Domino's Pizza and a Sydney-based robotics company, Marathon Targets.
+That's great, right? As the saying goes: Pizza makes everything possible!
+
+8 Nestle: AI cooking voice guidance
+
+It's really a struggle to constantly check the recipe manual while cooking. I hope someone can directly tell me what to do to make things easier.
+This is about to happen! Now, I can ask my personal cooking assistant to tell me what to do. I just need to follow along. Nestlé, the world's largest food company, has made this a reality. The company plans to train Amazon's Alexa and implement custom skills to provide voice-first hands-free cooking assistance.
+The GoodNes skills provided by Nestlé for Alexa raise people's interest in cooking, link them to the perfect recipe, and provide explanations at every step of the cooking process. It enables good visual guidance and also provides a visual voice browsing experience.
+
+To improve this skill, Nestlé has partnered with MobiquityInc., A third-party digital service provider with extensive experience in voice construction. Mobiquity's global Alexa lab has expertise in speech design that can help SVIO teams quickly design, build, and complete skills.
+Quite simply, if there are guests visiting the house and you want to make some special dishes for them, then all you have to do is ask Alexa. It will browse the recipes for you, send shopping lists to your emails, and play some wonderful music in the background. Alex can multitask in the kitchen!
+9 Walmart: robots scan shelves
+The era of inventory taking is over! Today, we have artificial intelligence scanners that can scan the shipments of shelves and calculate the quantity of each item.
+Tampa Bay Walmart has introduced a wheeled robot that can perform this task very efficiently. This super chain prefers to call it "autonomous scanner".
+The robot moves along the aisle, extending its arms to the top of the shelf, and automatically captures the required data, including price and number of items available. This was previously done by a manager holding a scanner.
+This saves a lot of time and effort and can help the company reduce operating costs. The company's goal is to increase interaction with customers, not spend that time on shelves.
+
+Can you guess the artificial intelligence technology behind this system? Yes, computer vision! The system uses deep neural networks to scan barcodes, analyze items on each shelf, and more.
+10.Olay: Smart Personalized Skin Care
+This won my heart! This is a concept I imagined-subverting the way the skin care industry works.
+Olay's artificial intelligence skin advisor (AI-poweredskin advisor) is an online service that relies on artificial intelligence and proprietary deep learning. It can analyze the user's skin care needs in a very detailed way.
+
+Four steps:
+· Self-portrait (without makeup)
+· A questionnaire about the user's current treatment plan and requirements (similar to an in-store consultation with a beautician)
+· Analysis of Olay's predetermined "aging areas" (forehead, cheeks, mouth, crow's feet and fundus)
+·      Products Recommended
+Platform users will get facial skincare recommendations, including areas that require "further maintenance" and "well-maintained" areas.
+The beta version of the web-based platform has been released and there are already more than 1 million subscribers on the platform.
+
+Endnote
+According to the latest forecast from Gartner, the technology expenditure of the global retail industry will increase by 3.6% in 2020 to nearly 203.6 billion US dollars, and this trend will continue in the next two years.
+Retail brands are investing more to ensure the best customer experience.
+The retail industry is more fragmented and competitive than ever before. Knowing all the above developments, I believe you can predict the future development speed. Artificial intelligence is revolutionizing the retail industry, and it has greatly increased the cost-effectiveness of providing a personalized, immersive, and optimized experience.
+
+
+
+
+
+
+
+
+5. Sketch of AI logistics industry
+
+Whether it is AI in the cloud that reduces cost and efficiency for the financial industry, or AI that observes crops at the moment in the field, although they are bringing subtle changes to our lives, they are still far from the technological changes we imagine. Almost so ...
+I have to admit that many times our imagination of technology is exaggerated and bloody. For example, the mention of biotechnology is associated with the biochemical crisis. As for the imaginary AI application, at least some seemingly very old industries must be changed. To improve efficiency, it is best to come to a robot with something unique. Isn't this more "stimulating" than just relying on cloud-based algorithmic models to change the industry?
+
+This application scenario that sounds so sci-fi really happened in 2019, and that is AI logistics.
+
+Magic and Reality in Logistics Montage
+When it comes to logistics, you viewers are sure to play such a series of montages in our minds-parcels thrown in huge warehouses, long Fei Feng dance written by the seller, express delivery brother speeding in the city in the cold wind ...
+Such an industry seems difficult to undergo technological transformation. At least before the realization of autonomous driving, this industry still had a high dependence on human labor.
+But in fact, although the logistics business that consumers are exposed to is mostly completed by the courier brother, in fact logistics has sufficient AI conditions.
+First of all, in terms of motivation, our stereotypes of the logistics industry, such as low labor efficiency at the warehouse end and difficulties in information screening, are often some of the problems that the logistics industry actually faces. They clearly have the will to use technology for improvement. In addition, the lack of labor in express delivery outlets has become more apparent since two years ago. The express cabinet gradually replaces the little brother who delivers home, and the industry is also eager to use technology to alleviate this "labor shortage."
+
+The logistics industry may seem "primitive," but its work is highly structured. For example, the location of items in the storage space and the route of travel of people are often fixed. The distribution process of logistics vehicles between cities is often relatively fixed. In particular, logistics travel relies on map navigation, and its daily trajectory has accumulated data. In addition, the logistics industry is originally a clustered and large-scale industry. The entire business process is very suitable for being structured and improved through AI processing.
+Even seemingly distant autonomous driving has actually made considerable progress in fixed routes. It is connected to the fixed route of the logistics park and has a natural fit.
+Since a few years ago, logistics has never lacked wisdom. We often see in the propaganda of logistics companies that many large logistics companies have built intelligent sorting lines and intelligent storage systems. No manual operation is needed, and the cooperation of robotic arms and pipelines can allow packages to go where they should go.
+
+Decoupling, Reorganization, Fantasy Come True: Logistics AI 2019
+In 2019, the most significant change that has taken place in logistics AI is the beginning of a decoupling trend between business and technology.
+As we mentioned, logistics never lacks intelligence. In large logistics companies, intelligent coverage is actually very good. However, it is also because these technologies come from the self-driving business within the enterprise, which results in the binding of the business itself and the technology being quite strong. Although the logistics enterprises themselves have powerful technology, mature logistics solution providers are rarely seen in the logistics industry. This will greatly affect the technical coverage efficiency of the entire industry, and there will be robots going into the sky in the script we have seen. In reality, the express delivery brother is tired and bald.
+However, in 2019, more and more technical service providers have begun to appear in the logistics industry. From technology giants to small technology companies, they have begun to solve problems in the logistics industry.
+In 2019, the evolution of AI in transportation is the most obvious.
+
+For example, applying data mining methods combined with AI algorithms can better plan efficient transportation routes and improve mileage utilization. Even the scheduling work that originally required skilled employees to spend an hour or two per day can be solved in minutes by AI. In particular, through the mining of previous years' data, it is possible to predict the freight pressure and prepare each site in advance. Take the Double Eleven and 618 shopping festival nodes. Failure to make adequate preparations will likely result in courier warehouse outages, exhaustion of delivery personnel, and the accumulation of a large number of goods at the site, posing a danger. However, if the estimated number is too large, the express delivery site will bear the cost again. But with the blessing of AI technology, it can easily cope with node pressure.
+At the same time, AI capabilities in the warehousing sector are also improving.
+Not only have a large number of unmanned vehicles started to enter the port to undertake freight connection tasks, but many technology manufacturers have also begun to launch small, flexible warehouse robots, and realize the intelligence of application scenarios through digital twinning capabilities. In other words, logistics merchants who want to apply robots in the warehousing process no longer need to build a large smart factory. The cooperation between small robots can also improve the efficiency of warehousing and sorting, and can better avoid violent sorting.
+Finally, in the delivery process, some very "magic reality" pictures also appeared one after another.
+Since 2018, Suning, Amazon and other e-commerce companies have started to test the last mile of express delivery using small unmanned vehicles. In 2019, we can see similar solutions in more places. For example, the self-driving car of Debon Express appeared on the university campus in Guangdong, and the self-driving car of China Post also began to help the express brother to share the work on Double Eleven.
+In short, those pictures we are dreaming about are appearing one by one.
+
+The most readable chapters from the landing of AI, yet another page
+But we must face up to it, although the "realization" of logistics AI is not difficult, its commercialization development still has a long way to go. Take the case of replacing the courier brother with an unmanned car. It seems that it can reduce labor costs for logistics companies, but the 800,000 quotations are enough to make most companies prohibitive. The industrial advantage of logistics is scale But it also brings cost pressures of scale. An unmanned vehicle is used at hundreds of logistics sites in a city, which means a cost of nearly 100 million yuan.
+
+In fact, it is not difficult to predict that in 2020 logistics AI is likely to show the following two trends.
+The first is that hardware costs have been reduced through constant competition and R & D. Especially products such as warehouse robots and unmanned express vehicles are still at the stage where they have just been tapped by capital and large enterprises. In the next period of time, in order to make the industry chain run as quickly as possible, these products are likely to show a downward trend in prices under competition or subsidy policies. More and more logistics companies can apply hardware products.
+While conquering hardware costs, some easier-to-deploy software solutions will also better integrate with the logistics industry. Like using face recognition to unlock the courier collection counter, or using OCR technology to identify documents. When AI companies are focusing on implanting their technology into more application functional scenarios, these AI technologies that do not require companies to pay too much and can enhance the user experience from the details are likely to be the first two parties to contact. An opportunity.
+Especially when all industries and industries are facing labor shortage, AI technology in the logistics field can be reused after cutting, such as takeaway distribution, port dispatching, etc., and can also enjoy the technological achievements in the logistics field. Therefore, whether it is the logistics company itself or the technical service company, the investment in this scenario will continue to increase, and even one day we see that some original logistics companies suddenly turned into technical service providers for logistics companies without any accident.
+In short, in the process of combining AI with the physical world, logistics will definitely become one of the most readable chapters, but it requires readers to wait patiently.
+
+
+
+
+
+
+
+
+6. Can AI make us immortal?
+
+Imagine this situation:
+A flying disaster has pushed you young and vigorous to an irreversible end. Modern medicine is powerless in the face of trauma, and you have only a handful of time left before you can tell others.
+However, the situation is not desperate.
+At that time, AI technology could already extract human consciousness, upload it to the cloud, and continue it in digital form. To be more straightforward, even if the extinction of the physical body is unavoidable, the "digital survival in the narrow sense" ", Within reach.
+However, this brings us to another intriguing question:
+Would you choose to get rid of the flesh of the flesh, become the digital ghost, and move towards eternal life in the virtual world created by AI?
+One
+If it is possible to save memories, re-read, and even communicate through unnatural means, does that mean we have achieved eternal life in form?
+Most readers should not be unfamiliar with this topic-the numerous science fiction classics derived from it are not mentioned for the time being, and the mainstream culture has already agreed on the value of this topic: the 1999 college entrance examination essay "If Memory "Portable", most people should still have the impression.
+
+Not only that, with the advancement of science and technology, this fantasy technology that once only stayed in the blueprint stage has become closer and closer to reality:
+Not long ago, Andrew Kaplan, a 78-year-old American writer, announced that he would save his memory in the cloud in digital form with the assistance of AI; if all goes well, future generations can also develop with themselves through Alexa Dialogue and communication-To put it more succinctly, that is, Andrew Kaplan used his memory (perhaps also including the sound source library) data to customize a "family-specific" Siri.
+
+"My parents have been dead for decades, but I find myself still thinking," Oh, I really want to ask my parents for some advice, or just to get some comfort, "and I think this impulse will never go away "I have a son in his 30s and hope that one day this will have some value for him and his children."
+In Kaplan's view, the fundamental purpose of this decision is not to pursue "eternal life", he just wants to leave a little memory for the family, which is essentially no different from family albums, videos, and even letter cards. What ethical troubles are there.
+That being said, but in the eyes of most people who eat melons, Kaplan's behavior is clearly beyond the line:
+"Recently, a foreign company has invented an artificial intelligence technology. When your lover dies, you can choose to leave the memory of the TA to the AI. Since then, you can chat with this AI at any time, just like your lover. Always by your side. Andrew Kaplan, 78, an American writer, has chosen to use AI technology to save his memory to the cloud, becoming the first human to do this. So if it is you, your loved one dies Will you leave the memories of TA to the AI? "
+Variety show "Amazing Bizarre" bravely challenged this issue of balancing technology and philosophy.
+
+"Every time I feel 'this is just a program', I will feel 'I lost a person' more deeply. And the problem is not just that it cannot be replaced-AI and us are two different sets of intelligence It is very clever in some aspects, but it does not have the nicks left on us by the evolutionary history of hundreds of millions of years, it has no biological intuition and instinct, it does not understand the small emotions of people, it does not understand that people suddenly want to hug Impulse, it does not understand the words, intonations, expressions that are the most relevant to love, it does not understand. It can play all the roles of the world through its extraordinary intelligence, but it only You can't play alone. "
+The speech of player Zhan Qingyun was the highlight of this period of "Amazing Story".
+
+However, whether we agree or not, today's front-end technology field, countless front-end technologies of "AI + memory = immortal" have emerged one after another:
+
+In the middle of this year, Elon Musk announced the first product of its neuroscience company Neuralink: a brain-computer interface module that is close to being practical. According to Musk, as soon as next year, we can directly add flying leads to the brain to perform more complex operations through implanted electrodes. Not to mention, "memory extraction + digital save upload", I am afraid it will be turned into reality first.
+The wheels of technology rolled in and engulfed us all. Facing the unstoppable wave of iterations, where should we go from here?
+Are there more acceptable compromises for the overwhelmed public?
+two
+Turning a living person into a program, a piece of code that can be seen but not heard, even if it can substantially extend the "save period", it is still difficult to accept it.
+From another perspective, if we keep the physical form of human beings, and use artificially manufactured "accessories" to continuously repair and replace them to extend the "life" of the whole body, will it be easier to be recognized?
+In fact, from the first true science fiction "Frankenstein" to the renaissance of cyberpunk sci-fi works nowadays, using artificial intervention and even artificial parts to replace the "natural human" native organs , So as to achieve the ultimate goal of "controlling life", has long been the standard default routine.
+In Cyberpunk's originator, Neural Wave Rover, we can easily find a complete set of high-tech human body transformation examples-rich people pursuing "original ecology" can use various biological means to maintain youth; lack of arms Poor ghosts who have few legs but no money can take mechanical prosthetics from military surplus materials. As for the young generation of frivolity, naturally there are various gaudy plugs to toss their bodies. In a nutshell, the most basic market laws have not changed at all, which is reassuring.
+
+Therefore, as long as the desired effect is achieved, our acceptance of "physical transformation" is obviously much higher than expected-after all, tossing the body with organic and inorganic fillers and ink and needle tips is one of the traditional arts of human beings. First, our next step is to upgrade these classic crafts with high-tech components.
+It is particularly worth mentioning that, in terms of research and development and control of mechanical prosthetics, we have indeed made many remarkable breakthroughs in recent years:
+This fall, researchers from the Federal Institute of Technology in Lausanne, Switzerland, combined the theories of neuroengineering and robotics to create a new method of controlling mechanical prostheses. Using AI, the wearer can flexibly control each finger of the prosthetic, achieving unprecedented results. Operating accuracy.
+In simple terms, this control solution collects and decodes the user's motor nerve signals, then uses machine learning to understand the parties' movement intentions, and combines the force feedback signals of the prosthetic sensors when grasping the object to finally achieve accurate limb control ——To be more popular, it is to use AI to coordinate the signal data of the entire control system, combined with the model trained by the wearer, so that the grip of the mechanical prosthetic becomes more natural and flexible.
+
+Although still in the experimental stage, this set of artificial limb control schemes incorporating artificial intelligence has achieved success in the experiments of 3 amputees plus 7 limbs, and the distance from practicality is not as far away as imagined. Not only that, this "sensor + AI" research and development idea can also be applied in the design field of other artificial organs-from mechanical prosthetic eyes to artificial hearts, and even including various subcutaneous implantable drug delivery devices. Examples come in handy.
+As a result, it seems that a new way of eternal life has been illuminated in front of us. But before we set out on the road, we need to confirm one last small question:
+In the process of continuous self-transformation to eternal life, do we need to draw a clear line to determine whether we are "humans"?
+If this is not necessary, if we replace all organs, including the brain, with mechanical devices, what is the difference between the situation we face in the end and the "digital uploading of memories to the cloud to use AI forever"?
+If you realize this is necessary, where should the boundaries stay?
+"Just the brain?"
+Seems like a good idea. At least in "Dream Dream" (that is, the original comic of the movie "Alita: Battle Angel"), the limit of the physical transformation of the surviving ground residents is to preserve the brain and spine-"Let our containers of consciousness maintain their original ecology "This mentality is easy to understand.
+However, if it is acceptable that "all organs except the brain are replaced", is it really necessary to "maintain the basic physical form of human beings"?
+Imagine if the fragile brain was kept in a secure container, connected to the network through a brain-computer interface, and manipulating 100% of the artificial body in the cloud to "live" in reality, would this be our ideal ultimate form?
+
+If we go further, we can directly transmit the compiled electrical signals to the brain stored in the secure container through the brain-computer interface, so that the "brain in the cylinder" will create the illusion of "living in reality" in the digital virtual world. Can it be accepted?
+One hundred steps back, from a biological perspective, our brains are not immortal. If the principle of "maintaining the original ecology of the brain" is not wavered, then eternal life is bound to be out of reach.
+In the final analysis, peeling off the skin of the topic of "eternal life through the transformation of the human body," we can see a kernel of classic philosophical argument:
+"What is human?"
+
+three
+
+"Knowing yourself!"
+
+This is an inscription from the ancient Greek temple of Delphi and the motto of Socrates.
+So how do we define "human"?
+First of all, there is no doubt that humans are imperfect creatures-even from a physiological perspective, this set of upright bodies with considerable brain capacity does have many advantages, but in the natural environment, the shortcomings of survival are still obvious. It is for this reason that we will make tools to transform nature and create an artificial environment suitable for reproduction. From the beginning, "compliance with nature" has not been the main theme of human civilization, which must be emphasized.
+Secondly, it is precisely because human nature is not "perfect" that we favor the concepts that only exist under ideal conditions-the so-called "eternal life" is also in this interval:
+As early as around 2000 BC, the "Gilgamesh Epic" of Mesopotamian civilization recorded the story of the pursuit of eternal life in the Sumerian era-it is intriguing that in this story, as a demigod Although Gilgamesh received the key props related to eternal life, he failed to stay until the last wish to achieve eternal life.
+In addition to these legends that exist in the classics, in real history, examples of the pursuit of eternal life are countless:
+Everyone knows the story of Qin Shihuang sending Xu Fu to find immortality.
+
+From the alchemy of the east to the alchemy of the west, mystics have invariably believed that it is not impossible to achieve eternal life on the physical level. The key lies in the mysterious element represented by the "philosopher's stone" and hiding the mystery of eternal life;
+After entering the era of industrialization, the mighty electricity seemed to be omnipotent, and it became a new key to romantic life in the pen of romantics;
+As for the information age, what efforts have we made in this direction-we have already seen above, of course, this is still just the tip of the iceberg.
+
+In any case, whether from the historical development trend or the iterative rate of modern technology, with the assistance of artificial intelligence, the "immortal life" in the real sense is indeed getting closer and closer-whether it is replacing natural organs with artificial components The "acquired upgrade" solution, or the "digital survival" solution through quantum computer simulation consciousness ("AI + memory" is only an initial prototype in comparison), the "eternal life" realized by technology has indeed been illuminated on the horizon Dawn came.
+However, at this stage that dawn has not yet arrived, in the face of the already clearly identifiable "eternal life", the unnecessarily worrying reappears:
+It's like the ship of Theseus. If the constituent elements of human beings are constantly replaced, will the individuals who finally reach the other side of eternal life be the original "human beings"?
+of course not.
+But, what about it?
+
+Just a few days ago, Benjamin Mayn, a molecular biologist from CSIRO (Commonwealth Scientific and Industrial Research Organisation) in Australia, sorted out the biological genetic map and found that the "natural" life span of humans is only 38 years old-as for our actual life expectancy, How much we all know.
+After all, since the birth of civilization, continuous development of technology to increase the average life span has become the ultimate mission of human beings engraved on DNA. Therefore, whether it is the transformation of the flesh or the abandonment of biological forms into digital immortality, it is a reasonable choice driven by our instincts. Since human nature is so, is it not the question of "rationality" and "orthodoxness" to be inverted?
+As the so-called "God doesn't do it, man does it", why follow the choice of free will to change the form to pursue eternal life?
+
+
+
+
+
+
+
+7. New Development Opportunities for Urban AI
+
+Speaking of the changes that AI has brought to cities, I probably have a bit of a say.
+I live in Tianjin Eco-City. This place is basically an island, and you have to cross a bridge every day when you go out. But obviously everyone went out at the same time, so the bridge was staged on time at 8 o'clock in the morning. The original traffic jam for half an hour in the morning has become a conditioned reflex, but after this summer, the traffic jam time has been significantly reduced, and it is almost always not blocked.
+Later, I discovered that the traffic lights at the main intersections that turned out to be eco-city were taken over by AI. In the morning, the traffic is on the main road, and there are basically no people on the branch line. In addition, the smart camera can see the actual traffic length and adjust the traffic light time.
+And the place where I travel the most is Shenzhen. Anyone who has been to Shenzhen this year should be impressed by the changes in Bao'an Airport. The obvious change is that both check-in and security checks can be used to brush your face. Frequent flyers can take the fast track, and the sourness is dizzying. The invisible change is that the AI ​​algorithm is used for airport allocation, and the docking rate of corridors has been greatly improved. There is basically no need to worry about flying to Shenzhen when you fly to Shenzhen. Of course, it is difficult to say when flying back to Tianjin ... and all of this is also due to AI.
+If you live in first- and second-tier cities and are concerned about the infrastructure and municipal news around you, it is not difficult to find that AI has been integrated into China's urban life in 2019. Taking a step back 10,000 steps, you have always experienced brushing your face at high-speed rail stations and paying at your convenience store.
+Just in the past 2019, AI has really changed urban life and also changed the already huge market of "smart cities". If you want to record changes in urban AI, you may need to start with a concept.
+
+Smart cities and "AI + cities": issues are intertwined
+By 2017, more than 500 cities and regions in China have clearly proposed the construction of smart cities, and there are more than 3,000 smart city projects in the country. However, if you think about it differently, you will find that the AI ​​market has just opened in 2017, and the combination of AI and cities is still at the concept stage.
+That's right, these more than 3,000 projects have basically nothing to do with AI technology.
+How could cities be wise without artificial intelligence? This goes back to that distant 2008, when IBM proposed the "Smart Planet" plan. It sounds like 2008 is not too far away, but you should know that it's all in the 1920s. It's like we recalled things from the 1980s in the 21st century, it's really old.
+Although the so-called smart planet includes all aspects of technology, it generally collects data in urban transportation, water conservancy, construction and other fields, and then builds a data visualization system. IBM's main idea at that time was to sell IT infrastructure to the government after the corporate IT market became saturated.
+This incident includes the smart city projects that followed, which should essentially be called "information cities." Because they just aggregate the city information and then present it to the managers, making them more "smart". This idea is certainly valuable, but it does not make the city itself smarter. Of course, future smart city projects will be even more dazzling. It seems that as long as the main body of the city is a project called a smart city, even a public account for a unit is also called a smart city.
+
+Things didn't change until AI arrived. Whether it's brushing your face into the station or catching a fugitive at a concert with a smart camera. These simplest AI + city projects have at least played the role of using machines to replace manual work. In other words, until then, cities can rely on machines to provide intelligence, or intelligence.
+However, smart cities have been under construction for more than ten years, and it is not appropriate for people to change their names. Another smart city project is often the basic condition for the combination of AI and urban scenes, because without data collection and information collation, AI cannot function. This makes AI's position in the smart city construction system a bit awkward: on the one hand, the government and the people have become accustomed to smart city projects, and it is difficult to notice that smart cities have undergone new changes due to AI; on the other hand, AI + cities themselves It's also complicated, it's a collection of countless different items. For example, environmental pollution monitoring and urban intelligent security are machine vision projects based on identification capabilities; urban rail management and airport intelligence are data-based projects; intelligent water affairs, electricity, and heating are essentially industrial intelligence project.
+Therefore, the concepts of smart cities, AI + cities, and urban intelligence often become intricate word games today, and many companies hide in the chaotic market. This ambiguity between smart cities and AI cities makes it difficult for the industrial chain and capital markets to judge the value and potential of urban AI, and also allows the initiative of urban AI to be placed in the already mature smart city player base. It is difficult to see entrepreneurial companies entering this market.
+Smart cities, smart cities, urban brains, and AI cities. If you find that you ca n’t tell the difference between these concepts, then you have found the biggest problem in the development trajectory of urban AI today: Fang, it is likely that they can't tell the difference.
+
+The "AI + City" is beginning to prosper
+Although the overall situation today is smart city and smart city projects that do not involve AI capabilities; AI capabilities are added to urban informatization projects; and AI projects are dominated by urban projects. Several kinds of logic have developed independently, in the absence of a unified standard Sing and play. However, we still have to see that on the clue of AI and urban integration, 2019 has brought many surprises.
+These surprises mainly come from the fact that earlier the combination of AI and cities was generally limited to the field of transportation. The so-called urban brain often finds that the AI ​​in a few blocks or a small block is involved in traffic light control. Of course, this is not to say that the value of traffic lights controlled by AI is very small, but compared with the infrastructure and service capabilities of the entire city, the control of traffic lights by AI is just a single point and cannot represent the intelligence of the entire city.
+
+In the second half of 2018, the overall industrial AI solution began to be on the agenda. By 2019, we can see the appearance of AI in all areas of Chinese cities. Although the overall intelligence of the city conceived in science fiction movies is still quite far away, we may be able to call this cycle the prosperity of "AI + City One".
+For example, many local meteorological bureaus represented by Beijing Meteorological Bureau and Chongqing Meteorological Bureau have built AI + meteorological systems in 2019. Through the deep learning system to improve the accuracy of weather forecast in a short time. This year we saw that some meteorological address disasters in the southwestern region completed the rapid warning within minutes, and the AI ​​is behind it.
+For another example, the use of smart camera systems to actively identify violations of laws and regulations and environmental pollution has become a common measure in many cities. Suzhou Water Conservancy Bureau has started to use machine vision cameras to monitor waterway pollution and improve its environmental protection response. In Ningbo, the smart urban management system can already use AI to identify problems such as illegal parking, random piles of materials, illegal operations, etc., to capture illegal acts in the first time and determine the responsible party. The fire protection system can also use the AI ​​camera and fire alarm equipment to predict the fire situation and carry out intelligent fire rescue.
+Many areas that belong to cities are actually industrial AI issues. Such as heating, power generation, water system monitoring and so on. Among these systems, industrial model prediction and AI quality inspection capabilities have begun to improve energy efficiency and ensure facility safety.
+In the field of urban transportation, in addition to AI traffic lights control, intelligent monitoring of street traffic, intelligent bus stations, and intelligent high-speed, today have infiltrated AI capabilities. Construction of autonomous driving and vehicle-road collaboration systems has also begun in some areas.
+After all, the city is a spatiotemporal complex with a large number of functions, facilities, and labor. Although AI + cities lack uniform standards and industry awareness. But every detail in the city is a big market for the AI ​​supply chain. Making AI in every city corner is already a project worth fighting for several years.
+
+
+Revival of the city's overall intelligence
+In 2020, there will obviously be some progress in urban AI propositions. But objectively speaking, this progress will mainly come from the cloud service market going deeper into urban scenes and government markets, and to provide more specialized and targeted AI overall solutions for this. In addition, the Internet of Things market is approaching industry maturity and standardization, which will allow a large number of urban intelligence needs to acquire hardware, which also means new development opportunities for urban AI.
+In other words, urban AI in 2020 is more likely to experience quantitative development rather than the sudden arrival of qualitative change. But we can still see that the overall thinking about the construction of smart cities is changing. The overall intelligence of the city is becoming a new hot spot on the discussion table.
+In the earlier development process of "Government Cloud" and the mobile government channel, the industry will soon discover such a problem: each government department individually assumes a system and develops its own private cloud system. Essentially, there will be developed a wide range of chimney systems. Data between various government departments and institutions will not be accessible, the systems will not be compatible, and service capabilities will exist independently. On the one hand, it will increase the learning and use burden of the masses, on the other hand, it is not conducive to the long-term development and overall planning of the government affairs cloud.
+In the development of urban AI systems, chimney systems may soon appear. Water conservancy AI and logistics AI are not compatible with each other, transportation AI and aviation AI are not connected with each other, and even regions, units and schools in the same city have set up their own AI systems.
+
+The problem with this model is that the development of AI is inseparable from the rolling input and reuse of data, and urban data often interact with each other. For example, the flow data of shopping malls, schools, and stadiums directly affects the flow data of urban transportation networks and rail transit; the intelligent energy conservation of residential areas and factories can directly affect the intelligent management of urban energy.
+Based on this prediction, the overall intelligence of the city should be the core direction of the future. Only by allowing each department of the city to communicate with each other and give each other intelligent judgment and intelligent decision-making, can they move towards a true "urban brain".
+From the current perspective, there are three opportunities for urban AI to move towards overall urban intelligence:
+1. Unify the AI ​​technology standards around the technology base provided by the enterprise. But this requires a company's ecological capacity and market share to be large enough.
+2. Based on the unified IoT standard and access network, build an integrated urban AI channel from the hardware level.
+3. In the 5G era, corporate private networks and government affairs private networks may rise. Under the conditions of network iteration, data circulation will accelerate, and this opportunity may create new opportunities for the intelligent development of cities.
+But in the final analysis, urban AI is still part of the urban network, cloud computing, and big data systems, and it needs to rely on the overall intelligent development decision of the city. City intelligence is a veritable number one project. Good decision-making ideas are the biggest driving force for the development of city intelligence.
+At the 2019 Barcelona Global Smart City Conference, Jiangxi Yingtan won the Global Smart City Digital Transformation Award. This place we rarely mention, through the embrace and development of the Internet of Things industry, and the deep integration of urban infrastructure and Internet of Things technology, even went to the international podium. It is not difficult to see that the integration of urban AI and technology is not a patent for economic-level cities. Instead, it may be “a blank piece of paper for painting”, which will bring more new development opportunities to small and medium cities.
+These days, the concept of the "China Dividend" is on fire. It is not easy to say how many industries can obtain the Chinese Dividend. But in the field of urban AI, the Chinese dividend does exist.
+
+
+
+
+
+
+
+
+8. Foreigners cannot understand "Chinese story" without this "Chinese AI"
+
+Chinese cultural IP "going overseas" has suddenly become a hot topic.
+From discussing "Is Li Ziyi's success on Youtube a cultural output", to the recently broadcast "Qing Yu Nian" updated simultaneously with English subtitles on overseas platforms, countless overseas audiences, and even netizens other than English, Leave a message asking for subtitles in other languages ​​...
+With the prosperity of China's cultural market and the popularity of the Internet and smart phones, China's original IP has more influence overseas.
+At present, literature is the largest source of IP for Chinese culture to "go overseas". According to the May 2019 "Chinese Cultural Symbols for the New Era-2018-2019 Cultural IP Evaluation Report", among the 74 IPs selected, literature Original IP accounts for more than half. In literature original IP, Internet literature is the main body.
+Netizens even compared Chinese online literature to American Hollywood blockbusters, Japanese anime and Korean TV series as "the world's four major cultural wonders."
+The first time that Chinese web articles went out to sea can be traced back to about 2001. At that time, Southeast Asia became an important battlefield for going out to sea due to its unique geographical advantages and cultural similarities.
+Six years later, the foreign language publishing license was launched, which began the prelude to the 1.0 era of Internet literature going abroad. In 2017, Webnovel, a subsidiary of the Reading Group, went online, ushering in the 2.0 digital era of web publishing.
+In cross-cultural communication and communication, language is the first priority.
+Despite the strong momentum of overseas web texts, due to the limited talents and speed of translation of web texts, as well as the uneven level of translation, the scale of web texts is still in its infancy.
+In fact, apart from the compliance of classic literary translations with "Sindaya", or translation skills and strategies that need to be mastered in business and diplomatic settings. In daily life, whether it is a drama or web reading, we rely more on the real-time and accuracy of the language translation and the ability to output in batches.
+,
+Make professional translation easier and more popular
+The development of the Internet and AI technology is trying to speed up the efficiency of network texts going overseas, making it possible for "high-quality batches" to go overseas.
+Recently, Starting Point International, a subsidiary of Reading Articles, has launched 30 hot-selling IP web articles to the market through "AI translation". The NLP technology provider behind it is a domestic entrepreneur who has been in the field of artificial intelligence images and languages ​​for many years. The company Caiyun Technology.
+More users know Caiyun Technology through the app "Caiyun Weather".
+In 2014, it became the first mobile phone application in China to achieve accurate short-term weather forecasting with a combination of man-machine programming, and it is also the only minute in the world that supports the United States, Japan, South Korea, Europe and other major developed countries and regions in the world. Weather Forecast App.
+While Caiyun Weather ushered in the market word of mouth for the team, in 2016, the founder and CEO Yuan Xingyuan set his sights on another branch of artificial intelligence-the natural language processing he has been optimistic about.
+In less than a year, in early 2017, Caiyun Xiaoyi App was officially launched.
+"When we explored in the early stage, we found that the real-time translation software for the C-end was very ordinary. One was that the translation speed was slow. In addition, users continued to speak for a long period of time and the machine would become stuck. As a 'Chinese to English' Software, they can't translate languages ​​yet. If I speak English, it's 'suffocated,' "Yuan Xingyuan said." None of the important functions that translation software needs. "
+The small translation is not only the first true interpretation of "speaking while translating, without pause", but also improving the accuracy and use experience of translation in more scenarios.
+At the end of 17th, Caiyun Xiaoyi launched version 2.0, which innovatively implemented the bilingual translation of web pages, helping people who want to improve reading efficiency and feel less comfortable with pure machine translation to browse the Internet more happily.
+
+Product innovations such as bilingual bilingual web page translation cannot do without the support of translation quality.
+
+We can see that Caiyun Xiaoyi not only understands long sentences more easily in context, but also speaks more everyday.
+
+Yuan Xingyuan told Lieyun.com that the problem that AI translators need to overcome is to maintain the reasonableness of the context in the case of long sentences. "The more complex the sentence, the more obvious our advantages."
+Traditional machine translation is mainly based on statistical machine translation. Using this method is equivalent to entering the database for parsing when you don't know the words. Although there is a certain degree of accuracy, it often only translates the corresponding words, and lacks the overall understanding of the sentence, which affects the fluency of translation.
+The small translation uses a deep neural network sequence-to-sequence mapping technology, similar to the neural network responsible for compiling the sentence to be expressed into a set of features, and then another neural network decodes these features and restores them into text. In this way, the sentence is guaranteed in context understanding and full text accuracy.
+Although online translation dictionaries or related software have appeared on the market in the early days of Internet development, and machine translation technology capabilities have also been gradually improved, for a long time, translation tasks such as contract documents of enterprises and institutions, overseas film and television dramas, and web articles have still been Scattered among large and small translation companies, part-time translators who earn extra money.
+The needs of more C-side users and SMEs still cannot be met. Data from the China Translation Association shows that the output value of the Chinese language industry in 2017 was about 348.5 billion yuan, and the average growth rate from 2011 to 2016 was close to 19.7%.
+
+Facing the huge market demand, Caiyun Xiaoyi released an API open platform in July 2018-it can support 6 languages: Chinese, Japanese, English, French, and Russian, and provide document translation, pure documentation including DOC / PDF / PPT, etc. Various translation services such as text translation, bilingual webpage translation translation, voice simultaneous interpretation, real-time translation and generation of video subtitles, and news translation.
+Through powerful data distribution capabilities, the tentacles of artificial intelligence translation have been extended to more ordinary people's living spaces, making cross-language communication more convenient and popular.
+
+Enjoy "Zero Jet" retrospective with AI translation
+
+The cooperation with the Reading Group is an opportunity for Caiyun Xiaoyi AI Translator to help network articles go abroad.
+Through corpus learning, Xiaoyi's algorithm engineer optimized the AI ​​in a targeted manner. In this way, AI can not only accurately identify the proper nouns and personal names in the article, ensure the consistency of these words, but also identify the objects referred to by various pronouns to reduce the possible oolong phenomenon in translation.
+Interestingly, taking into account different types of themes and writing styles such as fantasy and romance, Caiyun Xiaoyi has also trained in "translation style", which enables personalized translation according to the selected "type".
+According to Yuan Xingyuan, under the circumstances that the quality of human translation is comparable to human translation, the translation speed can be increased a thousand times. The speed of manual translation is about one thousand words per hour, and the cost is about 200 yuan / thousand words. The small translation of Caiyun can translate at least one million words per hour, which greatly frees the time and manpower required for manual translation.
+Under the blessing of "AI Translation" by Caiyun Xiaoyi, the translation and the original work can be updated almost simultaneously, allowing overseas readers to achieve "zero-time" tracing.
+
+In order to further improve the translation accuracy of vocabulary in some specific contexts or cultures, Webnovel's AI translation section also has a "user revised translation" function-this is also the only product in all translation software on the market that can implement real-time revision functions. .
+Users can manually correct and correct AI translations that are not accurate enough during the reading process. These revised contents will further feed back the translation model of Caiyun Xiaoyi to optimize the effect of machine translation.
+
+
+In addition to web articles, the popularity of Li Zizhen and Qing Yunian mentioned at the beginning of this article are all IP of video and film works.
+Caiyun Technology also started subtitle translation cooperation with the third season of the science fiction "Three-body" low-poly pixel style animation adaptation of "My Three-body" in 2019.
+
+In the past, from dictation, translation to proofreading, production timeline ... The translation of a video was done by a number of subtitler collaborations. Through Caiyun's small translation, these processes are completed by one-click listening and translation. Later, the manual can be slightly improved in details.
+In terms of human translation and AI translation, to many people, although AI translation is becoming more and more technically advanced, it still cannot replace human translation's understanding of cultural and sentence backgrounds and knowledge deposition.
+In fact, there is no absolute conflict between the two translation methods.
+With the enrichment of corpora and the evolution of machine learning capabilities, AI translation will continue to improve the accuracy of translation through absorption and learning, and further improve the business efficiency of artificial translation-for the existing translation talents that cannot meet the rapidly growing huge market In terms of contradictory needs, AI is precisely the opportunity to reform and upgrade translation from the "manual work" of thousands of years.
+In recent years, domestic and foreign technology giants such as Baidu, HKUST Xunfei, NetEase, Sogou, and foreign countries such as Google, Facebook, and Microsoft have frequently appeared in the translation market, showing their commercial potential. For Caiyun Technology, translation is only the first step in NLP's exploration. While doing better AI translation, their eyes are also keeping an eye on the application of more cutting-edge technologies in the NLP field, such as machine poem writing, intelligent question answering, and so on.
+"We believe that the breakthrough in the next field of NLP may lie in a new dialogue system, from which the next generation of UI will be born. Therefore, through the 'training' in natural language technology, we hope that we can pick the 'crown pearl' in the future. "Yuan Xingyuan said.
+Regardless of Caiyun Weather or Caiyun's translation, Caiyun Technology's products are aimed at C-end users. In Yuan Xingyuan's view, "ToC is a test field that exists all the time. Here, technology can obtain the effect of amplifiers."
+This is also the direct reason for the giants' willingness to take root in this field. By strengthening the moat on the AI ​​translation track, it is possible to deal with the "knife and fire" when AI applications break out.
+1578304058496228.jpg
+In the Bible, the Old Testament, the Tower of Babel is a towering tower that humans have united to build their reputation. In order to stop human plans, God split the language into multiple forms that prevented them from communicating. Human plans have failed, and things have fallen apart ever since.
+Although tall towers cannot be built, the desire to achieve free and accessible conversation for all humanity has never disappeared.
+If it is said that different languages ​​draw a gap between people, AI translation is the bridge that bridges and transcends this gap.
+Especially today, the culture of the sea has reached a new stage. Cultural IP has become a carrier of Chinese stories and spread overseas. How to quickly occupy the market and win users, find more innovations in the way of telling Chinese stories, and test the wisdom of Pathfinders.
+
+
+
+
+
+
+
+9. Making "Space Magic": Tencent Multimedia Lab for the Future
+
+For the 80s and 90s, including the 00s, many "moments to witness miracles" in life were spent with a national product of Tencent. For example, for the first time, I sent out the phrase "How are you?" Fit, and realize the wonderful connection between the digital world and the real world.
+Technology has amazing changes like magic in the real world, which is often the case. Taking a product as an opportunity to change the life of a user, a group or even a generation.
+
+And the magic maker never rests. On December 25, 2019, the cloud video conferencing product "Tencent Conference" was officially released, and behind it was the mysterious Tencent Multimedia Lab.
+Today we may start from the magic of the Tencent Conference and explore the magic factory behind it.
+
+Remote conference: the biggest shortcoming of mobile office
+Speaking of remote meetings, it is estimated that our readers of "Social Animals" are already very familiar. Today, distributed office and mobile office are very common. It is very common to open the WeChat group voice communication work or open the QQ group video for a remote meeting at any time.
+However, the experience of remote conferences was poorly visible to everyone in the past-call delays are very common, and even more disturbing is that if the environment is noisy, it will affect everyone's experience. In particular, the radio equipment of many laptop computers is very close to the keyboard. When recording meetings, it is often necessary to temporarily turn off the microphone to keep it from disturbing others. Frequent situations like face-to-face meetings, such as moving drinking glasses and one or two coughs, can become a noise that interferes with meetings during remote calls. Not to mention the embarrassment of facing the camera during a video conference.
+
+
+This situation is not insurmountable. Many software and hardware manufacturers will also choose to use noise reduction algorithms and compression algorithms to optimize the network calling experience. However, in the conference scene, it is difficult to find a relatively ideal unified solution. In particular, how to optimize the near-noise interference noise such as keyboard typing, low-latency maintenance for multi-person calls, and optimization of the combination of video and audio streams often face problems in mobile conference scenarios. It is difficult for users to find alternatives without targeted solutions.
+The product of Tencent Conference is an amazing "space magic" for this scene.
+
+Space Magic: Tencent Multimedia Lab
+How to "change" colleagues to you?
+The magic of Tencent conference can be divided into four parts: audio and video, China Unicom, evaluation and network.
+In terms of audio and video, Tencent Multimedia Lab not only provides video beauty algorithms, but also includes common environmental noises such as station noise and wind and rain noise, as well as common conference noises such as coughing sounds, keyboard sounds, and water cup sounds. Through fixed-point noise reduction processing, the noise is stripped to restore clear human voice. At the same time, Tencent Multimedia Lab has also opened up a variety of voice call technologies such as VoIP, PSTN, etc., applying audio over-scoring algorithms in the widest possible bandwidth and sampling rate, and improving voice quality through technical processing. Not only that, the Multimedia Lab also launched a voice quality operation and maintenance solution for real network scenarios. In addition to providing good call results, this solution also helps users better locate noise and noise, and guarantees the call effect.
+
+Behind audio and video capabilities and connectivity capabilities, an important support is the ability to evaluate. In most cases, the clarity of a remote conference call can only be determined by the user. This is very detrimental to the industrial development of conference calls. The Tencent Multimedia Lab has professional audio and video laboratories and test equipment. It uses hundreds of indicators that meet ITU / 3GPP / AVS and other domestic and foreign standards to evaluate call quality. The Multimedia Lab has also established a large-scale audio and video subjective quality database. Based on this, it has developed an evaluation algorithm that can be deployed in business lines. In this way, not only can there be measurement standards in research and development, but also the quality of user experience can be monitored. Finally, in response to the situation that the multi-party call may face different network connection status of various parties, Tencent Multimedia Lab also applies an intelligent network detection algorithm to cover multiple network types and provide high-quality call services in a complex network environment.
+In addition, Tencent meetings also provide functions such as one-click recording and cloud encrypted storage, making the product form more complete, including the entire cycle of meeting progress and meeting record keeping.
+As a result, users can enjoy the same calling experience as if they were in a closed conference room even on a noisy street. Technology is like magic, allowing people in the ends of the earth to communicate in the same "space".
+
+
+The magician's progression
+It can be seen from the recurring name that the "magician" that provides kinetic energy behind space magic is Tencent Multimedia Lab. Although the name is relatively new, the magician's advanced road in Tencent Multimedia Lab has started many years ago.
+Think about what was mentioned at the beginning. Many people's first "witness moments to witness the miracle" was chatting with friends and relatives far away through QQ. But soon this communication mode evolved from text to voice and video. That is to say, since a long time ago, Tencent has been dealing with technical issues of voice and video conversations.
+Around 2011, when mobile-end products gradually became popular, the QQ voice call experience, which is very close to phone calls, ushered in a wider demand. So QQ established an audio and video center, and began to solve the problem of mobile voice and video functions. In particular, the adaptability of weak networks and the rich types of mobile terminals are issues that must be resolved before providing high-quality audio and video services.
+
+From this moment, the technology base of Tencent Multimedia Lab began to accelerate accumulation. But it is also born because of solving the demand of QQ products at the beginning, making the technology of Tencent Multimedia Lab and QQ business deeply coupled. But in 2014, with the improvement and popularization of hardware capabilities, voice and video services began to appear in more products-K song, live broadcast, games ... Especially like live broadcast, K song, etc. originated from model innovation and focused on operations Products are often launched first before technology optimization. At this time, these products are longing for technologies that have achieved results in application scenarios and can be combined with their own business scenarios as soon as possible. Tencent itself started to enter these areas through layout investment and establishment of new businesses. What is urgently needed at this time is the decoupling between technology and products, and the improvement of the SDK enables the technology to be reused and bring value to a wider space.
+So in 2016, the Tencent audio and video laboratory was formally independent, and eventually grew into the Tencent multimedia laboratory we see today. From the initial single-digit number, to a team of more than 100 people worldwide, a strong talent pool combined with nearly two decades of accumulation, and countless technical alchemies from real scenes, everything is for this magician Accumulated ample toolbox.
+
+From magician to the factory that makes magic
+We can also see one or two from this product of Tencent Conference.
+In addition to voice algorithms such as noise reduction and audio super-scoring, Tencent Multimedia Lab's powerful codec capabilities can be seen in this product.
+For example, in common screen sharing scenarios of remote conferences, details such as screen freezes and text often appear blurry. Tencent Multimedia Lab has made a lot of optimizations for screen sharing scenarios. In the aspect of encoding, we launched a screen content encoder TSE specifically for screen content, and added screen content encoding tools to improve the encoding efficiency. As for the problem of blurred text, the Tencent Multimedia Lab adopted YUV444 encoding, which solved the quality loss caused by downsampling of chrominance components.
+
+In terms of real-time audio and video capabilities, in addition to rich scene experience, Tencent Lab also keeps track of the industry's advanced academic achievements. Just like the common demand for congestion control, Tencent Lab has investigated various academic circles. In combination with the industry's latest congestion control algorithm, combined with its accumulated scene experience, a new real-time congestion control algorithm is proposed, which can quickly give reliable bandwidth predictions in different network scenarios, so that operators can make various preparations in real time.
+Not only that, Tencent Multimedia Lab also has a strong accumulation in audio and video quality assessment and interactive immersive media. Objective audio and video quality assessment algorithms that can achieve end-to-end audio and video content quality assessment, as well as new interactive media interaction methods, are capabilities that Tencent Multimedia Labs has begun to export to the industrial world.
+In the magician's hat, there are endless ribbons, flying white pigeons and jumping rabbits. It's all about serving the world with more magic. But a magician often faces only a group of people, a theater, and a street.
+Here, we can re-examine the layout and planning of Tencent Multimedia Lab.
+Tencent's strong product genes, as well as the rich technical capabilities provided by other departments such as Youtu, AI Lab, and Security Lab, and finally adding the output port of Tencent Cloud, can allow Tencent Multimedia Lab's technology to have a more appropriate landing capability. In addition to the Tencent conference, the “Space Magic” released by the Tencent Multimedia Lab can also be seen in the products of K song, Douyu Live, and NOW Live. In an interview, the relevant person in charge of Tencent Multimedia Lab also stated that in the future, the technology of Tencent Multimedia Lab will be opened to the society as much as possible, so that more industry participants can optimize their products on this basis.
+
+From this point of view, instead of saying that the Tencent Multimedia Lab is the magician behind a certain product, it is better to say that it is a "magic factory". It is not only to surprise others with a rabbit in a hat, but to continuously produce "magic" in batches. , To make the world and state ideally connected-to make smoother live broadcasts without stuttering, to shorten the distance between strangers. Or a seamless long-distance chorus, so that family members far away can feel the joy of K song together.
+For millennials growing up on the Internet and in apartment buildings, migration, separation, and loneliness seem to be the norm in their lives. But a communication software that allows them to contact family and friends at any time, a technology that allows them to sit and talk with each other thousands of miles away, is almost a necessity of life. Eliminating the obstruction of physical space with technology is the greatest charm of this space magic, which is also what Tencent has been doing. And this magic is obviously not only owned by Tencent, but spread to the world through the clouds, like a warm snow, to warm up the coming future.
+
+
+
+
+
+
+
+
+10.AI enters the film and television industry: algorithm reengineering Li Jiaqi, Chinese opera begins to recruit AI doctors
+
+Soon after opening in 2020, the AI ​​and film and television industries are welcoming new changes.
+At the CES, Samsung showed the "artificial man" NEON project. No matter in temperament, language, movement, expression, and real life, even the hairstyle, eyes and lip details are vivid.
+This "virtual image" that appears on the screen is not uncommon, but it can make people dark about these "virtual people". Without paying any attention, you will mistakenly think that these life-sized stewardesses, commentators, yoga instructors, etc. are coming to you from the screen.
+From the fantasy world created by Hollywood blockbusters to the various "virtual figures" that appear on TV screens. Artificial intelligence-driven computer multimedia technology and three-dimensional animation technology bring many novel experiences to human beings.
+Recently, the news of "Driving in Artificial Intelligence for Drama in Chinese Drama" has broken people's imagination of film and television production. Whether it is virtual characters, simulated characters, or post-editing, special effects design, artificial intelligence is accelerating the development of the industry. From on-screen to off-screen, we are also concerned that in Hollywood, filmmakers have used AI to predict the box office of a movie.
+Film and television is an art form that realizes comprehensive visual and auditory appreciation with the purpose of screen and screen projection. With the development of artificial intelligence technology, technologies such as speech recognition and computer vision in the context of deep learning are changing the film and television industry.
+Artificial intelligence in movies is entering our world, and they will become part of our lives, such as becoming virtual news anchors, virtual receptionists, and even movie stars made by AI.
+
+The hit screen killers
+In the past year, we have been screened by the avatars behind various screens. From the "virtual man", virtual host, virtual idol displayed by Samsung at CES, even people want to re-create the next "Li Jiaqi" using AI algorithms.
+At CES, you might be shocked by Samsung's "man-made people" who are virtual characters who live on various screens and look lifelike. This dummy is from Samsung's NEON project. Samsung NEON is an artificial intelligence-driven virtual existence. The technology behind it is two STAR Labs' patented platforms: CORE R3 (responsible for appearance, intuitive reality) and SPECTRA under development (responsible for intelligence, learning, emotion and Memory).
+
+This is the "Digital Virtual Man" project launched by Samsung with great fanfare this year. The temperament, language, movements and expressions displayed by each virtual person on the screen are different, and they are very vivid and lifelike, especially the details of the eyes and lips, and basically no computer-synthesized details can be seen.
+The purpose of Samsung's manufacturing of virtual image design is to better adapt to the work of all walks of life in human society, such as financial experts, movie stars, news broadcasters, fitness coaches, hotel waiters and so on.
+
+Jobs in all walks of life can be replaced by virtual images. For example, virtual newscasters have become a reality.
+Companies such as Baidu, Sohu, HKUST Xunfei have launched "virtual moderators" for broadcasting news this year. With the help of AI technology, virtual hosts can save time and costs required for news production.
+Live bloggers don't care. HKUST Xunfei once used AI to synthesize a virtual anchor image of "Li Jiaqi". After multiple training, this "AI Li Jiaqi" can also "sell goods" in good faith. This requires the use of artificial intelligence technologies such as speech synthesis, image processing, and machine translation to enable real-time broadcast in multiple languages ​​and support automatic output from text to video.
+
+In the not-too-distant future, we may see more real virtual figures from all walks of life appear in front of us, not just virtual hosts.
+Various types of virtual animation images and virtual idols have appeared on various live broadcast websites. To organize a feast of virtual anchors with rich roles can't be simpler. In the animation anchor program, only one face of an anime character figure can be used to synthesize various facial and head motion animations.
+
+As the technology for synthesizing moving pictures has progressed, apps featuring "AI face-changing technology" have also become popular. In the film and television works, netizens turned Su Daqiang, who was so irritating in the TV series "It's Fine", changed his face with AI to become a beautiful eyebrow Wu Yanzu, or he could play the role of Huang Rong played by Zhu Yin in "The Heroes of the Condor Heroes" Replace it with Yang Mi. Face synthesis, as a branch of the highly sought after field of artificial intelligence, brings many novel experiences to human beings.
+
+Dive into the film and television industry chain
+Artificial intelligence is becoming more and more mainstream and penetrates multiple chains in the film and television industry.
+In Hollywood, filmmakers have used AI to predict movie box office.
+Recently, Warner signed a contract with artificial intelligence technology company Cinelytic to use the latter's artificial intelligence project management system. Perform predictive analysis during film planning. This system can measure the value of actors in various fields, which films are suitable for which film stars, and can calculate how many films should be launched, etc. Expected income.
+
+Warner's "Clown" swept the world's $ 1 billion and became one of the most profitable films of the year. Warner also had a lot of failed works last year, including "Godzilla: King of the Monsters", "Hell Kitchen", and "Murder".
+Although AI may not be able to predict the next Joker, it will reduce the time that movie decision makers spend on low-value, repetitive tasks, and help them make better decisions.
+In addition to Cinelytic, there are many companies doing similar jobs. Belgian startup ScriptBook can predict whether a movie will be a big hit by analyzing the script. Israeli startup Vault focuses on analyzing trailer data to predict which people are more likely to watch a feature film. Another company, Pilot, is working on a similar project that claims to "accurately predict" box office data for 18 months before the movie's release.
+During the film production process, the producer needs to make important decisions on the core elements of the film such as screenwriter, script, director and cast, and evaluate the cost, type, market, box office and audience of the film.
+For a long time, the script after adaptation or creation can become the film and television script. But now this work can be done by artificial intelligence. According to previous reports, an artificial intelligence program called "Benjamin" can write short sci-fi movie scripts. It can even write its own style of music episodes after learning 30,000 popular songs.
+Another example is IBM's artificial intelligence system Watson. After systematically learning the pictures, sounds, and creative composition of 100 horror movie trailers, it can mimic the structure of the script to help film staff make movie trailers for Fox's science fiction movie "Morgan" , Reducing production time from a period of 10 days to 1 month to 24 hours.
+Why does film and television need AI? Specifically in the entire process of film and television production, artificial intelligence plays a great role in script, editing, and special effects processing.
+The types of film and television content are very complicated, such as character scenes, natural scenes, historical scenes, imaginary scenes, etc. Based on the conventional content production methods, it still requires huge capital, labor and time costs.
+The automatic generation of scenes by AI can be regarded as a gospel for the film and television industry, which can not only improve the designer's work efficiency, but also greatly reduce the soaring production costs of the industry.
+AI is disrupting the film and television industry. Its performance is to reduce production costs, grasp the audience ’s psychology, and predict and analyze the value and quality of film and television.
+
+Talent market is waiting to be fed
+The application of artificial intelligence in film and television production has become an industry trend. At the same time, the application of AI in the film and television industry also needs to face another realistic problem-talents, whether in the early or late stages, the number of talents still cannot meet the needs of market development.
+
+At present, the talent gap in the film and television post-production industry has reached about 200,000, among which the special effects editor, column packer, and micro-film production are the most lacking. As artificial intelligence-based speech recognition, computer vision and other technologies gradually penetrate the film and television industry, fewer people have this skill.
+Most of the institutions that send this talent are universities, film and television training bases, or training institutions. Judging from the enrollment of doctoral students in drama and music by the two universities, artificial intelligence has targeted the application and research of film and television production.
+
+For the first time, China Opera recruited a PhD candidate in Drama Artificial Intelligence. The requirements for doctoral candidates for artificial intelligence include: candidates for science and engineering who have a research interest in the subject of "drama and film and television", and candidates with a cross-disciplinary background or strong interdisciplinary ability are preferred; Provide representative works (including papers, software, game development, publications, etc.) or original work results that can reflect their academic level, scientific research ability, and practical ability.
+Huang Guixiang, the producer of the artificial intelligence series documentary "Exploring Artificial Intelligence 2", once told the media that artificial intelligence is also an industry trend in the field of film and television production and stage performance. At that time, I also thought about the specific application of artificial intelligence to the production of programs. For example, we wanted to design Yang Lan's artificial virtual image, including Yang Lan's voice dubbing and other intelligence.
+Exploring the development space of artificial intelligence in the art field, the Central Academy of Drama is not the first.
+The Central Conservatory of Music has released an enrollment note for a PhD in artificial intelligence in music. The full name of the major is "Music Artificial Intelligence and Music Information Technology", which was first established by the Central Conservatory of Music. The tutor lineup includes artificial intelligence professors from Tsinghua University and Peking University. Together with the dean of the Central Conservatory of Music, a dual-mentor training system (music Mentor + technology mentor), and strive to cultivate "composite top-notch innovative talents with the fusion of music and science and engineering."
+According to the official website of the Central Conservatory of Music, the professional system of "musical artificial intelligence and music information technology" is a total of three years, and candidates are required to be candidates from computer, intelligence and electronic information. At present, the first batch of doctoral students of the Central Conservatory of Music has successfully recruited students.
+However, it is not clear what the two universities' research directions for artificial intelligence doctoral students are, but talents in this direction are still scarce. Whether it is a virtual character, a simulated character, or stage design, data imaging, including post-editing, film and television production, artificial intelligence-based speech recognition, and computer vision technology, there is still much room for imagination.
+
+
+
+
+
+
+
+
+11. Like a pathologist, AI accurately diagnoses prostate cancer!
+
+Recently, researchers at the Karolinska Institutet (Medical University of Stockholm, Sweden) responsible for the Nobel Prize in Physiology or Medicine have developed an AI system that can be used for the histopathological diagnosis and grading of prostate cancer. The AI ​​system addresses bottlenecks in histopathology of prostate cancer by providing more accurate diagnosis and better treatment decisions.
+Moreover, according to the research results published by the research team on January 9, 2020 in LANCET Oncology (Journal of Medical Oncology), the AI ​​system is more accurate than doctors in identifying prostate cancer, and it grades prostate cancer. It is on par with the world's leading European pathologists.
+
+At present, a major problem in prostate cancer detection is that there is a certain degree of subjectivity in the evaluation of biopsy. Even if the same sample is being studied, different pathologists may reach different conclusions. This makes doctors hesitant to choose a treatment plan.
+In this context, researchers see tremendous potential for AI technology to reduce the repeatability of pathological assessments.
+To train and test the AI ​​system, the researchers used a digital pathology scanner to extract more than 8,000 biopsies from approximately 1,200 Swedish men aged 50-69 years and digitized them into high-resolution images. About 6,600 samples were used to train artificial intelligence systems to identify differences between biopsies with or without cancer. The remaining samples and additional sample sets collected from other laboratories were used to test the AI ​​system. And, the researchers compared the results of AI with the assessments of 23 world-leading European pathologists. (This research was carried out in collaboration with researchers at Tampere University, Finland)
+The results showed that the AI ​​system performed nearly perfectly in determining whether the sample contained cancer and estimating the length of cancerous tumors in the biopsy. More precisely, the correlation between the cancer length predicted by the AI ​​and the cancer length specified by the reporting pathologist is: the independent test data set is 0.96 (95% CI is 0.95-0 · 97), externally verified The data set is 0.887 (0.884-0.90). In Gleason classification (a widely used method for histological classification of prostate cancer), the AI ​​system is as good as international experts. More accurately, in Gleason classification, the average paired kappa value of AI is 0.62 It is in the range of the pathologist's corresponding value (0 · 60 ~ 0.73).
+
+
+In response to this result, Lars Egevad, a professor of pathology at Karolinska Institutet and co-author of the study, said: "The AI ​​system is at the same level as international experts in the classification of prostate cancer severity, which is impressive. And in the diagnosis of advanced adenocarcinoma, the performance of artificial intelligence is even better. "
+According to researchers, this research is promising, but more validation is needed before the artificial intelligence system can be widely used in clinical practice.
+In light of this, a multicenter study across nine European countries is underway and is expected to be completed by the end of 2020. This research aims to train AI systems to identify cancers in biopsies from different laboratories, different types of digital scanners, and very rare growth patterns.
+Henrik Grönberg, a professor of cancer epidemiology at Karolinska Medical School, believes that artificial intelligence-based prostate cancer biopsy assessments could revolutionize future healthcare. It has the potential to improve the quality of diagnosis and, therefore, more equitable medical services at a lower cost.
+Will AI systems replace professional doctors in the future?
+In response, Martin Eklund, an associate professor in the Department of Medical Epidemiology and Biostatistics at the Karolinska Institutet leading the study, said that their study of this AI system is not to allow it to replace human participation, but to serve as a safety net. To ensure that pathologists don't miss some cancers and help standardize grading. This has the potential to greatly reduce the workload of European pathologists and allow them to focus on more difficult cases.
+He also said that in parts of the world where pathology expertise is completely lacking, AI systems could be an option to act as doctors.
+It is reported that this research was funded by more than 20 research institutions and foundations in Sweden and Finland.
+Worcester Polytechnic Institute is also using AI to help detect prostate cancer
+More than 2 months ago (October 22, 2019), the official website of the Worcester Polytechnic Institute (WPI): WPI researchers are creating a safer and more accurate method for detecting prostate cancer. They created a surgical imaging robot that works inside an MRI machine and inserts imaging probes into a patient's rectum, close to the prostate. Once the image is captured, the probe will be manipulated by the robot. It can capture other images from slightly different angles, eventually editing 3D images of the prostate and any existing tumors. This technology will identify tumors at an earlier stage than ultrasound imaging.
+[Interesting way to discover prostate cancer]
+In the February 2011 issue of European Urology, Jean-Nicolas Cornu and colleagues reported that trained dogs can smell evidence of prostate cancer in urine with near-perfect accuracy. Two specially trained dogs were able to smell organic chemicals released from the urine of prostate cancer with a total accuracy of 98%. Dr Gianluigi Taverna of the Milan Humanities Institute said their research has shown that if used with common diagnostic tools such as blood tests, biopsies and imaging scans for prostate cancer, dog testing is likely to usher in a real clinical opportunity in the future . The researchers said that the chemicals produced by prostate cancer tumors are called volatile organic compounds, which are easily volatile into the air, and the odors that can be detected can be detected by the nose of highly sensitive dogs.
+Prostate cancer is the second most common cancer among men in the world and the fifth most common cause of death. It is also one of the most common malignancies in men in Europe and the United States. Although the incidence of prostate cancer in China is lower than in European and American countries, with the aging of the population and changes in lifestyles, the incidence has shown a significant upward trend. In 2012, the incidence of prostate cancer in China's tumor registration areas was 9.92 per 100,000, ranking sixth in the incidence of male malignancies. The incidence of prostate cancer varies widely between urban and rural areas in China. Relatively speaking, the incidence is higher in large cities.
+According to the "Consensus of Early Diagnosis of Prostate Cancer Experts in China" opinion, the current clinical diagnosis model for early stage prostate cancer is generally recognized as the "three-step" method:
+1. Finding suspicious cases through examination of tumor markers such as blood prostate specific antigen (PSA) and digital rectal examination (DRE);
+2. Depending on the situation, choose transrectal prostate ultrasound (TRUS), multi-parameter magnetic resonance scanning (MRI) and other imaging examinations to complete the diagnosis of suspicious lesions;
+3. Obtain a pathological diagnosis through a biopsy of the prostate system guided by TRUS.
+It can be seen from the above two cases that the AI ​​system developed by WPI researchers has been applied to the second tier. The researchers at Karolinska Institutet developed AI to enhance the accuracy of reading biopsy samples, thus climbing the third ladder. The discovery of prostate cancer in dog noses may also be realized by robot dogs in the future, so that the first step is also plugged into the "overweight" of AI, so that prostate cancer, the main cause of cancer death in Swedish men, will no longer be a "killer". .
+
+
+
+
+
+
+
+
+12. China: AI writes and enjoys copyright; EU: AI is not human, patent is invalid
+
+Content Guide: Recently, the first case of AI writing was sentenced. The Tencent AI writing robot who created the original manuscript was judged to have the copyright. At the same time, a patent filed for an AI invention system in the UK was rejected by the European Patent Office because the inventor was not human.
+
+Who is the credit for the intellectual achievements of AI, and are they not protected by law?
+
+In the two recent incidents, some clues can be glimpsed. The domestic AI copyright ownership law was finally pronounced, while in Europe there was a case of AI patent application.
+
+Surprisingly, these two related events have obtained very different rulings.
+
+China: Copyright in AI Writing
+In August 2018, a financial report was published on the Tencent Securities website: "Lunch Review: The Shanghai Index rose slightly by 0.11% to 2691.93 points, led by telecommunications operations, oil extraction and other sectors." A manuscript completed quickly after the stock market closed a few minutes.
+
+Dreamwriter was launched by Tencent in 2015.It can quickly analyze and complete content writing. It will be identified in the published article and the end will be marked "This article was automatically written by Tencent robot Dreamwriter".
+After several years of iterative upgrades, the efficiency and quality of AI-generated manuscripts have been outstanding. On the release day of this article analyzing the stock market, Shanghai Yingxun Technology Co., Ltd. copied the content of the article without authorization and posted it to its "Internet Loan House" website platform.
+
+In this regard, Tencent believed that the other party had stolen Dreamwriter's labor results and infringed the copyright it enjoyed, so it chose to bring Yingxun Technology to court, and the Shenzhen Nanshan District People's Court accepted the case.
+After a trial, the court finally ruled that this article was indeed created by AI, and the content involved was determined to be original, and AI has the copyright of the article. It is illegal for the defendant to use its content without authorization.
+The judgement wrote: "The article in question is a work created by the overall intellectual creation of a multi-team and multi-person division chaired by the plaintiff, which reflects the plaintiff's needs and intentions for publishing stock review reviews. It is a legal work created by the plaintiff. . "
+
+The defendant Yingxun Technology provided the infringing article content on the website of the Internet Loan House without permission, infringing the plaintiff's right of information network dissemination, and should bear corresponding civil liability.
+In response, Yingxun Technology recognized the facts claimed by Tencent during the trial. And because the defendant had deleted the infringing work, the court finally determined that the defendant compensated the plaintiff for economic losses and a reasonable cost of rights protection of 1,500 yuan.
+At this point, the problem of copyright ownership of AI writing has been settled.
+
+At the same time that the domestic AI was sentenced to have copyright, a British patent application involving AI invention was eventually rejected by the European Patent Office for a simple reason: because AI is not a person, it cannot be granted a patent license.
+In August 2019, a team of researchers at the University of Surrey in the United Kingdom filed patent applications in Europe, the United Kingdom, and the United States. Unlike usual, two of these inventions are masterpieces by AI inventors.
+The two inventions were created by an AI called DABUS, one of which is a new device for stationary drinks; the other is a signaling device that helps search and rescue teams find their targets.
+
+These two seemingly ingenious inventions ate in the final ruling, and the European Patent Office rejected AI as the sole inventor of the patent. The reason is that it does not meet the requirements of the European Patent Organization (EPC), that is, the inventor specified in the application must be a person.
+This move eventually caused some controversy. The scientist involved in DABUS research, Ryan Abbott, was very dissatisfied with this result. He believed that the invention created by AI was inappropriate for granting any human being. The decision of the times.
+
+Coincidentally, the US Copyright Office and the European Patent Office have similar claims, and they also have strict requirements for authorship. The statement said: "The U.S. Copyright Office will register the original work, provided that the work was created by humans."
+He states that "copyright law only protects the fruits of intellectual labor, which are based on the creativity of the mind."
+From this point of view, the day when AI holds invention patents, there is still some time.
+
+After the dispute, the conclusion is not far away
+From the collection of poems published by Microsoft Xiaobing, to the auction of $ 432,000 AI paintings, to Huawei Yuefu AI, which created ancient poems, etc. ... we have entered the era of AI creation.
+
+For the determination of intellectual property rights created by AI, there are different legal regulations and systems in different countries and regions, and some of them have some long-standing disputes.
+History tells us that every major breakthrough in science and technology will be accompanied by profound changes in the knowledge copyright industry, and there are even many subversive adjustments.
+With more and more disputes, contradictions will only become more intense, but the good thing is that we will get closer to the conclusion.
+
+
+
+
+
+
+
+
+
+13. Lidar "beings": who is responding to changes in things, and who is shaking in the winter?
+
+Lidar is undoubtedly the core sensor of autonomous driving systems. But to achieve the leap from Demo to mass production, we must first solve the problem of car-grade reliability, followed by low cost, and ultimately need the guarantee of quality system and delivery capabilities.
+
+The bright future of autonomous driving has also given birth to the "radical" of some startups in the past few years, and the hidden risks caused by it.
+After two years of developing autonomous driving technology with Lyft, Magna said recently that this partnership is about to end. The auto parts maker plans to focus on driver assistance products rather than fully autonomous driving technology.
+In 2018, Magna invested $ 200 million in Lyft, but autonomous driving partnerships appear to have affected its profits. However, Magna has not completely cut off its relationship with Lyft, and they will continue to cooperate on other software and hardware related to autonomous driving.
+Magna believes that in the medium term, the potential of autonomous vehicles is not great enough. In the next 5 years, the company will see more growth opportunities in the assisted driving market (L2, L2 +, L3). Because the automotive industry is becoming more and more "realistic" about the real start of autonomous driving.
+Next, Magna will switch to an advanced version of advanced driver assistance systems based on cameras, millimeter-wave radars, and lidars that form the basis of fully automatic driving. The new system will enhance the functional experience of existing adaptive cruise control and increase safety redundancy.
+2019-2020 is a leap forward for the lidar industry. In the past 5 years, practitioners have focused on proving the feasibility of lidar technology. The larger market comes from the autonomous driving test market. Now, everyone is paying more attention to commercialization, aiming at the real front-loading market.
+
+First, Quanergy is a "legend"
+
+In 2012, based on the technical progress of solid-state lidar, Louay Eldad (as CEO) co-founded a lidar company called Quanergy. Its early targets were smaller, more efficient, and cheaper solid-state lidars.
+In 2015, when Quanergy debuted the solid-state lidar S3 at the CES show, it surprised many people. A year later, when Quanergy announced a $ 250 price, Velodyne's best lidar was priced at about $ 75,000.
+Since then, the company has established partnerships with a number of automakers and began preparing for an IPO at the end of 2017. However, a year later, the company began exposing a series of problems.
+On the one hand, the company has not been able to promote product research and development at the planned time. On the other hand, industry partners and some former employees broke the news that the products actually delivered by the company did not meet the performance indicators of external publicity.
+Production problems followed. Quanergy began to deliberately evade its commitment to the range and price of the product, and some testers who got the product also found that the actual test results and the nominal gap.
+What followed was that Daimler seemed to cancel the previous cooperation plan, and key personnel at Quanergy began to change jobs. This is a consequence of the typical overhype of the autonomous driving industry.
+Since then, Quanergy has begun to shift its target market to map mapping, security monitoring and other non-automotive applications. The former employee said that this change reflects the growing prospects for the company to reach mass production of automotive lidar with car manufacturers. Slim.
+At the same time, internal complaints about Louay Eldad's daily management are increasing. For example, in terms of equity options, last May, a former executive of the company filed a lawsuit over the treatment of stock options.
+But externally, Louay Eldad has always maintained the company's "good" image. In an interview, Louay Eldad denied concerns about the company's financial situation. But by August 2018, Quanergy's IPO plan was shelved, and the company began to look for other ways to raise new funds, including a possible sale.
+Then, in a statement in October 2018, Quanergy disclosed that the company was valued at more than $ 2 billion in financing led by a global top fund. However, according to people familiar with the matter, most of the new financing at that time came from Louay Eldad and another company founder. At the time, the US $ 75 million financing was actually less than US $ 45 million.
+Last year, Samsung Capital and Sensata, early investors in Quanergy, were also revealed to have been disappointed with the company's performance. Then the spokespersons of the two companies came forward to rumor, saying that they are still optimistic about Quanergy's technology, and of course it will take some time to overcome some difficulties.
+In the 1.0 era of lidar, the pioneers represented by Velodyne have made mechanical lidars with 360-degree rotation a must-have for major autonomous driving startups. From low wire harnesses to high wire harnesses has become the focus of competition among various manufacturers.
+In the 2.0 era of lidar, in order to meet future car-level mass production, low cost, and small volume requirements, major lidar manufacturers have begun to target hybrid solid-state, MEMS, and FLASH / OPA solid-state lidar technology routes.
+However, so far, with the exception of Valeo's SCALA, no second company has been able to come up with a true car-grade mass-produced loading lidar product.
+Perhaps aware of the huge risks in the automotive industry, Quanergy began restructuring its executive team last year, including the appointment of new CROs and CMOs to expand its product and market strategies in other application areas.
+
+During the CES of 2020, Louay Eldad announced the resignation of the company's CEO and board members, effective January 13, 2020. The key products introduced by Quanergy at this CES show have also become solid-state lidars that can be used in transportation hubs, public places, and commercial buildings.
+Although prior to this, Quanergy and China's independent brand Geely announced that they will launch in-depth cooperation in the future, focusing on the development and commercialization of smart city and autonomous driving system solutions. You know, a few months ago, Quanergy also announced a partnership with Chery Automobile, another independent brand in China.
+However, in the cooperation between the two companies and Quanergy, lidar for urban infrastructure is one of the main directions. As for the car-side lidar, there is not much information disclosure.
+
+
+2. The closing of Oryx indicates a fierce competition
+Quanergy's S3 solid-state lidar is an optical phased array (OPA) technology line based on CMOS chips, which is not a mainstream line worldwide. The roadside product selected by Geely is Quanergy's other mechanical laser radar M8.
+Compared with the current mainstream hybrid solid-state and MEMS, OPA beam quality control is difficult, it is difficult to achieve a clean laser beam, and there is much noise, which affects the detection of distance. In addition, the maximum horizontal field of view that OPA can currently achieve is only about 50 degrees (while MEMS can achieve 120 ~ 150 degrees), for automotive applications, there is still a long way to go.
+In addition, OPA still faces many technologies and processes to solve, such as semiconductor driving, complicated circuit algorithms to drive changes in optical phase, and what technology to use to change the direction of light arrays.
+Industry sources said that at present, a large part of more than 50 automotive lidar companies around the world will successively expose technical problems that have been covered up, especially in the short term it will be difficult to meet the pre-production volume requirements of automakers.
+Last August, Israeli lidar startup Oryx Vision Ltd. announced that it had officially closed. The company, which was founded in 2009, raised a total of $ 67 million. The company's founder said that they see Lidar is becoming a giant game, and as a small company, it is difficult to continue operations and achieve the expected return on investment.
+2020 will be the reshuffle year of the global automotive lidar industry. On the one hand, early financing needs to fulfill its commitments, and on the other hand, whether it can become the first batch of companies to produce cars on the market is crucial.
+At one time, Orxy believed that it could continue to operate in a leaner manner and avoid investors losing money on its investments, but then realized that it would take longer than they originally thought.
+The industry has entered a consolidation phase.
+According to the head of Luminar, a Volvo-invested lidar startup, a lot of colleagues have been approaching them in recent times to look for opportunities to be acquired. You know, Luminar's plan is to start mass production of its lidar two years later, in 2022.
+
+
+Three, Velodyne got up early
+Velodyne is one of the main contributors to the application of lidar (mainly mechanical rotary lidar) in the autonomous driving industry. In 2005, the US Department of Defense sponsored a driverless car competition. In 2006, the founder of Velodyne, Hall, invented a patent for a multi-beam rotating lidar.
+But Velodyne also faces challenges. According to some autopilot technology developers, mechanical lidar sensors, which are Velodyne's main pillars, have proven difficult to manufacture efficiently and with high quality on a large scale, and can be extremely fragile in practical applications. Of course, the company also quickly launched product solutions for car-grade mass production.
+However, over the past few years, dozens of companies, large and small, have been trying to create truly mass-producable, car-grade lidars, achieving perfection between distance, resolution, manufacturability, robustness, and cost. balance. Rivals are endless, and the battle for talent digging has already begun.
+In recent years, several early senior management of Velodyne have left one after another, including vice president of engineering, COO, CFO and so on. 2018 also became the peak period for the company's senior management to leave.
+In May last year, the company's CFO Robert Brown resigned and was adjusted to rival Cepton; in July, the company's vice president of product management T. R. Ramachandran resigned and also joined Cepton as executive vice president of marketing. A few months later, Cepton announced the latest low-power lidar Vista-X120 for ADAS and autonomous driving applications.
+Some Velodyne employees said that David Hall (founder and CEO) and Marta Hall (president of business development) were too arrogant and ignored the company's main problems in many ways. Just a few days ago, Velodyne announced the appointment of the company's former chief technology officer Anand Gopalan as the new CEO, and the company's founder David Hall officially "quit.
+Previously, Velodyne had planned an IPO before the end of last year, with a valuation of $ 1.8 billion. However, the matter was eventually put on hold. Immediately after, Velodyne laid off some employees in China before the end of last year. The Asia-Pacific office only retained some positions related to major customers, channels, and technical support. The number of employees will be reduced from about 20 to 10.
+The reason is that Lidar purchase orders for autonomous vehicles are not the main force. Mapping, robotics, and security are the main sources of orders for Velodyne. Among them, the most important restraint factor is the change in attitude of autonomous driving companies, especially car manufacturers, to mechanical lidar in recent years.
+
+Therefore, solid-state lidar has become a barrier that Velodyne must take. For example, the company announced in 2017 that it would launch a solid-state automotive lidar Velarray LiDAR. At that time, the official expected that the product would enter large-scale production by 2018, and the price could reach several hundred dollars.
+Since then, time has been delayed. Mass production has become a prototype test, and the time point has also been changed to be expected to be delivered to the OEM in the first half of 2019. In the second half of 2019, a vehicle-grade Velarray will be launched.
+However, at the US CES show in January 2020, it will be replaced by a Velabit lidar with a mass production target price of $ 100, a detection distance of only 100 meters, and a field of view of 60 degrees.
+
+Fourth, the accelerated reshuffle, the market is still expected
+The difficulty of mass-producing lidars in front-loading can be imagined.
+Surface vector laser lidars must first meet the performance standards and meet the requirements regardless of resolution and frame rate. Secondly, as a new electronic component used in the automotive field, they must pass a series of vehicle regulatory certifications to achieve vehicle-level reliability. Performance, including mechanical shock, mechanical vibration, high and low temperature, saline-alkali acid, electromagnetic interference and other conditions.
+In addition, Lidar companies must fully understand the scene applications at the car end. For mass production, it needs to be based on the special needs of different automakers for matching the installation position and function of lidar.
+For automakers, the use of forward-looking lidar sensors means that they can make up for and improve the performance of existing forward-looking + millimeter-wave radar sensing combinations. For example, combined with lidar detection and classification of dangerous targets in a specific environment.
+However, it is difficult to pave the way for the market reshuffle.
+Beginning last year, more and more Tier 1 auto parts suppliers and OEMs are accelerating in-depth interaction and strategic cooperation with lidar manufacturers, and accelerating the provision of car-grade design and verification testing support for lidar manufacturers.
+In addition, industry giants, including Bosch and Continental, are also deploying automotive lidar through self-research and acquisition of startups. At the same time, cross-border giants such as Huawei and DJI have also launched product samples.
+For example, Yijing Technology introduced the ML30S based on the MEMS route at this year's CES exhibition, which achieved the world's first LiDAR solution with a FOV exceeding 140x70 degrees, breaking through the limitation of the angle of view.
+In addition, Yijing Technology also released the world's first complete set of MEMS lidar solutions: a full range of MEMS lidars with long distances + medium and short distances + blind spots, aimed at car-level mass production. The characteristics of this set of radars are also car-grade, low-cost, and high-performance.
+Considering the long-term coexistence of L2 +, L3, and L4 in the future, there are also two types of requirements for lidar: one is forward long-range detection, and the other is short-to-medium-range detection with 360-degree surround view (for blind spots). ).
+Another company, Innovusion, is launching a new Falcon lidar specifically for high-level autonomous driving. The system combines custom electronic detection technology, advanced optics and complex software algorithms to achieve real-time Focused "Eagle Eye Bionic" feature.
+Baojunwei, founder and CEO of Innovusion, said that Lidar needs to have a wide viewing angle, ultra-high resolution, and a distance of more than 150m to effectively cope with the accuracy of long-distance obstacles on highways, urban roads, and pedestrians at intersections in L3 scenarios probe.
+At the same time, Innovusion is also the world's first lidar to release a ROI (Precise Sensing Area) feature, which fills the technological gap in autonomous driving systems from ADAS to higher-level autonomous driving, which can effectively reduce the rate of missed detection and false detection.
+Of course, the most critical factor in the commercialization of a technology is cost. Which company can achieve the cost of hundreds of dollars, will become the real turning point of laser radar towards the mass production of cars.
+According to current estimates by major automakers around the world, less than $ 1,000 is the price target for large-scale purchases of L4 autonomous driving lidar, while the price targets for L2 + and L3 are less than $ 500.
+At this year's CES, Radium Smart announced the release of three MEMS solid-state lidars that cost less than $ 1,000. Among them, the LS20E volume equivalent to 400 lines and ranging up to 500 meters is only priced at $ 888.
+The core is based on the core technology and innovative technology of the self-developed MEMS micro-mirror and 16-channel TIA chip, which has greatly simplified the internal structural components and greatly improved the assembly efficiency of the whole machine.
+The transition to self-driving cars will be a gradual process. First, we must ensure a safer assisted driving system, and give more power to the car over time. The optimization of these systems will also promote the innovation and application of lidar in the short term.
+The world's most stringent new car evaluation system, Euro NCAP is also promoting many reforms to gradually improve the safety of existing ADAS systems. Tier 1 auto parts suppliers also have a clear timetable to promote lidar mass production deployment in the next few years as part of the plan.
+For the lidar company, perhaps the most difficult moment, we can see the dawn before dawn. But more businesses may fall on the eve of dawn.
