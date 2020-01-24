@@ -1,0 +1,125 @@
+1. 2020 IAPR / IEEE Biometric Winter Camp First Day Frontier Technology Report-Ping An Technology
+
+IAPR / IEEE Winter School on Biometrics 2020, co-sponsored by the Department of Computer Science, Hong Kong Baptist University, Institute of Automation, Chinese Academy of Sciences and Computer Science Department of Southern University of Science and Technology, opened at the Golden Lily Hotel in Shenzhen on January 12. The winter camp thanked Ping An Technology, a gold sponsor, and OPEN AI LAB, a silver sponsor, and IAPR, IEEE, and Shenzhen Institute of Artificial Intelligence and Robotics for student travel expenses. This winter camp will last for 5 days. For young scholars, graduate students and related practitioners of various enterprises, 14 top experts in biometrics from different countries and regions are invited to report on the latest technology in the industry.
+
+In addition to experts from academia, the camp also invited Dr. Xiao Jing from Ping An Group, an expert from the industry, to give a speech. Dr. Jing Jing received his Ph.D. from CMU in the United States, worked at Epson and Microsoft, and is currently the chief scientist of China Ping An Group, leading the team to use technology to help finance. Dr. Xiao Jing introduced the application of AI, especially biometric recognition in the financial field from an industrial perspective, which is refreshing. Everyone feels the power of "Peace Brain" artificial intelligence and the investment and contribution of Ping An Company to the artificial intelligence industry.
+
+Finally, Professor Pong C Yuen from the Department of Computer Science of the Hong Kong Baptist University presented Dr. Xiao Jing with a prize and took a group photo. Thanks to Dr. Xiao Jing for his wonderful and in-depth report. Thanks to Dr. Xiao Jing for his support to the winter camp. Young scholars and classmates have a detailed and full understanding of the layout of Ping An Group and Ping An Technology in the field of artificial intelligence. Our life brings new breakthroughs and contributions to China and the world.
+
+
+
+
+
+2. 9 thousand yuan DJI lidar released! The conversation cost more than all competing products, and the solution cost was only 5% of the peer; the driverless car engineer was excited: I want to buy 10
+
+Lidar, which strangled the scale of autonomous driving, is now officially entering Shenzhen.
+Shortly after the global lidar brother Velodyne retreated to China, the price reduction, performance and mass production of lidar once again sparked heated discussions.
+Shenzhen companies scrambled to make a big splash at CES 2020.
+Sagitar's innovative products are priced at 13,000, while another officially launched company is frank: the highest price is 9,000 yuan-RMB. In the field of lidar, which has a starting speed of hundreds of thousands, it just dropped the atomic bomb.
+Moreover, this company is not a nameless person, and has a long-standing reputation in the field of product innovation.
+Yes, new entrants, DJI innovation.
+Too expensive and too difficult to mass-produce lidar, for the first time entered the "ten thousand yuan" era.
+
+DJI Incoming Lidar
+At 2020 CES, Livox, an independent subsidiary incubated by DJI Innovation, was unveiled and launched two high-performance, low-cost, mass-producable lidar products for L3 / L4 autonomous driving.
+One named: Horizon.
+The other is called: Tele-15, remote 15.
+But before that, Livox had mass production of industrial-grade lidar products, Mid-40 and Mid-100 series, focusing on embedded applications and achieving high performance with non-repetitive scanning technology.
+DJI claims that as the laser beam scans non-repetitively within the field of view (FOV), the area scanned by the Livox sensor will increase over time.
+Sensors such as Livox Mid-40 or Mid-100 generate unique flower-like scanning patterns to create 3D images of the surrounding environment.
+Image fidelity increases rapidly over time. In contrast, traditional mechanical lidar sensors use a horizontal linear scanning method, and there is a risk of blind spots. No matter how long the scan lasts, some objects in the field of view will be missed.
+
+The unique non-repetitive scanning method of Livox Lidar sensors can achieve nearly 100% field coverage as scanning time increases.
+DJI also emphasized that at the same price, similar products on the market today cannot achieve such performance.
+New products aim at autonomous driving
+The two new products released this time.
+Horizon——Horizon, the detection distance can reach 260 meters, the horizontal field of view (HFOV) is 81.7 °, and it can easily cover 4 lanes 10 meters away. When the integration time is 0.1 seconds, its field of view coverage rate is 64-line mechanical Lidar is equivalent.
+360 ° coverage can be achieved using a combination of five Horizon sensors at a total cost of only 5% of a 64-wire mechanical lidar.
+
+For driverless taxis or advanced auxiliary vehicles, low-cost, mass-producable lidar is undoubtedly all great news.
+
+Livox also showed a performance comparison.
+
+For example, using Horizon to detect a pedestrian crossing the road at an intersection, the point cloud diagram is as follows:
+To detect further, you need Tele-15.
+Designed for long-distance detection, it has a compact structure, has the advantages of high accuracy and high reliability, and greatly extends the real-time ranging range.
+When the integration time is 0.1 seconds, Tele-15 can scan 99.8% of the area within a 15 ° circular field of view, which is better than the 128-line mechanical lidar currently on the market.
+Tele-15 can detect objects up to 500 meters away, which is difficult for human eyes or other sensors to reach.
+Therefore, the breakthrough performance of Tele-15 enables the autonomous driving system to detect distant objects in advance and provide more response time even at high speeds.
+Livox also provides "run score data".
+Mid 40, which appears in the comparison series, is also a product of Livox, an industrial-grade application, and an embedded form.
+Safe and reliable energy production, the highest price is 9,000 yuan
+Mass production capacity enables Livox to undergo rigorous reliability tests. As many as 2,900 Livox lidars have been rigorously tested for various environmental conditions.
+Even under 100 klx lighting conditions, the false alarm rate of a single machine is less than 1/10000. The extreme temperature ranges of Horizon and Tele-15 are also designed in strict accordance with automotive industry standards and can operate in the range of -40˚C to 85˚C.
+In addition, the entire body of Horizon and Tele-15 can reach IP67 waterproof rating.
+In order to achieve 360 ​​° full coverage of traditional mechanical laser radar, a large number of key electronic components are rotating at high speed, which leads to an increase in the failure rate. The unique product design of Livox lidar has no other electronic moving parts except for rotating prisms. Compared with the lidar solutions on the market today, Livox products are more reliable and have a longer working life.
+The laser power of each sensor meets the requirements of IEC 60825-1 (2014) for 905nm Class 1 laser products and is safe for human eyes.
+
+
+The scariest thing is price.
+Livox Horizon retails for RMB 6,499.
+The retail price of Tele-15 is 9,000 yuan.
+You know, Velodyne's 128 lines once cost 700,000, and old customers have to cut prices by 500,000. And domestic players are relatively cheap, but 64-line products have to start at 200,000.
+So DJI dropped the atomic bomb this time.
+Even more frightening is the mass production capability. DJI claims that it can be purchased directly at the DJI DJI official mall-before that, lidar had never had the ability to "shop online".
+DJI said that Horizon will start shipping on January 7, 2020, and Tele-15 will start shipping in the second quarter of 2020.
+Currently, DJI LiDAR also lists the first partners. DJI lidar has begun to be used, including autonomous vehicle company AutoX, self-driving truck Xidi Zhiyue, commercial mobile robots Refraaction AI and Gaoxian robots, and digital green earth focusing on aerial, ground and mobile laser scanning technology.
+
+Shenzhen companies scramble
+Shenzhen's entry into the lidar is not just DJI.
+Also at CES 2020, another Shenzhen company, Sagitar Juchuang, also launched a new product, the intelligent solid-state lidar RS-LiDAR-M1.
+The 125 line, which sells for $ 1,898, is equivalent to 13,000 yuan, which also gives a "price butcher" feeling.
+
+Similarly, the impact it brings is not only the price, but also the outstanding performance. The official gives six characteristics, which are:
+Largest field of view (120 ° × 25 °), longest detection distance (150m @ 10%), neat point cloud (0.2 ° * 0.2 ° resolution), vertical 125 lines, 15 FPS frame rate, the smallest size in the world .
+In addition, Sagitar's new product also embeds Lidar point cloud algorithms into the main body of LiDAR hardware.
+
+According to its official introduction, this also means that the lidar hardware is no longer just an "information collector", it has also been upgraded to an "information understander".
+
+Become a software-hard integrated intelligent sensor that can process external information in real time and output a target list.
+
+Similarly, this product also has mass production capabilities, and has begun to accept orders from important customers. After the first quarter of 2020, it is open to ordinary customers.
+
+But is this the full version of "Shenzhen Speed"?
+
+No no no, don't forget Huawei.
+
+After the establishment of the Intelligent Vehicle Solution BU at the end of May this year, it again showed its attitude in October and became an incremental component supplier for intelligent connected cars.
+Its rotating chairman, Xu Zhijun, is even clearer. He uses the world's leading optoelectronic technology to develop lidars and truly solves the cost and performance issues facing lidars.
+Although no new product has been developed, Huawei's entry into the game means a lot of its attitude, as well as the horrible funds and technical accumulation behind it.
+In addition, it is not a day that Huawei wants to cut the infrastructure cake in the field of intelligent transportation, and the war is suddenly more intense.
+In addition, in addition to Shenzhen and LiDAR players, there is currently Hesai Technology in Shanghai Jiading.
+Prior to the Hesai Lidar, it has occupied a place in Baidu's Apollo Changsha RoboTaxi project and many autonomous driving test vehicles.
+At this year's CES, Hesai also cooperated with Horizon to provide customized solutions based on self-developed lidar products, claiming to create a "visual center" for radar perception.
+Therefore, the difficulties of mass production and cost reduction of lidar are constantly being solved.
+And now connected, maybe Velodyne lost some time ago, it is no longer unexpected.
+
+First player Velodyne loses China
+At the same time, perhaps echoing this.
+Velodyne, the world's first lidar company, has recently retired from China and no longer sells directly to the Chinese market.
+The original Velodyne China office, after layoffs, became a department serving large Chinese customers.
+And more small customers in the Chinese market will be sold through agents.
+The change at that time was somewhat surprising.
+Because of the development of autonomous driving, all players are overweight China.
+As a head goose player, Velodyne not only has excellent technology, but also has a very complete product line. From 16 to 128 lines, from mechanical to embedded solid-state lidar. Not to mention behind it is Baidu, a pioneer in China's autonomous driving industry, as a shareholder.
+However, it seems that it is only a matter of time before it is retired.
+The rise of players in Shenzhen, the speed of Shenzhen has increased, Velodyne does not understand China's national conditions, foreign companies are difficult to change the disease, and there is no rapid mass production to reduce costs during the technology monopoly period.
+Undefeated in 2019, and 2020 will not escape the impact of new giant players such as DJI Huawei.
+Of course, the speed at which lidar enters Shenzhen and the scale-up of closely related autonomous driving will certainly follow the time of entering China.
+On the development of autonomous driving technology today, China and the United States are the fastest, but when it comes to landing, Chinese cities and Chinese companies are undoubtedly faster.
+In Beijing, Guangzhou, Shenzhen, and Changsha, RoboTaxi has been issued with self-driving manned test licenses.
+In addition, both Guangzhou and Changsha have started RoboTaxi-the normalized trial operation of driverless taxi fleets. In the RoboTaxi scheme, lidars are the core sensors.
+Now, for performance and performance, price and price advantage, domestic laser radars with clear energy production have been released.
+The landing of autonomous driving will no doubt enter Chinese time.
+After hearing the news, an autonomous driving practitioner was excited and said: I want to buy 10 for this price!
+What do you think?
+
+
+
+
+
+
+3.HKSAIR was invited to participate in the opening of AI Plug and RCC 2.0 in Hong Kong Science Park
+
+  On the afternoon of January 20, the opening ceremony of the AI Plug and RCC 2.0 (Robotics Catalysing Centre) was held in the Hong Kong Science Park. Many heavyweight guests came to the scene. Many industry professionals gathered together. Executive Vice Chairman of HKSAIR Dr. Yanagisaki Feng, the Secretary-General, was also invited to attend and witness the opening. Below, please see the live picture sent by the editor in front. Are you ready to “A.I.R” your imagination?
+  The AI Plug is established by the Hong Kong Science Park to create a close artificial intelligence network, to connect technology companies, service providers, industries and talents related to artificial intelligence technology, to help achieve project landing and promote more progress through funding and technical service support. A platform for innovation and innovation. The AI Plug designer revealed that the name AI Plug has the meaning of a connector.
